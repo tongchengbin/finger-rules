@@ -1,0 +1,15 @@
+- name: HP-Switch
+  matchers:
+    - name: mode
+      type: regex
+      part: title
+      regex:
+        - "HP (.+) Switch"
+- name: HP-Printer
+  matchers:
+    - type: word
+      part: body
+      condition: and
+      words:
+        - Printer Cartridges
+        - /hp/device/contentHeader.html

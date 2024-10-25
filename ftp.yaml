@@ -1,0 +1,15 @@
+- matchers:
+    - part: body
+      type: word
+      words:
+        - "220 Microsoft FTP Service"
+  service: ftp
+  name: Micosoft-FTP-Service
+
+- matchers:
+    - part: body
+      type: word
+      words:
+        - "vsFTPd"
+  service: ftp
+  name: vsFTPd
