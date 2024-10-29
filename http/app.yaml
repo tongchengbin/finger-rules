@@ -3023,3 +3023,14 @@
       type: word
       words:
         - "Sunflower"
+- name: CyberPanel
+  matchers:
+    - part: body
+      type: regex
+      name: version
+      regex:
+        - "Tested on CyberPanel (.+) build"
+    - part: body
+      type: word
+      regex:
+        - "Tested on CyberPanel"
