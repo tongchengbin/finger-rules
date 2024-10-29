@@ -3030,7 +3030,3 @@
       name: version
       regex:
         - "Tested on CyberPanel (.+) build"
-    - part: body
-      type: word
-      regex:
-        - "Tested on CyberPanel"
