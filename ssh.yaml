@@ -1,0 +1,9 @@
+- matchers:
+    - part: body
+      type: word
+      words:
+        - "Ubuntu-4k"
+      cpe:
+        os: Kylin-OS
+  service: ssh
+  name: OpenSSH
