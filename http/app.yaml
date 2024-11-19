@@ -3030,3 +3030,9 @@
       name: version
       regex:
         - "Tested on CyberPanel (.+) build"
+- name: H-UI
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "681877237"
