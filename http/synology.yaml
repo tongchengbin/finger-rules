@@ -1,15 +1,16 @@
 - name: Synology-DiskStation
   matchers:
     - part: title
-      type: regex
-      name: mode
-      regex:
-        - (.*) - Synology DiskStation
-    - part: title
+      type: word
+      condition: and
+      words:
+        - Synology
+        - DiskStation
+
+    - part: body
       type: word
       words:
-        - Synology DiskStation
-        - Synology DiskStation
+        - "synoSDSjslib/sds.css"
 - name: Synology-NVR
   matchers:
     - part: title
