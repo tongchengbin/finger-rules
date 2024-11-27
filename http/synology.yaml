@@ -63,3 +63,9 @@
       words:
         - "NAS"
         - "Synology"
+- name: Synology-Router-Manager
+  matchers:
+    - part: body
+      type: word
+      words:
+        - '"hostname" : "SynologyRouter"'
