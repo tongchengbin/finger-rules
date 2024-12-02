@@ -1,6 +1,13 @@
 - name: DaHua-DDS
   matchers:
-  - type: word
-    part: body
-    words:
-        - "/portal/include/script/dahuaDefined/headCommon.js"
+    - type: word
+      part: body
+      words:
+          - "/portal/include/script/dahuaDefined/headCommon.js"
+
+- name: DaHua-EIMS
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "eims"
