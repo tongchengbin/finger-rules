@@ -1,0 +1,6 @@
+- name: Expedition
+  matchers:
+    - type: word
+      part: icon_hash
+      words:
+        - "1499876150"

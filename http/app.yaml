@@ -49,12 +49,6 @@
       type: word
       words:
         - 'WEB SERVICE'
-- name: 大华-EIMS
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "eims"
 - name: Flexnet
   matchers:
     - part: title
@@ -3036,3 +3030,11 @@
       type: word
       words:
         - "681877237"
+
+
+- name: CodeChecker
+  matchers:
+    - type: word
+      part: icon_hash
+      words:
+        - "-1496590341"
