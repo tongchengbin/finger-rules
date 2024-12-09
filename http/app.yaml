@@ -2902,6 +2902,12 @@
       type: word
       words:
         - "-2051052918"
+- name: Docker-UI
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "<script src="static/common/js/ui.js"></script>"
 - name: Docker-API
   matchers:
     - part: header
