@@ -10,3 +10,9 @@
       type: word
       words:
         - "明源地产研究院"
+- name: 圣乔ERP
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "圣乔ERP系统"

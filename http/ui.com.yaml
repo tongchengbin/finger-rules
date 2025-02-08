@@ -1,15 +1,13 @@
-- name: UniFi
-  matchers:
-    - type: word
-      part: title
-      words:
-        - "UniFi"
 - name: UniFi-Network
   matchers:
     - type: word
-      part: title
+      part: url
       words:
-        - "UniFi Network"
+        - "/manage/account/login"
+    - type: word
+      part: cert
+      words:
+        - "O=ubnt.com"
 - name: UniFi-OS
   matchers:
     - type: word
