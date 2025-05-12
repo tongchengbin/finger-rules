@@ -12,3 +12,687 @@
         - visid_incap_
       type: word
   name: Incapsula-WAF
+- matchers:
+    - part: headers.server
+      words:
+        - WAF
+      type: word
+  name: WAF
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By-360wzb: wangzhan\.360\.cn
+      type: word
+  name: 360
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By: 360
+      type: word
+  name: 360
+- matchers:
+    - part: headers.server
+      words:
+        - 360wzws
+      type: word
+  name: 360wzws
+- matchers:
+    - part: body
+      words:
+        - Sorry! your access has been intercepted by AnYu
+      type: word
+  name: 360-AnYu
+- matchers:
+    - part: body
+      words:
+        - AnYu- the green channel
+      type: word
+  name: 360-AnYu
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By-Anquanbao: MISS
+      type: word
+  name: Anquanbao
+- matchers:
+    - part: headers.server
+      words:
+        - armor
+      type: word
+  name: Armor
+- matchers:
+    - part: headers.server
+      words:
+        - yunjiasu-nginx
+      type: word
+  name: BaiduYunjiasu
+- matchers:
+    - part: header
+      words:
+        - x-binarysec-cache: miss
+      type: word
+  name: BinarySEC
+- matchers:
+    - part: header
+      words:
+        - x-binarysec-via: binarysec\.com
+      type: word
+  name: BinarySEC
+- matchers:
+    - part: headers.server
+      words:
+        - BinarySec
+      type: word
+  name: BinarySEC
+- matchers:
+    - part: headers.server
+      words:
+        - BlockDos\.net
+      type: word
+  name: BlockDoS
+- matchers:
+    - part: headers.server
+      words:
+        - cloudflare-nginx
+      type: word
+  name: CloudFlare-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - cloudflare
+      type: word
+  name: CloudFlare-CDN
+- matchers:
+    - part: header
+      words:
+        - CF-RAY: .+
+      type: regex
+  name: CloudFlare-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - cloudfront
+      type: word
+  name: Cloudfront-CDN
+- matchers:
+    - part: header
+      words:
+        - X-Cache: cloudfront
+      type: word
+  name: Cloudfront-CDN
+- matchers:
+    - part: header
+      words:
+        - X-Cache: Error\sfrom\scloudfront
+      type: regex
+  name: Cloudfront-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - mod_security
+      type: word
+  name: mod_security
+- matchers:
+    - part: headers.server
+      words:
+        - Barracuda
+      type: word
+  name: Barracuda-NG
+- matchers:
+    - part: headers.server
+      words:
+        - Mod_Security
+      type: word
+  name: mod_security
+- matchers:
+    - part: headers.server
+      words:
+        - BigIP
+      type: word
+  name: F5-BIG-IP-APM
+- matchers:
+    - part: headers.server
+      words:
+        - BIG-IP
+      type: word
+  name: F5-BIG-IP-APM
+- matchers:
+    - part: header
+      words:
+        - X-WA-Info: .+
+      type: regex
+  name: F5-BIG-IP-ASM
+- matchers:
+    - part: header
+      words:
+        - X-Cnection: close
+      type: word
+  name: F5-BIG-IP-ASM
+- matchers:
+    - part: headers.server
+      words:
+        - F5-TrafficShield
+      type: word
+  name: F5-TrafficShield
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By: GoDaddy
+      type: word
+  name: GoDaddy
+- matchers:
+    - part: headers.server
+      words:
+        - BDWAF
+      type: word
+  name: Bluedon-IST
+- matchers:
+    - part: headers.server
+      words:
+        - Protected by COMODO
+      type: word
+  name: Comodo
+- matchers:
+    - part: headers.server
+      words:
+        - Airee
+      type: word
+  name: Airee-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - Beluga
+      type: word
+  name: Beluga-CDN
+- matchers:
+    - part: header
+      words:
+        - X-Fastly-Request-ID: \w+
+      type: regex
+  name: Fastly-CDN
+- matchers:
+    - part: header.set-cookie
+      words:
+        - limelight
+      type: word
+  name: limelight-CDN
+- matchers:
+    - part: header
+      words:
+        - BestCDN: CacheFly
+      type: word
+  name: CacheFly-CDN
+- matchers:
+    - part: header
+      words:
+        - X-CDN: maxcdn
+      type: word
+  name: maxcdn-CDN
+- matchers:
+    - part: header.set-cookie
+      words:
+        - \Asessioncookie=
+      type: regex
+  name: DenyAll
+- matchers:
+    - part: header.set-cookie
+      words:
+        - ^Navajo.*?$
+      type: regex
+  name: AdNovum
+- matchers:
+    - part: header
+      words:
+        - X-dotDefender-denied: 1
+      type: word
+  name: dotDefender
+- matchers:
+    - part: header
+      words:
+        - X-CDN: Incapsula
+      type: word
+  name: Incapsula-CDN
+- matchers:
+    - part: header.set-cookie
+      words:
+        - jsluid=
+      type: word
+  name: Jiasule
+- matchers:
+    - part: headers.server
+      words:
+        - AkamaiGHost
+      type: word
+  name: KONA
+- matchers:
+    - part: headers.server
+      words:
+        - NYOB
+      type: word
+  name: ModSecurity
+- matchers:
+    - part: headers.server
+      words:
+        - NOYB
+      type: word
+  name: ModSecurity
+- matchers:
+    - part: headers.server
+      words:
+        - .*mod_security
+      type: regex
+  name: ModSecurity
+- matchers:
+    - part: header
+      words:
+        - Cneonction: \Aclose
+      type: regex
+  name: NetContinuum
+- matchers:
+    - part: header
+      words:
+        - nnCoection: \Aclose
+      type: regex
+  name: NetContinuum
+- matchers:
+    - part: header.set-cookie
+      words:
+        - citrix_ns_id
+      type: word
+  name: NetContinuum
+- matchers:
+    - part: headers.server
+      words:
+        - newdefend
+      type: word
+  name: Newdefend
+- matchers:
+    - part: headers.server
+      words:
+        - NSFocus
+      type: word
+  name: NSFOCUS
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By: Safe3WAF
+      type: word
+  name: Safe3
+- matchers:
+    - part: headers.server
+      words:
+        - Safe3 Web Firewall
+      type: word
+  name: Safe3
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By: WAF/2\.0
+      type: regex
+  name: Safedog
+- matchers:
+    - part: headers.server
+      words:
+        - Safedog
+      type: word
+  name: Safedog
+- matchers:
+    - part: header.set-cookie
+      words:
+        - Safedog
+      type: word
+  name: Safedog
+- matchers:
+    - part: body
+      words:
+        - 404.safedog.cn/images/safedogsite/broswer_logo.jpg
+      type: word
+  name: Safedog
+- matchers:
+    - part: headers.server
+      words:
+        - SonicWALL
+      type: word
+  name: SonicWALL
+- matchers:
+    - part: headers.server
+      words:
+        - ZENEDGE
+      type: word
+  name: ZenEdge-Firewall
+- matchers:
+    - part: headers.server
+      words:
+        - WatchGuard
+      type: word
+  name: WatchGuard
+- matchers:
+    - part: header.set-cookie
+      words:
+        - \AX-Mapping-
+      type: regex
+  name: Stingray
+- matchers:
+    - part: header.set-cookie
+      words:
+        - WODSESSION=
+      type: word
+  name: Art-of-Defence-HyperGuard
+- matchers:
+    - part: headers.server
+      words:
+        - Sucuri/Cloudproxy
+      type: word
+  name: Sucuri
+- matchers:
+    - part: headers.server
+      words:
+        - Secure Entry Server
+      type: word
+  name: Usp-Sec
+- matchers:
+    - part: header
+      words:
+        - X-Varnish: .+
+      type: regex
+  name: Varnish
+- matchers:
+    - part: headers.server
+      words:
+        - varnish
+      type: word
+  name: Varnish
+- matchers:
+    - part: headers.server
+      words:
+        - nginx-wallarm
+      type: word
+  name: Wallarm
+- matchers:
+    - part: headers.server
+      words:
+        - WebKnight
+      type: word
+  name: WebKnight
+- matchers:
+    - part: headers.server
+      words:
+        - YUNDUN
+      type: word
+  name: Yundun
+- matchers:
+    - part: header.set-cookie
+      words:
+        - st8id=
+      type: word
+  name: Teros-WAF
+- matchers:
+    - part: header
+      words:
+        - X-Iinfo: .+
+      type: regex
+  name: Imperva-SecureSphere
+- matchers:
+    - part: header.set-cookie
+      words:
+        - NCI__SessionId=
+      type: word
+  name: NetContinuum-WAF
+- matchers:
+    - part: header
+      words:
+        - X-Cache: YUNDUN
+      type: word
+  name: Yundun
+- matchers:
+    - part: header.set-cookie
+      words:
+        - yunsuo
+      type: word
+  name: Yunsuo
+- matchers:
+    - part: headers.server
+      words:
+        - imunify360
+      type: word
+  name: Immunify360
+- matchers:
+    - part: header
+      words:
+        - Via: .+ISASERVER
+      type: regex
+  name: ISAServer
+- matchers:
+    - part: header
+      words:
+        - X-Qiniu-Zone: 0
+      type: word
+  name: Qiniu-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - azion
+      type: word
+  name: azion-CDN
+- matchers:
+    - part: header.set-cookie
+      words:
+        - ODSESSION=
+      type: word
+  name: HyperGuard-Firewall
+- matchers:
+    - part: headers.server
+      words:
+        - ArvanCloud
+      type: word
+  name: ArvanCloud
+- matchers:
+    - part: headers.server
+      words:
+        - greywizard.*
+      type: regex
+  name: GreyWizard-Firewall
+- matchers:
+    - part: header.set-cookie
+      words:
+        - cookiesession1
+      type: word
+  name: FortiWeb-Firewall
+- matchers:
+    - part: headers.server
+      words:
+        - Beluga
+      type: word
+  name: Beluga-CDN
+- matchers:
+    - part: header
+      words:
+        - X-DIS-Request-ID: .+
+      type: regex
+  name: DoSArrest-Internet-Security
+- matchers:
+    - part: header
+      words:
+        - Powered-By-ChinaCache: \w+
+      type: regex
+  name: ChinaCache-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - ChinaCache
+      type: word
+  name: ChinaCache-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - HuaweiCloudWAF
+      type: word
+  name: HuaweiCloudWAF
+- matchers:
+    - part: header.set-cookie
+      words:
+        - HWWAFSESID
+      type: word
+  name: HuaweiCloudWAF
+- matchers:
+    - part: headers.server
+      words:
+        - KeyCDN
+      type: word
+  name: KeyCDN
+- matchers:
+    - part: header.set-cookie
+      words:
+        - rbzid=\w+
+      type: regex
+  name: Reblaze-Firewall
+- matchers:
+    - part: header
+      words:
+        - X-Distil-CS: .+
+      type: regex
+  name: Distil-Firewall
+- matchers:
+    - part: header
+      words:
+        - X-Powered-By: SDWAF
+      type: word
+  name: SDWAF
+- matchers:
+    - part: header
+      words:
+        - X-NGENIX-Cache: HIT
+      type: word
+  name: NGENIX-CDN
+- matchers:
+    - part: headers.server
+      words:
+        - FortiWeb.*
+      type: regex
+  name: FortiWeb
+- matchers:
+    - part: header
+      words:
+        - X-Data-Origin: naxsi-waf
+      type: word
+  name: Naxsi
+- matchers:
+    - part: header
+      words:
+        - X-Backside-Transport: \w+
+      type: regex
+  name: IBM-DataPower
+- matchers:
+    - part: headers.server
+      words:
+        - ACE\sXML\sGateway
+      type: regex
+  name: Cisco-ACE-XML-Gateway
+- matchers:
+    - part: headers.server
+      words:
+        - awselb.*
+      type: regex
+  name: AWS-WAF
+- matchers:
+    - part: headers.server
+      words:
+        - PowerCDN
+      type: word
+  name: PowerCDN
+- matchers:
+    - part: headers.server
+      words:
+        - profense
+      type: word
+  name: Profense
+- matchers:
+    - part: header
+      words:
+        - X-SL-CompState: .+
+      type: regex
+  name: CompState
+- matchers:
+    - part: header
+      words:
+        - X-Cache: .+WT263CDN-.+
+      type: regex
+  name: West263CDN
+- matchers:
+    - part: body
+      words:
+        - Condition Intercepted
+      type: word
+  name: DenyALL-WAF
+- matchers:
+    - part: body
+      words:
+        - <img class="yunsuologo"
+      type: word
+  name: yunsuo
+- matchers:
+    - part: body
+      words:
+        - aesecure_denied.png
+      type: word
+  name: aesecure
+- matchers:
+    - part: body
+      words:
+        - errors.aliyun.com
+      type: word
+  name: aliyun
+- matchers:
+    - part: body
+      words:
+        - cdn.aliyuncs.com
+      type: word
+  name: aliyun
+- matchers:
+    - part: header.set-cookie
+      words:
+        - aliyungf_tc=
+      type: word
+  name: aliyun
+- matchers:
+    - part: body
+      words:
+        - has been blocked in accordance with company policy
+      type: word
+  name: Palo-Alto-Firewall
+- matchers:
+    - part: body
+      words:
+        - https://www.perimeterx.com/whywasiblocked
+      type: word
+  name: PerimeterX-Firewall
+- matchers:
+    - part: body
+      words:
+        - SENGINX-ROBOT-MITIGATION
+      type: word
+  name: Neusoft-SEnginx
+- matchers:
+    - part: body
+      words:
+        - sitelock-site-verification
+      type: word
+  name: SiteLock-TrueShield
+- matchers:
+    - part: body
+      words:
+        - nsa_banner
+      type: word
+  name: SonicWall
+- matchers:
+    - part: body
+      words:
+        - Web Site Blocked
+      type: word
+  name: SonicWall
+- matchers:
+    - part: body
+      words:
+        - Powered by UTM Web Protection
+      type: word
+  name: Sophos-UTM-Firewall
