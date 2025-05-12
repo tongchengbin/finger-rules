@@ -25,13 +25,7 @@
     - (<FONT COLOR="#000000"><b>Advanced Web Statistics ([0-9\.]+ \(build [0-9\.]+\)))
     type: regex
   name: awstats
-- matchers:
-  - name: version
-    part: headers.server
-    regex:
-    - (^CUPS\/([^\s]+)$)
-    type: regex
-  name: cups
+
 - matchers:
   - part: headers.x-powered-by
     regex:
@@ -1881,71 +1875,6 @@
       v([\d\.]+)<\/a><\/font><\/td>)
     type: regex
   name: ashnews
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <meta name="Generator" CONTENT="ASP-Nuke
-  - part: body
-    type: word
-    words:
-    - <meta name="Generator" content="ASPNuke
-  - name: version
-    part: body
-    regex:
-    - '2'
-    type: regex
-    words:
-    - <meta name="Generator" content="ASPNUKE v2.0 - distributed under GPL license">
-  - part: body
-    regex:
-    - (<a href="\/gotoURL.asp\?url=)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - <a href="finger://www.rot.dk" target="_blank">Asp-Nuke</a> community
-  - part: body
-    regex:
-    - (<link rel="Shortcut Icon" href="[^>]*aspnuke.ico">)
-    type: regex
-  - part: body
-    regex:
-    - (<a href="finger:\/\/www.aspnuke.it" target="_blank">ASP-Nuke [0-9\.]*<\/a>)
-    type: regex
-  - part: body
-    regex:
-    - (<form name='Authentication' method='post' action='[^']*\/authent.asp'>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - Designed with <a href="finger://www.asp-nuke.net" target="_blank">ASP-Nuke</a>
-  - name: version
-    part: body
-    regex:
-    - v1.1+
-    type: regex
-    words:
-    - <br>Designed with ASP-Nuke v1.1+
-  - group: 2
-    name: version
-    part: body
-    regex:
-    - (<meta name="Generator" (content|CONTENT)="(ASPNUKE|ASP-Nuke) ([^->"]+))
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (Designed with <a href="finger:\/\/www.asp-nuke.net" target="_blank">ASP-Nuke<\/a>
-      ([^<]+)<br>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<a href="finger:\/\/www.aspnuke.it" target="_blank">Asp-Nuke ([\d\.]+)<\/a>)
-    type: regex
-  name: asp_nuke
 - matchers:
   - name: version
     part: body
@@ -6629,17 +6558,6 @@
     type: regex
   name: formmail
 - matchers:
-  - part: headers.server
-    regex:
-    - (^FortiWeb$)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^FortiWeb-([\d\.]+)$)
-    type: regex
-  name: fortiweb
-- matchers:
   - name: version
     part: body
     regex:
@@ -7159,17 +7077,7 @@
       in config.php and see if the "file_storage_path" folder and it\'s contents are
       writable');
   name: group_office
-- matchers:
-  - part: headers.server
-    regex:
-    - (^gSOAP)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^gSOAP\/([^\s]+)$)
-    type: regex
-  name: gsoap
+
 - matchers:
   - part: body
     type: word
@@ -7565,36 +7473,6 @@
       explorer\s+([^\s^<]+)<\/a>)
     type: regex
   name: http_explorer
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <!--Modify by wangxiangguang 2006-9-29 for BYDD15857 Begin -->
-  - part: body
-    type: word
-    words:
-    - <!--Modify by wangxiangguang 2006-9-29 for BYDD15857 End -->
-  - part: body
-    type: word
-    words:
-    - <input type="text" onpaste="checkPaste(this,'012')" name="username" id="username"
-      maxlength=
-  - part: body
-    type: word
-    words:
-    - (<div align="center">Copyright \(c\) Huawei Technologies Co\., Ltd\. 2005-(20[\d]{2})\.
-      All rights reserved\. <\/div>)
-  - part: body
-    type: word
-    words:
-    - (<div align="center">Copyright \(c\) 2005-(20[\d]{2}) Huawei Technologies Co\.,
-      Ltd\.<\/div><\/td>)
-  - name: model:Eudemon
-    part: headers.server
-    regex:
-    - (^Eudemon Server ([^\s]+)$)
-    type: regex
-  name: huawei_firewall
 - matchers:
   - name: hsPagesViewedThisSession cookie
     part: headers.set-cookie
@@ -9248,34 +9126,6 @@
     type: regex
   name: ksearch
 - matchers:
-  - part: headers.server
-    regex:
-    - (^KM-MFP-finger)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^KM-MFP-finger\/V([\d\.]+)$)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^KM-httpd\/([\d\.]+)$)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^JC-HTTPD\/([\d\.]+)$)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^NetworkScanner WebServer Ver([\d\.]+)$)
-    type: word
-    words:
-    - Scanner
-  name: kyocera_printer
-- matchers:
   - name: version
     part: headers.server
     regex:
@@ -9712,17 +9562,7 @@
     - (Powered by <a href="finger:\/\/loggix.gotdns.org">Loggix<\/a> ver.([\d\.]+)<\/address>)
     type: regex
   name: loggix
-- matchers:
-  - name: version
-    part: headers.server
-    regex:
-    - (^Lotus-Domino\/([^\s]+))
-    type: regex
-  - part: headers.server
-    regex:
-    - (^Lotus-Domino$)
-    type: regex
-  name: lotus_domino
+
 - matchers:
   - part: headers.www-authenticate
     type: word
@@ -18773,9 +18613,9 @@
   name: ultimate_bulletin_board
 - matchers:
   - part: headers.server
-    regex:
-    - (^Ultraseek)
-    type: regex
+    words:
+    - Ultraseek
+    type: word
   - name: version
     part: headers.server
     regex:
@@ -20340,22 +20180,7 @@
     - (^WindWeb\/([^\s]+)$)
     type: regex
   name: windweb
-- matchers:
-  - group: 1
-    part: headers.server
-    type: word
-    words:
-    - (^Wing FTP Server\/([\d\.]+)\(([^\)]*)\)$)
-  - part: headers.server
-    type: word
-    words:
-    - (^Wing FTP Server\(([^\)]*)\)$)
-  - name: version
-    part: headers.server
-    regex:
-    - (^Wing FTP Server\/([\d\.]+)\(([^\)]*)\)$)
-    type: regex
-  name: wing_ftp_server
+
 - matchers:
   - part: body
     type: word

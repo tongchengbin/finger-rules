@@ -1536,3 +1536,10 @@
       type: word
       words:
         - 'Powered by <a href="http://www.edusoho.com/"'
+
+- name: basercms
+  matchers:
+    - part: headers.set-cookie
+      type: word
+      words:
+        - BASERCMS

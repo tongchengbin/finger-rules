@@ -567,9 +567,10 @@
 - matchers:
     - part: headers.server
       words:
-        - FortiWeb.*
-      type: regex
+        - FortiWeb
+      type: word
   name: FortiWeb
+
 - matchers:
     - part: header
       words:

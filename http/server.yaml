@@ -623,3 +623,45 @@
       type: word
       words:
         - CPE-SERVER
+
+- matchers:
+  - part: headers.server
+    words:
+      - gSOAP
+    type: word
+  - name: version
+    part: headers.server
+    regex:
+      - ^gSOAP\/([^\s]+)$
+    type: regex
+  name: gsoap
+
+- matchers:
+  - name: version
+    part: headers.server
+    regex:
+    - ^CUPS\/([^\s]+)$
+    type: regex
+  name: cups
+
+- matchers:
+  - part: headers.server
+    words:
+      - Lotus-Domino
+    type: word
+  name: lotus_domino
+
+- matchers:
+  - part: headers.server
+    type: word
+    words:
+    - KM-MFP-finger
+    - JC-HTTPD
+    - NetworkScanner WebServer Ver
+  name: kyocera_printer
+- matchers:
+  - part: headers.server
+    type: word
+    words:
+    - Wing FTP Server
+  name: wing_ftp_server

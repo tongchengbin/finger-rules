@@ -14,3 +14,10 @@
       type: word
       words:
           - "灵当CRM"
+- name: Mkdocs
+  matchers:
+    - part: body
+      type: regex
+      name: version
+      regex:
+        - content="mkdocs-([\d\.]+)
