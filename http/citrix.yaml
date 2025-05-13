@@ -83,3 +83,10 @@
       type: word
       words:
         - "/Citrix/StoreWeb"
+
+- name: Citrix-ShareFile
+  matchers:
+    - part: iconhash
+      type: word
+      words:
+        - "20733819"

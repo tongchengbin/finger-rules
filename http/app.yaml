@@ -3044,3 +3044,105 @@
       part: icon_hash
       words:
         - "-1496590341"
+- name: webuzo
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Webuzo"
+- name: pagekit
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "pagekit"
+
+- name: gnuboard
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "GNU Board"
+- name: traefik
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Traefik"
+- name: tasmota
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Tasmota"
+- name: symfony_profiler
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Symfony Profiler"
+- name: pfblockerng
+  matchers:
+    - part: headers.server
+      type: word
+      words:
+        - "pfBlockerNG"
+- name: Admidio
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "The Admidio Team"
+- name: browserless
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Browserless"
+
+- name: RuoYi
+  matchers:
+    - part: body
+      type: word
+      words:
+        - '/ruoyi/'
+- name: ESPEasy
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "ESPEasy"
+- name: mosparo
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "mosparo.css"
+
+- name: com_alphauserpoints
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "com_alphauserpoints"
+        - "alphauserpoints"
+
+- name: Prismatic
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Prismatic"
+- name: vironeer
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Vironeer"
+
+- name: Terraboard
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Terraboard"

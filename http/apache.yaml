@@ -147,3 +147,9 @@
       type: word
       words:
         - "-1429839495"
+- name: tapestry
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "tapestry-console.css"

@@ -1543,3 +1543,24 @@
       type: word
       words:
         - BASERCMS
+- name: phpwiki
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "phpwiki"
+
+- name: wiki.js
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Wiki.js"
+
+- name: indonasia_toko_cms
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Toko CMS"
+        - "tokocms"
