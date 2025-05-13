@@ -1564,3 +1564,9 @@
       words:
         - "Toko CMS"
         - "tokocms"
+- name: JMS-Blog
+  matchers:
+    - part: body
+      type: word
+      words:
+        - modules/jmsblog

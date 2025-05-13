@@ -6,10 +6,10 @@
           - "-79854140"
 - name: 灵当CRM
   matchers:
-    - part: body
+    - part: iconhash
       type: word
       words:
-          - "crmcommon/js/jquery/jquery-1.10.1.min.js"
+          - "436310201"
     - part: title
       type: word
       words:

@@ -18616,12 +18616,6 @@
     words:
     - Ultraseek
     type: word
-  - name: version
-    part: headers.server
-    regex:
-    - (^Ultraseek\/([^\s]+)$)
-    type: regex
-  name: ultraseek
 - matchers:
   - part: body
     type: word
