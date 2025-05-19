@@ -1307,12 +1307,6 @@
       type: word
       words:
         - 'ng-app="cs141'
-- name: 3COM
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "3Com Corporation Web Interface"
 - name: E-Soonlink
   matchers:
     - part: title
@@ -3146,3 +3140,10 @@
       type: word
       words:
         - "Terraboard"
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - data-xwiki-reference
+  name: xwiki

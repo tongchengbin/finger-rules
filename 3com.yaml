@@ -1,0 +1,18 @@
+- name: 3COM
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "3Com Corporation Web Interface"
+- name: 3COM-Wireless-8760
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "3Com Wireless 8760"
+- name: NJ2000
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "3Com IntelliJack NJ2000"

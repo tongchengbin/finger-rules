@@ -586,22 +586,7 @@
     - <link[^>]+akaunting-green\.css
     type: regex
   name: akaunting
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <meta name="wiki" content="xwiki"/>
-  - part: body
-    type: word
-    words:
-    - <div id="xwikilicence">
-  - group: 2
-    name: version
-    part: body
-    regex:
-    - (<div id="xwikiplatformversion">(Powered by )?(XWiki Enterprise )?([^\s<>]+))
-    type: regex
-  name: xwiki
+
 - matchers:
   - name: version
     part: body
@@ -18616,6 +18601,7 @@
     words:
     - Ultraseek
     type: word
+  name: Ultraseek
 - matchers:
   - part: body
     type: word
