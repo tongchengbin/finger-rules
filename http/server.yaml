@@ -12,6 +12,12 @@
       type: regex
   matchers-condition: or
   name: Nginx
+- name: nginx-ingress
+  matchers:
+    - part: cert
+      type: word
+      words:
+        - "nginx-ingress"
 - name: mxhttpd
   matchers:
     - part: headers.server

@@ -15027,19 +15027,6 @@
 - matchers:
   - part: headers.server
     regex:
-    - (^[\s]*rackcorpcdn)
-    type: regex
-  - name: os:Linux
-    part: headers.server
-    regex:
-    - (^[\s]*rackcorpcdn\/([\d\.]{3,6}))
-    type: word
-    words:
-    - Apache or Nginx
-  name: rackcorp_cdn
-- matchers:
-  - part: headers.server
-    regex:
     - (<A HREF='finger:\/\/www.rackstar.net\/' TITLE='This server is powered by the
       RackStar Server Appliance OS'>RACKSTAR<\/A>)
     type: regex
