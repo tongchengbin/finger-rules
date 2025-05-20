@@ -3147,4 +3147,10 @@
     words:
       - data-xwiki-reference
   name: xwiki
-  
+
+- name: Langflow
+  matchers:
+    - part: body
+      type: word
+      words:
+        - Langflow
