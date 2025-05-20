@@ -431,15 +431,12 @@
       words:
         - "Batflat"
 - matchers:
-    - part: title
+    - part: header
       type: word
-      words:
-        - Welcome to Craft CMS
-    - part: headers.set-cookie
       words:
         - CraftSessionId
-      type: word
-  name: craft-CMS
+        - Craft CMS
+  name: Craft-CMS
 - matchers:
     - part: title
       type: word
@@ -1182,12 +1179,6 @@
       words:
         - POWERED BY ZIMPLIT CMS
   name: Zimplit-CMS
-- matchers:
-    - part: headers.x-powered-by
-      type: word
-      words:
-        - craft cms
-  name: craft-cms
 - matchers:
     - part: headers.x-powered-by
       type: word

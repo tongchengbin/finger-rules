@@ -22192,12 +22192,6 @@
     type: regex
   name: cowboy
 - matchers:
-  - part: headers.x-powered-by
-    type: word
-    words:
-    - \bcraft commerce\b
-  name: craft_commerce
-- matchers:
   - part: headers.Set-Cookie
     type: word
     words:
