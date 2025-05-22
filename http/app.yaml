@@ -3167,3 +3167,7 @@
       type: word
       words:
         - "SAP NetWeaver Application Server Java"
+    - part: header
+      type: word
+      words:
+        - "SAP NetWeaver Application Server Java"

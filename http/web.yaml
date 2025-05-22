@@ -15535,23 +15535,6 @@
     - ' songwin = window.open("songinfo.php?songid="+songid, "songinfowin", "location=no,status=no,menubar=no,scrollbars=yes,resizeable=yes,height=400,width=650");'
   name: samphpweb
 - matchers:
-  - name: HTTP Server Header
-    part: headers.server
-    regex:
-    - (^SAP (Web|NetWeaver))
-    type: regex
-  - group: 1
-    part: headers.server
-    type: word
-    words:
-    - (^SAP (Web|NetWeaver) Application Server [\/]?[\ ]?[\(]?([^\)^\r^\n]+)[\)]?)
-  - name: module:J2EE
-    part: headers.server
-    regex:
-    - (^SAP J2EE Engine\/([\d\.]{1,4}))
-    type: regex
-  name: sap_netweaver
-- matchers:
   - part: body
     type: word
     words:
