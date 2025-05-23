@@ -3177,3 +3177,10 @@
       - Shopware
     type: word
   name: Shopware
+
+- matchers:
+  - part: head
+    words:
+      - TeamCity
+    type: word
+  name: TeamCity
