@@ -21,15 +21,11 @@
 - matchers:
     - part: header
       words:
-        - X-Powered-By-360wzb: wangzhan\.360\.cn
+        - "wangzhan.360.cn"
+        - "X-Powered-By: 360"
       type: word
   name: 360
-- matchers:
-    - part: header
-      words:
-        - X-Powered-By: 360
-      type: word
-  name: 360
+
 - matchers:
     - part: headers.server
       words:
@@ -51,7 +47,7 @@
 - matchers:
     - part: header
       words:
-        - X-Powered-By-Anquanbao: MISS
+        - "X-Powered-By-Anquanbao: MISS"
       type: word
   name: Anquanbao
 - matchers:
@@ -69,13 +65,13 @@
 - matchers:
     - part: header
       words:
-        - x-binarysec-cache: miss
+        - "x-binarysec-cache: miss"
       type: word
   name: BinarySEC
 - matchers:
     - part: header
       words:
-        - x-binarysec-via: binarysec\.com
+        - "x-binarysec-via: binarysec.com"
       type: word
   name: BinarySEC
 - matchers:
@@ -87,7 +83,7 @@
 - matchers:
     - part: headers.server
       words:
-        - BlockDos\.net
+        - "BlockDos.net"
       type: word
   name: BlockDoS
 - matchers:
@@ -105,8 +101,8 @@
 - matchers:
     - part: header
       words:
-        - CF-RAY: .+
-      type: regex
+        - CF-RAY
+      type: word
   name: CloudFlare-CDN
 - matchers:
     - part: headers.server
@@ -117,13 +113,13 @@
 - matchers:
     - part: header
       words:
-        - X-Cache: cloudfront
+        - cloudfront
       type: word
   name: Cloudfront-CDN
 - matchers:
     - part: header
       words:
-        - X-Cache: Error\sfrom\scloudfront
+        - Error\sfrom\scloudfront
       type: regex
   name: Cloudfront-CDN
 - matchers:
@@ -159,13 +155,13 @@
 - matchers:
     - part: header
       words:
-        - X-WA-Info: .+
-      type: regex
+        - X-WA-Info
+      type: word
   name: F5-BIG-IP-ASM
 - matchers:
     - part: header
       words:
-        - X-Cnection: close
+        - X-Cnection
       type: word
   name: F5-BIG-IP-ASM
 - matchers:
@@ -177,7 +173,7 @@
 - matchers:
     - part: header
       words:
-        - X-Powered-By: GoDaddy
+        - GoDaddy
       type: word
   name: GoDaddy
 - matchers:
@@ -207,8 +203,8 @@
 - matchers:
     - part: header
       words:
-        - X-Fastly-Request-ID: \w+
-      type: regex
+        - X-Fastly-Request-ID
+      type: word
   name: Fastly-CDN
 - matchers:
     - part: header.set-cookie
@@ -219,37 +215,37 @@
 - matchers:
     - part: header
       words:
-        - BestCDN: CacheFly
+        - "BestCDN: CacheFly"
       type: word
   name: CacheFly-CDN
 - matchers:
     - part: header
       words:
-        - X-CDN: maxcdn
+        - "X-CDN: maxcdn"
       type: word
   name: maxcdn-CDN
 - matchers:
     - part: header.set-cookie
       words:
-        - \Asessioncookie=
-      type: regex
+        - Asessioncookie=
+      type: word
   name: DenyAll
 - matchers:
     - part: header.set-cookie
       words:
-        - ^Navajo.*?$
-      type: regex
+        - Navajo
+      type: word
   name: AdNovum
 - matchers:
     - part: header
       words:
-        - X-dotDefender-denied: 1
+        - X-dotDefender-denied
       type: word
   name: dotDefender
 - matchers:
     - part: header
       words:
-        - X-CDN: Incapsula
+        - Incapsula
       type: word
   name: Incapsula-CDN
 - matchers:
@@ -279,33 +275,20 @@
 - matchers:
     - part: headers.server
       words:
-        - .*mod_security
-      type: regex
+        - mod_security
+      type: word
   name: ModSecurity
 - matchers:
+    - part: headers.connection
+      words:
+        - Aclose
+      type: word
     - part: header
       words:
-        - Cneonction: \Aclose
-      type: regex
-  name: NetContinuum
-- matchers:
-    - part: header
-      words:
-        - nnCoection: \Aclose
-      type: regex
-  name: NetContinuum
-- matchers:
-    - part: header.set-cookie
-      words:
+        - newdefend
         - citrix_ns_id
       type: word
   name: NetContinuum
-- matchers:
-    - part: headers.server
-      words:
-        - newdefend
-      type: word
-  name: Newdefend
 - matchers:
     - part: headers.server
       words:
@@ -315,7 +298,7 @@
 - matchers:
     - part: header
       words:
-        - X-Powered-By: Safe3WAF
+        - Safe3WAF
       type: word
   name: Safe3
 - matchers:
@@ -327,8 +310,8 @@
 - matchers:
     - part: header
       words:
-        - X-Powered-By: WAF/2\.0
-      type: regex
+        - "X-Powered-By: WAF"
+      type: word
   name: Safedog
 - matchers:
     - part: headers.server
@@ -393,8 +376,8 @@
 - matchers:
     - part: header
       words:
-        - X-Varnish: .+
-      type: regex
+        - X-Varnish
+      type: word
   name: Varnish
 - matchers:
     - part: headers.server
@@ -429,8 +412,8 @@
 - matchers:
     - part: header
       words:
-        - X-Iinfo: .+
-      type: regex
+        - X-Iinfo
+      type: word
   name: Imperva-SecureSphere
 - matchers:
     - part: header.set-cookie
@@ -441,7 +424,7 @@
 - matchers:
     - part: header
       words:
-        - X-Cache: YUNDUN
+        - YUNDUN
       type: word
   name: Yundun
 - matchers:
@@ -459,13 +442,13 @@
 - matchers:
     - part: header
       words:
-        - Via: .+ISASERVER
-      type: regex
+        - ISASERVER
+      type: word
   name: ISAServer
 - matchers:
     - part: header
       words:
-        - X-Qiniu-Zone: 0
+        - X-Qiniu-Zone
       type: word
   name: Qiniu-CDN
 - matchers:
@@ -507,14 +490,14 @@
 - matchers:
     - part: header
       words:
-        - X-DIS-Request-ID: .+
-      type: regex
+        - X-DIS-Request-ID
+      type: word
   name: DoSArrest-Internet-Security
 - matchers:
     - part: header
       words:
-        - Powered-By-ChinaCache: \w+
-      type: regex
+        - "Powered-By-ChinaCache"
+      type: word
   name: ChinaCache-CDN
 - matchers:
     - part: headers.server
@@ -549,19 +532,19 @@
 - matchers:
     - part: header
       words:
-        - X-Distil-CS: .+
-      type: regex
+        - X-Distil-CS
+      type: word
   name: Distil-Firewall
 - matchers:
     - part: header
       words:
-        - X-Powered-By: SDWAF
+        - SDWAF
       type: word
   name: SDWAF
 - matchers:
     - part: header
       words:
-        - X-NGENIX-Cache: HIT
+        - "X-NGENIX-Cache: HIT"
       type: word
   name: NGENIX-CDN
 - matchers:
@@ -574,14 +557,14 @@
 - matchers:
     - part: header
       words:
-        - X-Data-Origin: naxsi-waf
+        - naxsi-waf
       type: word
   name: Naxsi
 - matchers:
     - part: header
       words:
-        - X-Backside-Transport: \w+
-      type: regex
+        - X-Backside-Transport
+      type: word
   name: IBM-DataPower
 - matchers:
     - part: headers.server
@@ -610,14 +593,14 @@
 - matchers:
     - part: header
       words:
-        - X-SL-CompState: .+
-      type: regex
+        - X-SL-CompState
+      type: word
   name: CompState
 - matchers:
     - part: header
       words:
-        - X-Cache: .+WT263CDN-.+
-      type: regex
+        - WT263CDN
+      type: word
   name: West263CDN
 - matchers:
     - part: body

@@ -2,8 +2,8 @@
     - part: body
       type: word
       words:
-        - <meta name="generator" content="WordPress.com" />
-        - <a href="finger://www.wordpress.com">Powered by WordPress</a>
+        - content="WordPress.com"
+        - Powered by WordPress
         - /wp-content/plugins/
     - part: title
       type: word
