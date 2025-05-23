@@ -2789,7 +2789,7 @@
       type: word
       words:
         - "JBossWS"
-- name: sysaid_on-premises
+- name: sysaid
   matchers:
     - part: icon_hash
       type: word
@@ -3171,3 +3171,9 @@
       type: word
       words:
         - "SAP NetWeaver Application Server Java"
+- matchers:
+  - part: body
+    words:
+      - Shopware
+    type: word
+  name: Shopware

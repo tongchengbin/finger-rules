@@ -417,6 +417,10 @@
       type: word
       words:
         - "880812652"
+    - part: body
+      type: word
+      words:
+        - "foxui-"
   name: BloofoxCMS
 - matchers:
     - part: headers.Set-Cookie
