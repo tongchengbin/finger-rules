@@ -3179,7 +3179,7 @@
   name: Shopware
 
 - matchers:
-  - part: head
+  - part: header
     words:
       - TeamCity
     type: word
