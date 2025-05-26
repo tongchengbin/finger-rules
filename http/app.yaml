@@ -3177,3 +3177,29 @@
       - Shopware
     type: word
   name: Shopware
+
+- name: CentreStack
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1163764264"
+- name: Memos
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1924700661"
+
+- name: VipShop
+  matchers:
+    - part: header
+      type: word
+      words:
+        - "vipshop"
+- name: Electrolink
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Electrolink"
