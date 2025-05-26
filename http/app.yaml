@@ -3206,6 +3206,7 @@
 - name: Teamcity
   matchers:
     - part: header
+      case-insensitive: true
       words:
         - TeamCity
       type: word
