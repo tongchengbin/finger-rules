@@ -3203,3 +3203,9 @@
       type: word
       words:
         - "Electrolink"
+- name: Teamcity
+  matchers:
+    - part: header
+      words:
+        - TeamCity
+      type: word

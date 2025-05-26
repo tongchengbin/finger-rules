@@ -24672,14 +24672,6 @@
     - tawkconnectiontime
   name: tawk.to
 - matchers:
-  - group: 1
-    name: version
-    part: body
-    regex:
-    - <span class="versiontag"><span class="vword">version</span> ([\d\.]+)
-    type: regex
-  name: teamcity
-- matchers:
   - part: headers.Set-Cookie
     type: word
     words:
