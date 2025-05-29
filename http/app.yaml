@@ -493,9 +493,9 @@
   matchers:
     - type: word
       part: title
+      case-insensitive: true
       words:
-        - "zeroShell"
-        - "ZeroShell"
+        - "zeroshell"
 - name: Struts2
   matchers:
     - type: word
@@ -2370,11 +2370,10 @@
       words:
         - "VoIPmonitor"
 - matchers:
-    - part: headers.Liferay-Portal
-      name: version
-      type: regex
-      regex:
-        - Liferay Portal (.*)
+    - part: header
+      type: word
+      words:
+        - Liferay-Portal
   name: Liferay-Portal
 - name: ADGuard
   matchers-condition: and
