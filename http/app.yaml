@@ -3209,3 +3209,10 @@
       words:
         - TeamCity
       type: word
+
+- name: moveit_cloud
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "989289239"
