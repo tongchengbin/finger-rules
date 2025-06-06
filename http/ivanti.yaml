@@ -13,3 +13,10 @@
       words:
         - "362091310"
 
+- name: endpoint_manager_cloud_services_appliance
+  matchers:
+    - part: title
+      type: word
+      case-insensitive: true
+      words:
+        - "LANDesk(R) Cloud Services Appliance"
