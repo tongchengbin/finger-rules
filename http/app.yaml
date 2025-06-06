@@ -359,12 +359,7 @@
       type: word
       words:
         - GLPI
-- name: FortiNAC
-  matchers:
-    - part: title
-      type: word
-      words:
-        - FortiNAC
+
 - name: FortiProxy
   matchers:
     - part: title
@@ -2295,12 +2290,7 @@
       type: word
       words:
         - "perfSONAR Toolkit"
-- name: FortiWLM
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "FortiWLM"
+
 - name: Apollo VX20
   matchers:
     - part: cert
