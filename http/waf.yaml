@@ -476,12 +476,6 @@
       type: regex
   name: GreyWizard-Firewall
 - matchers:
-    - part: header.set-cookie
-      words:
-        - cookiesession1
-      type: word
-  name: FortiWeb-Firewall
-- matchers:
     - part: headers.server
       words:
         - Beluga
@@ -547,12 +541,6 @@
         - "X-NGENIX-Cache: HIT"
       type: word
   name: NGENIX-CDN
-- matchers:
-    - part: headers.server
-      words:
-        - FortiWeb
-      type: word
-  name: FortiWeb
 
 - matchers:
     - part: header

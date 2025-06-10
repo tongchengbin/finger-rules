@@ -87,3 +87,10 @@
       words:
         - "zbx_session"
         - "xxj"
+    - part: body
+      type: word
+      condition: and
+      case-insensitive: true
+      words:
+        - "cisco_logo.png"
+        - "logo_zte.png"

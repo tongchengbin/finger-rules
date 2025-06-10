@@ -4,6 +4,12 @@
       type: word
       words:
         - "Fortinet"
+- name: FortiOS
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "945408572"
 - matchers:
     - part: cert
       type: word
@@ -28,3 +34,46 @@
       type: word
       words:
         - 'FortiPortal'
+- name: FortiNAC
+  matchers:
+    - part: title
+      type: word
+      words:
+        - FortiNAC
+- name: FortiWLM
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "FortiWLM"
+
+- name: FortiProxy
+  matchers:
+    - part: title
+      type: word
+      words:
+        - FortiProxy
+- name: FortiLogger
+  matchers:
+    - part: title
+      type: word
+      words:
+        - FortiLogger
+- name: FortiDDoS
+  matchers:
+    - part: title
+      type: word
+      words:
+        - FortiDDoS
+- matchers:
+    - part: header.set-cookie
+      words:
+        - cookiesession1
+      type: word
+  name: FortiWeb-Firewall
+- matchers:
+    - part: headers.server
+      words:
+        - FortiWeb
+      type: word
+  name: FortiWeb
