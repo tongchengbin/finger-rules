@@ -3207,3 +3207,9 @@
       type: word
       words:
         - "989289239"
+- name: CodoForum
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "http://codoforum.com"
