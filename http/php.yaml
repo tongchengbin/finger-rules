@@ -72,3 +72,9 @@
       type: word
       words:
         - DolphinPHP
+- name: PHP-Mailer
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "PHP Mailer"
