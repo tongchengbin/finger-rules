@@ -1,5 +1,9 @@
 - name: iVanTi-Connect-Secure
   matchers:
+    - part: title
+      type: word
+      words:
+        - "Ivanti Connect Secure"
     - part: body
       type: word
       words:
@@ -13,10 +17,29 @@
       words:
         - "362091310"
 
-- name: endpoint_manager_cloud_services_appliance
+- name: ivanti-endpoint-manager
   matchers:
     - part: title
       type: word
       case-insensitive: true
       words:
         - "LANDesk(R) Cloud Services Appliance"
+
+
+- matchers:
+    - part: title
+      words:
+        - Ivanti
+      type: word
+  name: iVanTi
+
+- name: ivanti-traffic-manager-panel
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "apps/zxtm/login.cgi"
+    - part: icon_hash
+      type: word
+      words:
+        - "1862800928"
