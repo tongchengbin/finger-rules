@@ -585,15 +585,7 @@
       type: word
       words:
         - MeterSphere
-- name: MobileIron
-  matchers:
-    - part: icon_hash
-      type: word
-      words:
-        - 545827989
-        - 967636089
-        - 362091310
-        - 2086228042
+
 - name: NetMizer
   matchers:
     - part: title

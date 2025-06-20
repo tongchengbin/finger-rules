@@ -17,7 +17,7 @@
       words:
         - "362091310"
 
-- name: ivanti-endpoint-manager
+- name: iVanTi-endpoint-manager
   matchers:
     - part: title
       type: word
@@ -33,7 +33,7 @@
       type: word
   name: iVanTi
 
-- name: ivanti-traffic-manager-panel
+- name: iVanTi-traffic-manager-panel
   matchers:
     - part: body
       type: word
@@ -43,3 +43,15 @@
       type: word
       words:
         - "1862800928"
+- name: iVanTi-MobileIron
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - MobileIron
+- name: MobileIron-Sentry
+  matchers:
+    - part: title
+      type: word
+      words:
+        - MobileIron System Manager
