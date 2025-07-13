@@ -3205,3 +3205,9 @@
       type: word
       words:
         - "http://codoforum.com"
+- name: Wing-FTP-Server
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Wing FTP Server"
