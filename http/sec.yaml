@@ -120,12 +120,7 @@
       type: word
       words:
         - JumpServer
-- name: FortiDDoS
-  matchers:
-    - part: title
-      type: word
-      words:
-        - FortiDDoS
+
 - name: KingSoft-v8
   matchers:
     - part: title

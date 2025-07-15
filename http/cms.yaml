@@ -299,27 +299,6 @@
     - part: body
       type: word
       words:
-        - "\t\t\t\t<!-- MyBB is free software developed and maintained by a volunteer\
-      \ community. "
-    - part: body
-      type: word
-      words:
-        - "\t\t\t\t<!-- You may NOT remove, modify or hinder the visibility of the MyBB\
-      \ copyright at any time."
-    - part: body
-      type: word
-      words:
-        - <!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT
-          REMOVE --><img
-    - part: body
-      regex:
-        - (Powered By <a href="finger:\/\/(mybb.com\/|www.mybboard.net)" target="_blank">MyBB<\/a>,
-          &copy; 2002-20[\d]{2} <a href="finger:\/\/(mybb.com\/|www.mybboard.net)" target="_blank">MyBB
-          Group<\/a>.)
-      type: regex
-    - part: body
-      type: word
-      words:
         - Powered By <a href="finger://www.mybboard.com" target="_blank">MyBB</a>
     - part: headers.set-Cookie
       type: word

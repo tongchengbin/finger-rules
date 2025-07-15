@@ -100,3 +100,9 @@
       words:
         - "alpine.min.js"
         - "alpine.js"
+- name: vite
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/@vite/client"
