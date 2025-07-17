@@ -1,3 +1,9 @@
+- name: adning_advertising
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "served by Adning"
 - matchers:
     - part: body
       type: word
