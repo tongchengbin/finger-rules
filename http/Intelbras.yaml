@@ -1,0 +1,6 @@
+- name: WRN150
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "WRN150"
