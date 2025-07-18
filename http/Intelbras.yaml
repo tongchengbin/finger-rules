@@ -4,3 +4,9 @@
       type: word
       words:
         - "WRN150"
+- name: NPLUG
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "NPLUG"

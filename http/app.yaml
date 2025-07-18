@@ -3211,3 +3211,15 @@
       type: word
       words:
         - "Wing FTP Server"
+- name: freedom
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "FREEDOM Administration"
+- name: concerto
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-534530225"
