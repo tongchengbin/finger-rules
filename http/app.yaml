@@ -3211,3 +3211,11 @@
       type: word
       words:
         - "Wing FTP Server"
+- name: invisioncommunity
+  matchers:
+    - part: body
+      type: word
+      condition: and
+      words:
+        - Invision
+        - ips4
