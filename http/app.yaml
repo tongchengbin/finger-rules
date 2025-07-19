@@ -644,20 +644,6 @@
         - "-754147112"
   name: gitea
 
-- name: Roundcube-WebMail
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "Roundcube Webmail"
-    - part: icon_hash
-      type: word
-      words:
-        - "-1203843035"
-    - part: headers.set-cookie
-      type: word
-      words:
-        - roundcube_cookies
 - matchers:
     - part: headers.set-cookie
       type: word
@@ -3223,3 +3209,16 @@
       type: word
       words:
         - "-534530225"
+- name: DocsGPT
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Welcome to DocsGPT"
+- name: jan
+  vendor: homebrew
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-165268926"
