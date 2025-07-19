@@ -3223,3 +3223,9 @@
       type: word
       words:
         - "-534530225"
+- name: DocsGPT
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Welcome to DocsGPT"
