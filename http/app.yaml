@@ -3224,3 +3224,9 @@
       type: word
       words:
         - "/Apriso/Portal"
+- name: pws_dashboard
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "PWS Dashboard"
