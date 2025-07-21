@@ -3218,3 +3218,9 @@
     words:
       - MailEnable
   name: mailenable
+- name: apriso
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/Apriso/Portal"

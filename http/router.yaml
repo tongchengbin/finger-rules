@@ -345,7 +345,7 @@
       type: word
       words:
         - B-LINK
-  name: LB-Link-Router
+  name: B-Link-Router
 
 - name: LGATE-902
   matchers:
@@ -384,3 +384,4 @@
       type: word
       words:
         - "themes/mercury/css/base.css"
+        
