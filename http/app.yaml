@@ -3236,3 +3236,15 @@
       type: word
       words:
         - "PicHome"
+- name: jux_real_estate
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "joomlaux"
+- name: Mage
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "<title>Mage</title>"

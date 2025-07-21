@@ -1544,3 +1544,9 @@
       type: word
       words:
         - modules/jmsblog
+- name: IdeaCMS
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1033616879"
