@@ -9724,16 +9724,7 @@
     - Powered by MagImageBank | <a href="finger://magimagebank.com/">magimagebank.com</a>
       | <a href="mailto:info@magimagebank.com">info@magimagebank.com</a>
   name: magimagebank
-- matchers:
-  - part: body
-    type: word
-    words:
-    - </table><!-- loginPanel_shell_table -->
-  - part: body
-    type: word
-    words:
-    - <td class="loginPanel_botLeft"><div class="loginPanel_botLeft_div"></div></td>
-  name: mailenable
+
 - matchers:
   - name: version
     part: body

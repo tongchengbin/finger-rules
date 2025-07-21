@@ -3203,3 +3203,18 @@
       type: word
       words:
         - "Joplin Server"
+
+- name: panel
+  vendor: Pterodactyl
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Pterodactyl"
+
+- matchers:
+  - part: title
+    type: word
+    words:
+      - MailEnable
+  name: mailenable
