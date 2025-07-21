@@ -3197,3 +3197,9 @@
       type: word
       words:
         - "Wing FTP Server"
+- name: joplin
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Joplin Server"
