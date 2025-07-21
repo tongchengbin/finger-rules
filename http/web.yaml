@@ -16104,25 +16104,6 @@
       by SiteCaddy.com">
   name: sitecaddy
 - matchers:
-  - name: SC_ANALYTICS_ cookie
-    part: headers.set-cookie
-    regex:
-    - (^SC_ANALYTICS_)
-    type: regex
-  - name: sc_expview cookie
-    part: headers.set-cookie
-    regex:
-    - (^sc_expview)
-    type: regex
-  - part: headers.Set-Cookie
-    type: word
-    words:
-    - sc_analytics_global_cookie
-    - sc_expview
-    - sc_os_sessionid
-    - sxa_site
-  name: sitecore
-- matchers:
   - part: body
     regex:
     - (var PortalBrowser = window.open\('popup.php\?page_type='\+page_type\+'&lang=[A-Z]{2}&page_id='\+pgid(\+addToURL)?,
