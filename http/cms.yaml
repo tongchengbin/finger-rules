@@ -605,7 +605,7 @@
       words:
         - 'Powered by Mara cms'
 
-- name: Backdrop-CMS
+- name: Backdrop
   matchers:
     - part: body
       type: word
