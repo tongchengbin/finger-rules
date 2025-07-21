@@ -3230,3 +3230,9 @@
       type: word
       words:
         - "PWS Dashboard"
+- name: PicHome
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "PicHome"
