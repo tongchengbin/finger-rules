@@ -543,6 +543,10 @@
       part: title
       words:
         - "weiphp"
+    - type: word
+      part: body
+      words:
+        - "weiphp.css"
 - name: rocket.chat
   matchers:
     - type: word
