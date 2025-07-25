@@ -3252,3 +3252,9 @@
       type: word
       words:
         - "<title>Mage</title>"
+- matchers:
+  - part: body
+    type: word
+    words:
+      - Powered by mojoPortal
+  name: mojoportal
