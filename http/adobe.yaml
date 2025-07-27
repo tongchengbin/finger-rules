@@ -2,7 +2,7 @@
     - part: headers.set-cookie
       type: word
       words:
-        - "cftoken="
+        - "CFID="
   name: ColdFusion
 
 - matchers:
