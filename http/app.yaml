@@ -543,6 +543,10 @@
       part: title
       words:
         - "weiphp"
+    - type: word
+      part: body
+      words:
+        - "weiphp.css"
 - name: rocket.chat
   matchers:
     - type: word
@@ -3248,8 +3252,6 @@
       type: word
       words:
         - "<title>Mage</title>"
-
-
 - matchers:
   - part: title
     type: word

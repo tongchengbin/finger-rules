@@ -284,7 +284,7 @@
       words:
         - "EVSE Web Interface"
 
-- name: TEW-827DRU
+- name: tew-827dru_firmware
   matchers:
     - part: body
       type: word
