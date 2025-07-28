@@ -3248,3 +3248,11 @@
       type: word
       words:
         - "<title>Mage</title>"
+
+
+- matchers:
+  - part: title
+    type: word
+    words:
+      - Pandora FMS
+  name: pandora_fms

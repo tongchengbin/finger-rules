@@ -11,6 +11,7 @@
       words:
         - "3Com Wireless 8760"
 - name: NJ2000
+  vendor: 3Com
   matchers:
     - part: body
       type: word

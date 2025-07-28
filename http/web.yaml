@@ -12598,23 +12598,6 @@
     - window.location.replace("/view/idconv.cgi?UID=%i&FILE=/hdrindex.html&PAGE="+myDate.getTime());
   name: panasonic_network_camera
 - matchers:
-  - part: body
-    type: word
-    words:
-    - <title>Pandora FMS - the Flexible Monitoring System</title>
-  - part: body
-    type: word
-    words:
-    - <link rel="alternate" href="operation/events/events_rss.php" title="Pandora
-      RSS Feed" type="application/rss+xml" />
-  - name: version
-    part: body
-    regex:
-    - (<img src="images\/pandora_logo\.png" style="border:0px;" alt="logo" \/><\/a><br
-      \/>v([^<]+)<\/td><td class="f9b">)
-    type: regex
-  name: pandora_fms
-- matchers:
   - part: headers.x-pantheon-edge-server
     type: word
     words:
@@ -18076,23 +18059,10 @@
     - <TITLE CLASS="clsTitle1">TopAccess</title>
   name: toshibaprinter
 - matchers:
-  - name: version
-    part: body
-    regex:
-    - (<object\s+classid="clsid:[a-f\d\-]+"\s+codebase="TotvsSmartClientax\.cab#version=([^"]+)")
-    type: regex
-  - part: body
-    type: word
-    words:
-    - (<param name="StartProgram" value="([^"]+)"> <<= Programa)
-  - part: body
-    type: word
-    words:
-    - (<param name="Environment" value="([^"]+)"> <<= Ambiente)
   - part: headers.TotvsSmartClient
-    regex:
-    - (^TotvsSmartClient$)
-    type: regex
+    word:
+      - TotvsSmartClient
+    type: word
   name: totvs_smartclient
 - matchers:
   - part: body
