@@ -3255,6 +3255,7 @@
 - matchers:
   - part: title
     type: word
+    case-insensitive: true
     words:
       - Pandora FMS
   name: pandora_fms

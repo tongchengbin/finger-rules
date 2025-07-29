@@ -148,6 +148,10 @@
       type: word
       words:
         - "GeoHttpServer"
+    - part: headers.server
+      type: word
+      words:
+        - "GeoHttpServer"
 
 - name: avn801_dvr
   matchers:
