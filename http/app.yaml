@@ -1858,6 +1858,10 @@
         - "protractor.conf.js"
 - name: Cockpit
   matchers:
+    - part: title
+      type: word
+      words:
+        - "Authenticate Please"
     - part: body
       type: word
       words:
