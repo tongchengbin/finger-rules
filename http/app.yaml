@@ -1862,10 +1862,10 @@
       type: word
       words:
         - "Authenticate Please"
-    - part: body
+    - part: icon_hash
       type: word
       words:
-        - "Cockpit"
+        - "688609340"
 - name: Rukovoditel
   matchers:
     - part: icon_hash
