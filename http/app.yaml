@@ -762,6 +762,10 @@
       type: word
       words:
         - Cacti
+    - part: icon_hash
+      type: word
+      words:
+        - "-1797138069"
   name: cacti
 - name: Salia-PLCC
   matchers:
