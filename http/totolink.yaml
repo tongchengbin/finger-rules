@@ -2,7 +2,6 @@
   matchers:
     - part: title
       type: word
-
       words:
         - "totolink"
 
@@ -10,7 +9,6 @@
   matchers:
     - part: title
       type: word
-
       words:
         - "TOTOLINK A4"
 

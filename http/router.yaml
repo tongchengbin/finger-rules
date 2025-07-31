@@ -56,7 +56,6 @@
 - name: Tenda-Router
   matchers:
     - part: title
-
       condition: and
       type: word
       words:
@@ -66,7 +65,6 @@
   matchers:
     - part: title
       type: word
-
       words:
         - "Tenda 11N"
 - name: Vodafone-Router

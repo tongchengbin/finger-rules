@@ -42,7 +42,6 @@
     - part: headers.server
       type: word
       condition: and
-
       words:
         - "Boa"
         - "Seeyon"
@@ -56,14 +55,12 @@
     - part: body
       type: word
       condition: and
-
       words:
         - "Server: Server"
         - "Server: Web Server"
     - part: header
       type: word
       condition: and
-
       words:
         - "BigIP"
         - "lighttpd"
@@ -90,7 +87,6 @@
     - part: body
       type: word
       condition: and
-
       words:
         - "cisco_logo.png"
         - "logo_zte.png"

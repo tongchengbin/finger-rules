@@ -43,6 +43,10 @@
       type: word
       words:
         - "CasaOS"
+    - part: body
+      type: word
+      words:
+        - "/CasaOS-UI/public/index.html"
 - name: Seagate-NAS
   matchers:
     - part: title

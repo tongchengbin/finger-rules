@@ -21,7 +21,6 @@
   matchers:
     - part: title
       type: word
-
       words:
         - "LANDesk(R) Cloud Services Appliance"
 

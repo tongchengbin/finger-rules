@@ -35,7 +35,6 @@
 - matchers:
     - type: word
       part: header
-
       words:
         - "frontpage"
 

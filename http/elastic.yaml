@@ -9,7 +9,6 @@
   matchers:
     - part: header
       type: word
-
       words:
         - "kbn-name"
         - "kibana"
