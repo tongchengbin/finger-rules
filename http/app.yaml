@@ -3288,7 +3288,7 @@
   name: open_journal_systems
 - matchers:
   - part: body
-    type: header
+    type: word
     words:
       - www.spip.net
   name: spip
