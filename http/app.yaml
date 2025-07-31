@@ -3268,3 +3268,10 @@
     words:
       - Pandora FMS
   name: pandora_fms
+
+- name: OAuth2-Proxy
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "oauth2-proxy#oauth2_proxy"
