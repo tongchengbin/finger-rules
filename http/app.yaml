@@ -397,12 +397,7 @@
       type: word
       words:
         - Gibbon Certificate Manager
-- name: Zimbra
-  matchers:
-    - part: headers.set-cookie
-      type: word
-      words:
-        - ZM_LOGIN_CSRF
+
 - name: YAPI
   matchers:
     - type: word
