@@ -315,38 +315,6 @@
   - part: body
     type: word
     words:
-    - <div class="formulaire_spip formulaire_recherche"
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="SPIP ([^\s]+) \[[\d]+\]"( \/)?>)
-    type: regex
-  - name: version
-    part: headers.composed-by
-    regex:
-    - (SPIP ([^@]{1,10}) @ www\.spip\.net)
-    type: regex
-  - part: headers.composed-by
-    regex:
-    - (SPIP @ www\.spip\.net)
-    type: regex
-  - part: headers.x-spip-cache
-    regex:
-    - (^.+$)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - <a href="spip.php
-  - part: body
-    type: word
-    words:
-    - <img src='/spip
-  name: spip
-- matchers:
-  - part: body
-    type: word
-    words:
     - <p>Powered by <a href="finger://dotclear.org/">Dotclear</a></p>
   - part: body
     type: word

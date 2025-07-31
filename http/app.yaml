@@ -3286,3 +3286,9 @@
     words:
       - "pkp-lib"
   name: open_journal_systems
+- matchers:
+  - part: body
+    type: header
+    words:
+      - www.spip.net
+  name: spip
