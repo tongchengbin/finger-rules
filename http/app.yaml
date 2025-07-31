@@ -3275,3 +3275,14 @@
       type: word
       words:
         - "oauth2-proxy#oauth2_proxy"
+
+- matchers:
+  - part: headers.Set-Cookie
+    type: word
+    words:
+      - ojssid
+  - part: body
+    type: word
+    words:
+      - "pkp-lib"
+  name: open_journal_systems

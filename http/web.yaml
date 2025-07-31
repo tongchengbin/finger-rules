@@ -23473,12 +23473,7 @@
     words:
     - \.speedtestcustom\.com
   name: ookla_speedtest_custom
-- matchers:
-  - part: headers.Set-Cookie
-    type: word
-    words:
-    - ojssid
-  name: open_journal_systems
+
 - matchers:
   - part: headers.server
     regex:
