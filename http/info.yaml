@@ -9,7 +9,7 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
+
       words:
         - "登录"
 - name: 色情网站

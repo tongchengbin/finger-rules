@@ -88,7 +88,7 @@
   matchers:
     - part: body
       type: word
-      case-insensitive: true
+
       words:
         - "backbone.min.js"
         - "backbone.js"
@@ -96,7 +96,7 @@
   matchers:
     - part: body
       type: word
-      case-insensitive: true
+
       words:
         - "alpine.min.js"
         - "alpine.js"

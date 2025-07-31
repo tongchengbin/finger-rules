@@ -18,7 +18,6 @@
     - part: title
       type: word
       condition: and
-      case-insensitive: true
       words:
         - "d-link"
         - "router"
@@ -31,7 +30,6 @@
         - "D-Link Router Management System"
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "d-link"
 - name: DLink-Wireless-Access

@@ -21,7 +21,7 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
+
       words:
         - "LANDesk(R) Cloud Services Appliance"
 
@@ -55,3 +55,11 @@
       type: word
       words:
         - MobileIron System Manager
+
+
+- name: Avalanche
+  matchers:
+    - part: title
+      type: word
+      words:
+        - Avalanche

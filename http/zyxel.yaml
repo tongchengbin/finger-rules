@@ -101,7 +101,7 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
+
       words:
         - "zyxel vsg1432-b101"
 - name: ZyXEL-P-660HN-51

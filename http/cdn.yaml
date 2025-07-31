@@ -2,7 +2,7 @@
   matchers:
     - type: word
       part: header
-      case-insensitive: true
+
       words:
         - "cloudflare-nginx"
         - "__cfduid="

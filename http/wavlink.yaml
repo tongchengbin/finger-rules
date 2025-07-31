@@ -2,7 +2,7 @@
   matchers:
     - part: body
       type: word
-      case-insensitive: true
+
       words:
         - "Wavlink"
 - name: Wavlink-WiFi-APP

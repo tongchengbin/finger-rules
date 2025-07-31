@@ -9,7 +9,7 @@
   matchers:
     - part: header
       type: word
-      case-insensitive: true
+
       words:
         - "kbn-name"
         - "kibana"

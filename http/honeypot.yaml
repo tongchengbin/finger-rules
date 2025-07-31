@@ -42,28 +42,28 @@
     - part: headers.server
       type: word
       condition: and
-      case-insensitive: true
+
       words:
         - "Boa"
         - "Seeyon"
     - part: headers.server
       type: word
       condition: and
-      case-insensitive: true
+
       words:
         - "openresty"
         - "Jetty"
     - part: body
       type: word
       condition: and
-      case-insensitive: true
+
       words:
         - "Server: Server"
         - "Server: Web Server"
     - part: header
       type: word
       condition: and
-      case-insensitive: true
+
       words:
         - "BigIP"
         - "lighttpd"
@@ -83,14 +83,14 @@
     - part: header
       type: word
       condition: and
-      case-insensitive: true
+
       words:
         - "zbx_session"
         - "xxj"
     - part: body
       type: word
       condition: and
-      case-insensitive: true
+
       words:
         - "cisco_logo.png"
         - "logo_zte.png"

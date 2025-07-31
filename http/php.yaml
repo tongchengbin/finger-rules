@@ -16,7 +16,7 @@
       type: regex
     - part: headers.set-cookie
       type: word
-      case-insensitive: true
+
       words:
         - PHPSESSID
 - matchers:

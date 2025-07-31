@@ -420,12 +420,12 @@
         - beegoServer(?::([\d\.]+))
 - matchers:
     - part: headers.x-powered-by
-      case-insensitive: true
+
       words:
         - jboss
       type: word
     - part: title
-      case-insensitive: true
+
       words:
         - jboss
       type: word

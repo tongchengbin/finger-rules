@@ -285,7 +285,7 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
+
       words:
         - "avideo"
 - name: NUUO-NVR
@@ -354,7 +354,7 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
+
       condition: and
       words:
         - "GeoVision"
