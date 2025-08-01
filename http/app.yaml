@@ -2111,6 +2111,10 @@
       type: word
       words:
         - 'ntopng'
+    - part: body
+      type: word
+      words:
+        - 'Configure ntop'
 - name: Chyrp
   matchers:
     - part: headers.set-cookie
