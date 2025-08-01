@@ -1717,7 +1717,6 @@
   matchers:
     - part: body
       type: word
-      case-insensitive: true
       words:
         - "processwire"
 - matchers:
