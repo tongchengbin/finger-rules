@@ -3270,3 +3270,18 @@
     words:
       - www.spip.net
   name: spip
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "WebSVN RSS"
+  - part: title
+    type: word
+    words:
+      - "WebSVN"
+  - part: header
+    type: word
+    words:
+      - "WebSVN"
+  name: websvn

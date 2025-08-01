@@ -19787,21 +19787,6 @@
     type: regex
   name: webspell
 - matchers:
-  - name: version
-    part: body
-    regex:
-    - (<meta finger-equiv="generator" content="WebSVN ([^"]+)"[\s]?\/>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - <link rel="alternate" type="application/rss+xml" title="WebSVN RSS" href="rss.php?repname=
-  - part: body
-    type: word
-    words:
-    - <link rel='alternate' type='application/rss+xml' title='WebSVN RSS' href='rss.php?repname=
-  name: websvn
-- matchers:
   - name: WEBTRENDS_ID cookie
     part: headers.set-cookie
     regex:
