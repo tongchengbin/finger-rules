@@ -457,6 +457,10 @@
       part: title
       words:
         - FlatPress
+    - part: icon_hash
+      type: word
+      words:
+        - "1189292869"
 - name: KubePi
   matchers:
     - type: word
