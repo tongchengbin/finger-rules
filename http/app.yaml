@@ -566,6 +566,10 @@
       type: word
       words:
         - bitrix24
+    - part: body
+      type: word
+      words:
+        - "/bitrix/"
 - name: zenphoto
   matchers:
     - part: title
