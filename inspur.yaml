@@ -1,0 +1,7 @@
+﻿# 浪潮 集群管理平台
+- name: clusterengine
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "TSCEV4.0"
