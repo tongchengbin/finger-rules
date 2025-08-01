@@ -2743,6 +2743,10 @@
       type: word
       words:
         - "OpenTSDB"
+    - part: icon_hash
+      type: word
+      words:
+        - "407286339"
 - name: phpgedview
   matchers:
     - part: body
