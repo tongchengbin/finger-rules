@@ -9932,28 +9932,6 @@
     - (<meta[^>=]+name[\s]*=[\s]*["|']?generator["|']?[^>=]+content[\s]*=[\s]*"([^"'>]+)")
   name: metagenerator
 - matchers:
-  - part: body
-    type: word
-    words:
-    - (<meta[^>]+name=["']powered[\- ]?by["'][^>]+content=["']([^"]+)["'])
-  name: metapoweredby
-- matchers:
-  - part: body
-    regex:
-    - (<meta name="copyright" content="Copyright 2008-20[\d]{2} MetInfo">)
-    type: regex
-  - part: body
-    regex:
-    - (<meta name="author" content="[^"]+--Powered by MetInfo">)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (Powered by <a href="finger:\/\/www.MetInfo.cn" target="_blank" title="MetInfo
-      enterprise website manager system"><b>[^<]+<\/b><\/a> ([\d\.]+))
-    type: regex
-  name: metinfo
-- matchers:
   - name: 'Admin Login Page '
     part: body
     regex:

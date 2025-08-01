@@ -3295,3 +3295,11 @@
       - content="b2evolution
     type: word
   name: b2evolution
+
+- name: metinfo
+  matchers:
+    - part: body
+      words:
+        - "powered_by_metinfo"
+      type: word
+  
