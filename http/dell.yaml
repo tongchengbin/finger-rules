@@ -4,6 +4,10 @@
       type: word
       words:
         - "Integrated Dell Remote Access Controller"
+    - part: body
+      type: word
+      words:
+        - "thisIDRACText"
 - name: DELL-SonicWALL
   matchers:
     - part: title
