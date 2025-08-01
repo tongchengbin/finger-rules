@@ -5,3 +5,9 @@
       type: word
       words:
         - "-50306417"
+    - part: headers.server
+      type: word
+      words:
+      - KM-MFP-finger
+      - JC-HTTPD
+      - NetworkScanner WebServer Ver

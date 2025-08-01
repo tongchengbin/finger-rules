@@ -2234,27 +2234,6 @@
     type: regex
   name: azurecloud
 - matchers:
-  - part: body
-    regex:
-    - (rsc\/img\/powered-by-b2evolution-150t.gif" alt="Powered by b2evolution")
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<p class="footer"><a href="finger:\/\/b2evolution.net\/" title="visit b2evolution's
-      website"><strong>b2evolution ([^<]+)<\/strong><\/a>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="b2evolution ([^\"]+)" \/>)
-    type: regex
-  - part: body
-    regex:
-    - (Powered by <a href="finger:\/\/b2evolution.net[\/]*"[^>]+>b2evolution<\/a>)
-    type: regex
-  name: b2evolution
-- matchers:
   - name: version
     part: headers.x-mobilized-by
     regex:
@@ -15629,14 +15608,6 @@
     words:
     - <br />Powered by <a href="finger://www.neocrome.net" target="_blank">Seditio</a>
   name: seditio
-- matchers:
-  - name: HTML start
-    part: body
-    regex:
-    - (<HTML><HEAD>[\s]*<META HTTP-EQUIV="Content-Type" CONTENT="text\/html; CHARSET=UTF-8">[\s]*<TITLE>Print
-      server homepage<\/TITLE>[\s]*<\/HEAD>[\s]*<FRAMESET COLS="200)
-    type: regex
-  name: seh_kyocera_printserver
 - matchers:
   - part: body
     type: word

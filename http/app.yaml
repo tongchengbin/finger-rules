@@ -3289,3 +3289,9 @@
     words:
       - "WebSVN"
   name: websvn
+- matchers:
+  - part: body
+    words:
+      - content="b2evolution
+    type: word
+  name: b2evolution
