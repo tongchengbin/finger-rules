@@ -54,7 +54,10 @@
       type: word
       words:
         - MobileIron System Manager
-
+    - part: body
+      type: word
+      words:
+        - "Note: Requires a local Sentry administrative user"
 
 - name: Avalanche
   matchers:

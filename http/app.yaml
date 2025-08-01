@@ -21,7 +21,6 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "pyLoad"
 - name: SpringBoot
@@ -53,7 +52,6 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - 'FlexNet'
 - name: Jamf
@@ -85,7 +83,6 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - 'papercut'
 - name: Pega
@@ -488,7 +485,6 @@
   matchers:
     - type: word
       part: title
-      case-insensitive: true
       words:
         - "zeroshell"
 - name: Struts2
@@ -757,7 +753,6 @@
         - "-1180440057"
     - part: title
       type: word
-      case-insensitive: true
       words:
         - swagger
 - matchers:
@@ -1067,7 +1062,6 @@
   matchers:
     - part: cert
       type: word
-      case-insensitive: true
       words:
         - instant.arubanetworks.com
 - name: OpenMediaVault
@@ -1898,7 +1892,6 @@
   matchers:
     - part: title
       type: word
-      case-sensitive: true
       words:
         - "IceWARP"
     - part: headers.server
@@ -1979,14 +1972,12 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "copyparty"
 - name: Revive-Adserver
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "Revive Adserver"
     - part: icon_hash
@@ -2003,14 +1994,12 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "UVDesk Helpdesk Community Edition - Installation Wizard"
 - name: oscommerce
   matchers:
     - part: headers.ser-cookie
       type: word
-      case-insensitive: true
       words:
         - "osCsid="
 - name: Everything
@@ -2189,7 +2178,6 @@
 - matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "ip-guard"
   name: IP-Guard
@@ -2197,7 +2185,6 @@
 - matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "datacube3"
   name: DataCube3
@@ -2255,7 +2242,6 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "go-fastdfs"
 - name: TRS-MAS
@@ -2336,14 +2322,12 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "OpenSpeedTest™"
 - name: MessageSolution
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "MessageSolution"
 - name: VoIPmonitor
@@ -2390,14 +2374,12 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "Portainer"
 - name: Nginx-Proxy-Manager
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "Nginx Proxy Manager"
         - "Nginx 代理管理器"
@@ -2405,28 +2387,24 @@
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "CloudPanel"
 - name: NextChat
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "NextChat"
 - name: Adv-Radius
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "Adv Radius"
 - name: 资产灯塔系统
   matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - "资产灯塔系统"
 - name: OpenVPN
@@ -2785,14 +2763,12 @@
   matchers:
     - part: body
       type: word
-      case-insensitive: true
       words:
         - "Roxy-WI"
 - name: gitblit
   matchers:
     - part: body
       type: word
-      case-insensitive: true
       words:
         - "gitblit"
 - name: Datataker
@@ -2921,7 +2897,6 @@
 - matchers:
   - part: title
     type: word
-    case-insensitive: true
     words:
     - gogs
   name: Gogs
@@ -2929,12 +2904,10 @@
 - matchers:
     - part: title
       type: word
-      case-insensitive: true
       words:
         - moodle
     - part: headers.Set-Cookie
       type: word
-      case-insensitive: true
       words:
         - moodleid_
         - moodlesession
@@ -3194,7 +3167,6 @@
 - name: Teamcity
   matchers:
     - part: header
-      case-insensitive: true
       words:
         - TeamCity
       type: word
