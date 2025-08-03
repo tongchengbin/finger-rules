@@ -1,0 +1,31 @@
+- name: SonicWall
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "SonicWall - Authentication"
+        - "SonicWall Network Security"
+    - part: headers.server
+      words:
+        - SonicWALL
+      type: word
+- matchers:
+    - part: headers.server
+      words:
+        - SonicWALL SSL-VPN Web Server
+      type: word
+  name: SonicWALL-SSL-VPN
+- matchers:
+  - part: headers.server
+    words:
+      - SonicWALL
+    type: word
+  name: sonicwall_firewall
+- matchers:
+  - part: body
+    type: word
+    words:
+      - images/gray_waves.back.gif
+      - "SonicWALL Universal Management Suite"
+      - "SonicWALL Global Management System"
+  name: sonicwall_gms

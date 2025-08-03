@@ -653,18 +653,6 @@
 - matchers:
     - part: body
       words:
-        - nsa_banner
-      type: word
-  name: SonicWall
-- matchers:
-    - part: body
-      words:
-        - Web Site Blocked
-      type: word
-  name: SonicWall
-- matchers:
-    - part: body
-      words:
         - Powered by UTM Web Protection
       type: word
   name: Sophos-UTM-Firewall
