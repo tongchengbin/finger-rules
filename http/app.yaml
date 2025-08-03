@@ -1816,7 +1816,7 @@
       type: word
       words:
         - "Symantec Data Loss Prevention"
-- name: Symantec-Endpoint-Protection-Manager
+- name: symantec_sepm
   matchers:
     - part: title
       type: word
