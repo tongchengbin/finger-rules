@@ -142,7 +142,6 @@
       type: word
       words:
         - "OU=RV320"
-
 - name: Unified-Manager
   matchers:
     - part: body
@@ -150,8 +149,7 @@
       words:
         - 'Cisco Unified Communications Manager'
 
-
-- name: Cisco-vManage
+- name: vManage
   matchers:
     - part: title
       type: word
