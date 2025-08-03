@@ -134,20 +134,12 @@
       type: word
       words:
         - "GoAnywhere"
-
-
 - name: OpenNMS
   matchers:
     - part: title
       type: word
       words:
         - 'OpenNMS Web Console'
-- name: Cisco-CloudCenter-Suite
-  matchers:
-    - part: title
-      type: word
-      words:
-        - 'CloudCenter Suite'
 - name: F Secure Policy Manager
   matchers:
     - part: body
