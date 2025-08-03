@@ -3302,9 +3302,3 @@
       words:
         - "powered_by_metinfo"
       type: word
-- name: symantec_sepm
-  matchers:
-    - part: title
-      words:
-        - "Symantec Endpoint Protection Manager"
-      type: word
