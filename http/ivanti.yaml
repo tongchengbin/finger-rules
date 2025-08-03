@@ -44,7 +44,7 @@
         - "1862800928"
 - name: iVanTi-MobileIron
   matchers:
-    - part: icon_hash
+    - part: body
       type: word
       words:
         - MobileIron
