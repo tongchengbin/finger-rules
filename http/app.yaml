@@ -146,6 +146,10 @@
       type: word
       words:
         - "F-Secure Policy Manager"
+    - part: title
+      type: word
+      words:
+        - "Policy Manager"
 - name: manage engine dc
   matchers:
     - part: title
@@ -2816,12 +2820,7 @@
         - mage-translation-storage
         - x-magento-vary
   name: Magento
-- name: F-Secure-PolicyManager
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "Policy Manager"
+
 - name: FreeBoxOS
   matchers:
     - part: title
