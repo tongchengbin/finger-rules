@@ -3299,3 +3299,9 @@
       type: word
       words:
         - "ETQ Reliance"
+- name: EasyCVR
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "EasyCVR"
