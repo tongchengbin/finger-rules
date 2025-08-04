@@ -253,7 +253,7 @@
       words:
         - jsluid=
       type: word
-  name: Jiasule
+  name: 加速乐
 - matchers:
     - part: headers.server
       words:

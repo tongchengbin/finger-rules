@@ -1550,3 +1550,15 @@
       type: word
       words:
         - "-1033616879"
+- name: UNA_CMS
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'Powered by UNA'
+- name: arforms
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'Powered by ARForms'

@@ -3330,3 +3330,15 @@
       type: word
       words:
         - "evertz.min.css"
+- name: Elber
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Elber Satellite Equipment"
+- name: MeteoBridge
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Powered by Meteobridge"
