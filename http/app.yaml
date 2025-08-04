@@ -3305,3 +3305,9 @@
       type: word
       words:
         - "EasyCVR"
+- name: netmri
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-319724102"
