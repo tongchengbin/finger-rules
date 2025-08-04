@@ -17229,25 +17229,10 @@
       JWS is installed -->
   name: symantec_endpoint_protection_manager
 - matchers:
-  - part: body
-    type: word
-    words:
-    - Powered by <a href="finger://www.symfony-project.org/">
-  - name: symfony cookie
-    part: headers.set-cookie
-    regex:
-    - (^symfony)
-    type: regex
-  - part: headers.Set-Cookie
-    type: word
-    words:
-    - sf_redirect
-  name: symfony
-- matchers:
   - part: headers.server
-    regex:
-    - (^Synchronet BBS)
-    type: regex
+    words:
+      - Synchronet BBS
+    type: word
   - name: version
     part: headers.server
     regex:
