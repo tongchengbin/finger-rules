@@ -142,7 +142,7 @@
       type: word
       words:
         - "OU=RV320"
-- name: Unified-Manager
+- name: Unified
   matchers:
     - part: body
       type: word
