@@ -3324,3 +3324,9 @@
       type: word
       words:
         - "Lighthouse Studio"
+- name: Evertz
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "evertz.min.css"
