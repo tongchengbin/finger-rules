@@ -37,7 +37,6 @@
       words:
         - "XAMPP"
 
-
 - name: ThinkCMF
   matchers:
     - part: headers.x-powered-by

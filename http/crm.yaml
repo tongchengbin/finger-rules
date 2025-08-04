@@ -21,3 +21,11 @@
       name: version
       regex:
         - content="mkdocs-([\d\.]+)
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "var module_sugar_grp1"
+      - "Powered By SugarCRM"
+      - "SugarCRM is a customer"
+  name: sugarcrm
