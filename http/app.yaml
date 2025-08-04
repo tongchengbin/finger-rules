@@ -3025,12 +3025,6 @@
       type: word
       words:
         - "Tasmota"
-- name: symfony_profiler
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "Symfony Profiler"
 - name: pfblockerng
   matchers:
     - part: headers.server
@@ -3342,3 +3336,10 @@
       type: word
       words:
         - "Powered by Meteobridge"
+- matchers:
+  - part: headers.Set-Cookie
+    type: word
+    words:
+      - sf_redirect
+      - symfony
+  name: symfony
