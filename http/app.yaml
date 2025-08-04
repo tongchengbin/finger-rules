@@ -3311,3 +3311,16 @@
       type: word
       words:
         - "-319724102"
+- name: allegra
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "284403119"
+
+- name: Lighthouse_studio
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Lighthouse Studio"
