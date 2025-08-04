@@ -4,3 +4,7 @@
       part: icon_hash
       words:
         - "1499876150"
+    - type: word
+      part: title
+      words:
+        - "Expedition"
