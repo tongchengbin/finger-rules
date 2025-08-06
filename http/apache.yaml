@@ -115,6 +115,10 @@
       type: word
       words:
         - "NiFi"
+    - part: body
+      type: word
+      words:
+        - "nifi/assets/reset.css"
 - name: HugeGraph
   matchers:
     - part: title
