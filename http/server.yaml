@@ -79,6 +79,10 @@
       part: headers.set-cookie
       words:
         - "mongo-express"
+    - part: title
+      type: word
+      words:
+        - "Mongo Express"
 - name: MyCloud NAS
   matchers:
     - part: body
