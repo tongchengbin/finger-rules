@@ -2634,6 +2634,10 @@
       type: word
       words:
         - "-211006074"
+    - part: title
+      type: word
+      words:
+        - "MoniTorr"
 - name: majordomo
   matchers:
     - part: icon_hash

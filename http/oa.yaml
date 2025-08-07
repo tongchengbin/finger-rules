@@ -54,6 +54,10 @@
         - 远程通CHANJET_Remote
 - name: ChanJet-TPlus
   matchers:
+    - part: title
+      type: word
+      words:
+        - "畅捷通 T+"
     - part: body
       type: word
       words:
