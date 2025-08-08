@@ -421,6 +421,10 @@
       type: word
       words:
         - Login - Jorani
+    - part: header
+      type: word
+      words:
+        - "jorani_session"
 - name: modoboa
   matchers:
     - part: title
