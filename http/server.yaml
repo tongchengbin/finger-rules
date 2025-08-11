@@ -510,7 +510,7 @@
   matchers:
     - part: body
       words:
-        - 'Welcome to the Artica Web Administration Interface'
+        - 'artica'
       type: word
 - matchers:
     - name: version
