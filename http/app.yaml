@@ -3362,3 +3362,13 @@
       type: word
       words:
         - "devtools.nestjs.com"
+- name: LyLme_Spage
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "LyLme Spage"
+    - part: icon_hash
+      type: word
+      words:
+        - "-282504889"
