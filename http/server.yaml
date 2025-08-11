@@ -506,7 +506,7 @@
         - "https://airtame.com/download"
       condition: and
       type: word
-- name: Artica-Web-Proxy
+- name: Artica-Proxy
   matchers:
     - part: body
       words:
