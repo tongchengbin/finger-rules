@@ -3351,3 +3351,10 @@
       - sf_redirect
       - symfony
   name: symfony
+
+- name: nest-devtools
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "devtools.nestjs.com"
