@@ -2988,6 +2988,10 @@
       name: version
       regex:
         - "Tested on CyberPanel (.+) build"
+    - part: title
+      type: word
+      words:
+        - "CyberPanel"
 - name: H-UI
   matchers:
     - part: icon_hash
