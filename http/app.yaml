@@ -3354,6 +3354,10 @@
 
 - name: nest-devtools
   matchers:
+    - part: header
+      type: word
+      words:
+        - "devtools.nestjs.com"
     - part: body
       type: word
       words:
