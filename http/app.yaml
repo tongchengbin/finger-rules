@@ -3388,3 +3388,9 @@
       type: word
       words:
         - "Maltrail"
+- name: WeGIA
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "WeGIA"
