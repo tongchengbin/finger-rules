@@ -44,3 +44,10 @@
       part: title
       words:
         - "Samsung 5G Station Admin Settings"
+
+- name: MagicInfo-Premium-Server
+  matchers:
+    - type: word
+      part: headers.server
+      words:
+        - "MagicInfo Premium Server"
