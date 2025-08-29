@@ -382,4 +382,13 @@
       type: word
       words:
         - "themes/mercury/css/base.css"
-        
+- name: Aitemi-WiFi
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-741058468"
+    - part: header.server
+      type: word
+      words:
+        - "lighttpd"
