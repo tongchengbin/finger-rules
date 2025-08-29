@@ -388,7 +388,7 @@
       type: word
       words:
         - "-741058468"
-    - part: header.server
+    - part: headers.server
       type: word
       words:
         - "lighttpd"
