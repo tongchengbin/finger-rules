@@ -385,10 +385,10 @@
 - name: Aitemi-WiFi
   matchers-condition: and
   matchers:
-    - part: icon_hash
+    - part: body
       type: word
       words:
-        - "-741058468"
+        - "TT_SetWifiExt"
     - part: headers.server
       type: word
       words:
