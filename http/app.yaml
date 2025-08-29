@@ -3382,3 +3382,9 @@
       type: word
       words:
         - "scoold-wrapper"
+- name: Maltrail
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Maltrail"
