@@ -383,6 +383,7 @@
       words:
         - "themes/mercury/css/base.css"
 - name: Aitemi-WiFi
+  matchers-condition: and
   matchers:
     - part: icon_hash
       type: word
