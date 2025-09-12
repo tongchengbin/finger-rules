@@ -1,0 +1,6 @@
+﻿- name: CloudTest
+  matchers:
+    - part: body
+      type: word
+      words: 
+        - 'Akamai CloudTest'

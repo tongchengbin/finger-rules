@@ -421,6 +421,10 @@
       type: word
       words:
         - Login - Jorani
+    - part: header
+      type: word
+      words:
+        - "jorani_session"
 - name: modoboa
   matchers:
     - part: title
@@ -2634,6 +2638,10 @@
       type: word
       words:
         - "-211006074"
+    - part: title
+      type: word
+      words:
+        - "MoniTorr"
 - name: majordomo
   matchers:
     - part: icon_hash
@@ -2980,6 +2988,10 @@
       name: version
       regex:
         - "Tested on CyberPanel (.+) build"
+    - part: title
+      type: word
+      words:
+        - "CyberPanel"
 - name: H-UI
   matchers:
     - part: icon_hash
@@ -3343,9 +3355,3 @@
       - sf_redirect
       - symfony
   name: symfony
-- name: Mongoose
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "Mongoose"

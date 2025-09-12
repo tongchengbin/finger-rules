@@ -67,3 +67,13 @@
       part: title
       words:
         - "Supervisor Status"
+- name: gradio
+  matchers:
+    - type: word
+      part: title
+      words:
+        - gradio
+    - type: word
+      part: body
+      words:
+        - "__gradio_mode__"

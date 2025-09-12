@@ -506,11 +506,11 @@
         - "https://airtame.com/download"
       condition: and
       type: word
-- name: Artica-Web-Proxy
+- name: Artica-Proxy
   matchers:
     - part: body
       words:
-        - 'Welcome to the Artica Web Administration Interface'
+        - 'artica'
       type: word
 - matchers:
     - name: version

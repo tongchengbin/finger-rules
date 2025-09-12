@@ -1,0 +1,6 @@
+﻿- name: 金蝶云星空
+  matchers:
+    - part: title
+      type: word
+      words:
+        - 金蝶云星空

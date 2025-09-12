@@ -77,3 +77,14 @@
         - FortiWeb
       type: word
   name: FortiWeb
+
+- name: FortiSIEM
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1341442175"
+    - part: body
+      type: word
+      words:
+        - "var hst = location.hostname"

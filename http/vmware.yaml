@@ -68,6 +68,10 @@
       type: word
       words:
         - "VMware ESXi"
+    - part: body
+      type: word
+      words:
+        - "esxUiApp"
 - name: Vmware-FTP
   matchers:
     - part: title

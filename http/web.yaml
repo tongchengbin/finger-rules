@@ -1120,20 +1120,7 @@
     words:
     - Total Access
   name: adtran_device
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - 2.2
-    type: regex
-  - group: 1
-    name: version
-    part: body
-    regex:
-    - (<a href="finger:\/\/www.proxy2.de" target="_blank"><font color="#CCCCCC" size="1">(Advanced
-      Guestbook) ([^<]+))
-    type: regex
-  name: advanced_guestbook
+
 - matchers:
   - part: body
     type: word
@@ -2169,26 +2156,6 @@
   name: axcms_net
 - matchers:
   - part: body
-    type: word
-    words:
-    - <meta name="author" content="Axentra">
-  - part: body
-    type: word
-    words:
-    - '<title id="document_title">Axentra :: Digital Home/SOHO Software Platform for
-      Internet Gateway and NAS Devices</title>'
-  - part: headers.x-axentra-version
-    regex:
-    - ()
-    type: regex
-  - name: HOMEBASEID Cookie
-    part: headers.set-cookie
-    regex:
-    - (HOMEBASEID=)
-    type: regex
-  name: axentra_hipserv
-- matchers:
-  - part: body
     regex:
     - (<meta name="generator" content="Axous V([^"]+)" \/>)
     type: regex
@@ -2971,33 +2938,6 @@
       \/><\/a>)
     type: regex
   name: boastmachine
-- matchers:
-  - name: HTTP Bobo-Exception-Line Header
-    part: headers.bobo-exception-line
-    regex:
-    - ()
-    type: regex
-  - name: HTTP Bobo-Exception-Value Header
-    part: headers.bobo-exception-value
-    regex:
-    - ()
-    type: regex
-  - name: HTTP Bobo-Exception-File Header
-    part: headers.bobo-exception-file
-    type: word
-    words:
-    - (([^\r^\n]+))
-  - name: HTTP Bobo-Exception-Type Header
-    part: headers.bobo-exception-type
-    type: word
-    words:
-    - (([^\r^\n]+))
-  - name: X-Ksscommands HTTP Header
-    part: headers.x-ksscommands
-    regex:
-    - ()
-    type: regex
-  name: bobo
 - matchers:
   - part: body
     type: word
@@ -4560,21 +4500,6 @@
     - ( href="\?app=forgot_passwd&amp;cmd=passwd_send">[^>]*Forgot Password\?<\/a><\/td>)
     type: regex
   name: daffodil_crm
-- matchers:
-  - part: headers.x-daisy-version
-    regex:
-    - ()
-    type: regex
-  - name: version
-    part: headers.x-daisy-version
-    regex:
-    - '(^([^\s]+) \(build: [^\s]+)'
-    type: regex
-  - part: headers.x-daisy-version
-    type: word
-    words:
-    - '(^[^\s]+ \(build: ([^\s]+))'
-  name: daisy
 - matchers:
   - name: version
     part: body
@@ -6312,11 +6237,6 @@
     type: regex
   name: firephp
 - matchers:
-  - name: version
-    part: headers.server
-    regex:
-    - '1.0'
-    type: regex
   - name: version
     part: headers.server
     regex:
@@ -11535,28 +11455,6 @@
     words:
     - (<\/a> (20[\d]{2})-20[\d]{2} Powered by <a href="aboutnexus\.php">NexusPHP<\/a>)
   name: nexusphp
-
-- matchers:
-  - part: headers.server
-    regex:
-    - (Niagara Web Server)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (Niagara Web Server\/([\d\.]+))
-    type: regex
-  - name: version
-    part: headers.niagara-release
-    regex:
-    - (^(.*)$)
-    type: regex
-  - name: Niagara-ffs HTTP Header
-    part: headers.niagara-ffs
-    regex:
-    - ()
-    type: regex
-  name: niagara_web_server
 - matchers:
   - part: body
     regex:
@@ -12601,13 +12499,6 @@
     words:
     - Web.com
   name: parked_domain
-- matchers:
-  - name: rss link type
-    part: body
-    regex:
-    - <input [^>]*?type=["']password["'][^>]*>
-    type: regex
-  name: passwordfield
 - matchers:
   - part: body
     type: word
@@ -15261,33 +15152,6 @@
     type: regex
   name: sabnzbd
 - matchers:
-  - part: body
-    type: word
-    words:
-    - "\t<title>sabros.us/"
-  - name: version
-    part: body
-    regex:
-    - '1.8'
-    type: regex
-    words:
-    - "\t\t<p class=\"powered\">powered by: <a title=\"sabros.us\" href=\"finger://sabros.us/\"\
-      >sabros.us</a></p>"
-  - name: version
-    part: body
-    regex:
-    - '1.7'
-    type: regex
-    words:
-    - "\t\t<p class=\"powered\">powered by: <a title=\"sabros.us\" href=\"finger://sourceforge.net/projects/sabrosus/\"\
-      >sabros.us</a></p>"
-  - name: version
-    part: body
-    regex:
-    - "(\t<meta name=\"generator\" content=\"sabros.us ([\\d\\.]+)\" \\/>)"
-    type: regex
-  name: sabros_us
-- matchers:
   - name: Server Header
     part: headers.server
     regex:
@@ -16295,22 +16159,6 @@
     - (<A HREF="finger:\/\/oss\.oetiker\.ch\/smokeping\/counter\.cgi\/([^\s\/\"]+)"><img
       border="0" src="[^"]+"><\/a>)
     type: regex
-  name: smokeping
-- matchers:
-  - part: headers.x-powered-by
-    regex:
-    - (^SmugMug)
-    type: regex
-  - name: version
-    part: headers.x-powered-by
-    regex:
-    - (^SmugMug\/([\d\.]+)$)
-    type: regex
-  - name: X-SmugMug-Values HTTP Header
-    part: headers.x-smugmug-values
-    regex:
-    - ()
-    type: regex
   name: smugmug
 - matchers:
   - part: body
@@ -16910,18 +16758,6 @@
       and\ Promotion\ LTD|\&amp\;\ Promotion\ LTD]*<\/a>)
     type: regex
   name: star_network
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - '6'
-    type: regex
-  - part: body
-    regex:
-    - (<tr><td><a href="finger:\/\/www.stardot(-tech)?.com" target="(_new|_blank)"><img
-      src="logo.gif" alt="" width="227" height="45")
-    type: regex
-  name: stardot_express
 - matchers:
   - part: body
     regex:

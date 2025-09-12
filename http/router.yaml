@@ -382,4 +382,14 @@
       type: word
       words:
         - "themes/mercury/css/base.css"
-        
+- name: Aitemi-WiFi
+  matchers-condition: and
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "TT_SetWifiExt"
+    - part: headers.server
+      type: word
+      words:
+        - "lighttpd"
