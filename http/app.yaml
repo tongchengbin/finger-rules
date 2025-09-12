@@ -3394,3 +3394,14 @@
       type: word
       words:
         - "WeGIA"
+- name: freepbx
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "freepbx"
+    - part: icon_hash
+      type: word
+      words:
+        - "-1908328911"
+        - "1574423538"
