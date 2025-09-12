@@ -3394,7 +3394,7 @@
       type: word
       words:
         - "WeGIA"
-- name: freepbx
+- name: FreePBX
   matchers:
     - part: body
       type: word
