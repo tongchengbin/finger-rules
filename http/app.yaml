@@ -3367,3 +3367,9 @@
       type: word
       words:
         - "usualtool"
+- name: NetAlertX
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "netalertx"
