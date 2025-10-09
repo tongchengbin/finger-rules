@@ -3355,38 +3355,24 @@
       - sf_redirect
       - symfony
   name: symfony
-
-- name: nest-devtools
-  matchers:
-    - part: header
-      type: word
-      words:
-        - "devtools.nestjs.com"
-    - part: body
-      type: word
-      words:
-        - "devtools.nestjs.com"
-- name: LyLme_Spage
+- name: Mongoose
   matchers:
     - part: title
       type: word
       words:
-        - "LyLme Spage"
-    - part: icon_hash
-      type: word
-      words:
-        - "-282504889"
-- name: scoold
+        - "Mongoose"
+- name: usualtoolcms
   matchers:
     - part: body
       type: word
       words:
-        - "scoold-wrapper"
-- name: Maltrail
+        - "usualtool"
+- name: NetAlertX
   matchers:
     - part: title
       type: word
       words:
+<<<<<<< HEAD
         - "Maltrail"
 - name: WeGIA
   matchers:

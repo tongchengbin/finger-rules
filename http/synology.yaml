@@ -70,3 +70,9 @@
       type: word
       words:
         - '"hostname" : "SynologyRouter"'
+- name: photos
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "BeeStation"
