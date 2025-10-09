@@ -3405,3 +3405,14 @@
       words:
         - "-1908328911"
         - "1574423538"
+
+- name: Hoverfly
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Hoverfly"
+    - part: icon_hash
+      type: word
+      words:
+        - "1357234275"
