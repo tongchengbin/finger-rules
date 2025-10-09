@@ -3372,7 +3372,6 @@
     - part: title
       type: word
       words:
-<<<<<<< HEAD
         - "Maltrail"
 - name: WeGIA
   matchers:
