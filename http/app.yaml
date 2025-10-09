@@ -3401,3 +3401,10 @@
       type: word
       words:
         - "1357234275"
+
+- name: MCP Inspector
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "MCP Inspector"
