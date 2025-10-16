@@ -47,3 +47,10 @@
         - "Sophos | Web Appliance"
       type: word
   name: Sophos-Web-Appliance
+
+- name: unified-threat-management
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "securepoint utm"
