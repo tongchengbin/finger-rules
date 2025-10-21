@@ -3415,3 +3415,16 @@
       type: word
       words:
         - "DELMIA Apriso"
+
+- name: Teleport
+  matchers:
+    - part: headers.set-cookie
+      type: word
+      words:
+        - "__Host-grv_csrf"
+    - part: icon_hash
+      type: word
+      words:
+        - "544208100"
+        - "1854879765"
+        - "-1275955539"
