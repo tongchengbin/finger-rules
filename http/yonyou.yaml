@@ -16,7 +16,7 @@
       type: word
       words:
         - "YONYOU NC"
-- name: U8
+- name: U8-CRM
   matchers:
     - part: body
       type: word
