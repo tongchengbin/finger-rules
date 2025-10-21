@@ -3428,3 +3428,9 @@
         - "544208100"
         - "1854879765"
         - "-1275955539"
+- name: TRUfusion
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "TRUfusion"
