@@ -56,7 +56,7 @@
       regex:
         - ng-version="([\d\.]+)"
       type: regex
-  name: Angularjs
+  name: Angular
 
 - matchers:
     - part: body
