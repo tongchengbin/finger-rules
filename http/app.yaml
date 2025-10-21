@@ -3434,3 +3434,9 @@
       type: word
       words:
         - "TRUfusion"
+- name: senayan_library_management_system
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "SLIMS"
