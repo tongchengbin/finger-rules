@@ -65,3 +65,9 @@
       words:
         - "用友U8-OA"
         - "用友U8+OA"
+- name: ufida_erp-nc
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1085941792"

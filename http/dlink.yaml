@@ -165,7 +165,7 @@
       part: headers.server
       words:
         - "DIR-600"
-- name: DNS320
+- name: DNS-320-firmware
   matchers:
     - type: word
       part: headers.server
