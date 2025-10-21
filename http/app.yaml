@@ -3408,3 +3408,10 @@
       type: word
       words:
         - "MCP Inspector"
+
+- name: DELMIA-Apriso
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "DELMIA Apriso "
