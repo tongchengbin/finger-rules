@@ -171,3 +171,10 @@
       part: headers.server
       words:
         - "DNS320"
+
+- name: DLink-NAS
+  matchers:
+    - type: word
+      part: body
+      words:
+        - "sharecenter"
