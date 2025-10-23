@@ -3440,3 +3440,10 @@
       type: word
       words:
         - "SLIMS"
+
+- name: InvoiceShelf
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "InvoiceShelf"
