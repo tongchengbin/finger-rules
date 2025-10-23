@@ -1562,3 +1562,9 @@
       type: word
       words:
         - 'Powered by ARForms'
+- name: jms_blog
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'jmsblog'
