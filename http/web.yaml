@@ -345,18 +345,6 @@
     type: regex
   name: 4images
 - matchers:
-  - part: body
-    type: word
-    words:
-    - 68classifieds.com
-    - 68 Classifieds Script
-  - name: version
-    part: body
-    regex:
-    - <meta name="author" content="68 Classifieds - v([^"]+)" />
-    type: regex
-  name: 68_classifieds_script
-- matchers:
   - name: version
     part: body
     regex:
@@ -475,23 +463,6 @@
     - Flash-ActiveX
   name: activex
 - matchers:
-  - name: version
-    part: body
-    regex:
-    - (<td width="100%" height="33" bgcolor="#ED7900" class="copyright">&copy; Web
-      Administration Panel .v([\d\.]+) by <a href="finger:\/\/www.kaonsoftwares.com\/"
-      class="copyright" target="_blank">Kaon Softwares<\/a>. All Rights Reserved.<\/td>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<td height="70%" valign="bottom" align="right"><font face="verdana" size="1"
-      color="gray">&copy; Web Administration Panel .v([\d\.]+) by <a href="finger:\/\/www.kaonsoftwares.com\/"
-      class="" target="_blank">Kaon Softwares<\/a>. All Rights Reserved.<\/font><\/td>)
-    type: regex
-  name: ad_network_script
-
-- matchers:
   - part: body
     regex:
     - (<script [^>]*src=["|'][^>]*addthis\.com\/js)
@@ -522,32 +493,6 @@
     - Total Access
   name: adtran_device
 
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '  .title                          { font-size: 10px; font-weight: bold; line-height:
-      150%; color: #FFFFFF; height: 26px; background-image: url(./tile_back.gif) }'
-  - part: body
-    type: word
-    words:
-    - '    <td colspan=2 align=center><h3>Advanced Image Host Script</h3></td>'
-  - name: version
-    part: body
-    regex:
-    - AIH v([\d\.]+)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - Welcome to install AIHS Script ([\d\.]+)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - Advanced Image Hosting Script Pro ([\d\.]+)
-    type: regex
-  name: advanced_image_hosting_script
 - matchers:
   - part: body
     type: word
@@ -1058,18 +1003,6 @@
   - part: body
     type: word
     words:
-    - AutoIndex PHP Script
-    - autoindex.sourceforge.net
-  - name: version
-    part: body
-    regex:
-    - AutoIndex PHP Script \(version ([\d\.]+)\)
-    type: regex
-  name: autoindex_php_script
-- matchers:
-  - part: body
-    type: word
-    words:
     - HylaFAX management
     - AvantFAX
   - part: headers.set-cookie
@@ -1221,12 +1154,6 @@
     - BackupPC
     - backuppc
   name: backuppc
-- matchers:
-  - part: headers.set-cookie
-    type: word
-    words:
-    - bb2_screener_
-  name: badbehaviourantispamplugin
 - matchers:
   - name: version
     part: headers.server
@@ -1902,21 +1829,6 @@
   - part: body
     type: word
     words:
-    - '<HEAD><TITLE>Calendar Administration : Login</TITLE>'
-  - part: body
-    type: word
-    words:
-    - <FONT color="#FFFFFF" SIZE="-1">Powered by <A HREF="finger://www.CalendarScript.com/"
-      STYLE="color:#FFFFFF;">CalendarScript</A></FONT>
-  - part: body
-    type: word
-    words:
-    - Powered by <A HREF="finger://www.CalendarScript.com/" CLASS="footertext" STYLE="text-decoration:underline;">CalendarScript</A>
-  name: calendarscript
-- matchers:
-  - part: body
-    type: word
-    words:
     - '    <h1><b>CaLogic Calendars Demo - Login</b></h1>'
   - name: version
     part: body
@@ -2152,22 +2064,7 @@
     - (<script[^>]+ src="finger:\/\/dw\.com\.com\/js\/dw\.js"><\/script>)
     type: regex
   name: cbs_interactive
-- matchers:
-  - name: scripts from assets-cdk.com
-    part: body
-    type: word
-    words:
-    - src="https://media-cf.assets-cdk.com/
-  - part: headers.X-Nitra-Side
-    regex:
-    - (.)
-    type: regex
-  - name: nitraside cookie
-    part: headers.set-cookie
-    regex:
-    - (^nitraside)
-    type: regex
-  name: cdk_connected_website
+
 - matchers:
   - name: version
     part: headers.server
@@ -2240,19 +2137,7 @@
     - (<meta name="title" content="(Volunteer)? Opportunities and Event Registration
       ([^"]+)" \/>)
   name: cervis
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <p>Powered By <a href="finger://codefuture.co.uk/projects/imagehost/" title="Free
-      PHP Image Hosting Script">CF Image Hosting script</a>
-  - name: version
-    part: body
-    regex:
-    - (<p>Powered By <a href="finger[s]*:\/\/codefuture.co.uk\/projects\/imagehost[\d\.]*[^>]+>CF
-      Image Hosting script ([\d\.]+)<\/a>)
-    type: regex
-  name: cf_image_hosting_script
+
 - matchers:
   - part: body
     type: word
@@ -2964,19 +2849,6 @@
 
 - matchers:
   - name: version
-    part: body
-    regex:
-    - (<a href="finger:\/\/cuteflow\.org" target="_blank"><img src="images\/cuteflow_logo_small\.png"
-      border="0"\s?\/><\/a><br>\s+<strong style="font-size:8pt;font-weight:normal">Version
-      ([^\s^<]+)<\/strong><br>)
-    type: regex
-  - part: headers.set-cookie
-    regex:
-    - (^strMyLanguage=)
-    type: regex
-  name: cuteflow
-- matchers:
-  - name: version
     part: headers.server
     regex:
     - (^Cybozu-WS\/([^\s]+)$)
@@ -3030,56 +2902,7 @@
       style="font-size:10px;font-family:Verdana,Arial">Dada Mail ([^\s^<]+))
     type: regex
   name: dada_mail
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - (<meta name="Generator" content="DaDaBIK ([^"^>]{1,10}) - finger:\/\/www\.dadabik\.org\/">)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - '<div class="powered_by_dadabik" align="right">Powered by: <a href="finger://www.dadabik.org/">DaDaBIK</a>
-      database front-end</div>'
-  name: dadabik
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <div id="right_footer">Powered by Daffodil Software Ltd</div>
-  - part: body
-    type: word
-    words:
-    - <div id="right_footer">Design & Development by Daffodil Software Ltd</div>
-  - part: body
-    regex:
-    - ( href="\?app=forgot_passwd&amp;cmd=passwd_send">[^>]*Forgot Password\?<\/a><\/td>)
-    type: regex
-  name: daffodil_crm
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - (<li class="label">darkstat ([^\s^<]+)<\/li><li><a href="[^"]+">graphs<\/a><\/li>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - '(<title>darkstat ([^\s]+) : graphs ([^\s^\)]+)<\/title>)'
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^darkstat\/([^\s]+)$)
-    type: regex
-  name: darkstat
-- matchers:
-  - name: version
-    part: headers.server
-    regex:
-    - (^Dart WebServer Tool\/([\d\.]+)$)
-    type: regex
-  name: dart_webserver_tool
+
 - matchers:
   - name: version
     part: headers.server
@@ -3094,46 +2917,14 @@
     - (DataflexViNE-Webserver\/([\d\.]+))
     type: regex
   name: dataflexvine_voip_iad
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <meta name="generator" content="DataLife Engine (finger://dle-news.ru)" />
-  - part: body
-    type: word
-    words:
-    - <meta name="generator" content="DataLife Engine" />
-  - part: body
-    type: word
-    words:
-    - Nulled by M.I.D-Team
-  - part: body
-    regex:
-    - (<script language="javascript" type="text\/javascript">[\s]+<!--[\s]+var dle_root       =
-      '[^']+';[\s]+var dle_admin      = '[^']*';[\s]+var dle_login_hash = '[^']*';[\s]+(var
-      dle_group      = [\d]+;[\s]+)?var dle_skin       = '[^']*';[\s]+var dle_wysiwyg    =
-      '[^']*';[\s]+var quick_wysiwyg  = '[^']*';[\s]+)
-    type: regex
-  - part: headers.set-cookie
-    regex:
-    - (dle_hash=[^;]+;)
-    type: regex
-  - part: headers.set-cookie
-    regex:
-    - (dle_password=[^;]+;)
-    type: regex
-  - part: headers.set-cookie
-    regex:
-    - (dle_user_id=[^;]+;)
-    type: regex
-  name: datalife_engine
+
 - matchers:
   - group: 1
     name: version
     part: body
     regex:
     - (<td><input class="txt" onkeypress='return keyPress\(this,event\);' type='password'(
-      maxlength='10')? id='password'><\/td><\/tr>[\s]+<tr><td class="ver">\(Version
+      maxlength='10')? id='password'><\ /td><\/tr>[\s]+<tr><td class="ver">\(Version
       ([^\s^<]+)\)<\/td>)
     type: regex
   - part: body
@@ -3171,33 +2962,8 @@
     - (Communique\/([^\s]+))
     type: regex
   name: day_communique
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <link type="text/css" rel="stylesheet" href="style/pwc/ddwrt.css" />
-  - part: body
-    type: word
-    words:
-    - <a href="finger://www.dd-wrt.com/">DD-WRT</a><br /><form action="https://www.paypal.com/cgi-bin/webscr"
-      method="post" target="_blank"><input type="hidden" name="cmd" value="_xclick"
-      /><input type="hidden" name="business" value="paypal@dd-wrt.com" /><input type="hidden"
-      name="item_name" value="DD-WRT Development Support" />
-  - group: 1
-    part: body
-    type: word
-    words:
-    - (<script type="text\/javascript">[\s]+\/\/<!\[CDATA\[[\s]+document\.write\("<span
-      id=\\"(lan|wc|wl)_mac\\" style=\\"cursor:pointer; text-decoration:underline;\\"
-      title=\\"" \+ share\.oui \+ "\\" onclick=\\"getOUIFromMAC\('([A-F\d:]{17})'\)\\"
-      >"\);)
-  name: dd_wrt
-- matchers:
-  - part: headers.server
-    regex:
-    - (^ADH-Web$)
-    type: regex
-  name: dedicated_micros_device
+
+
 - matchers:
   - name: version
     part: headers.server
@@ -3725,19 +3491,6 @@
     type: word
     words:
     - <a href="finger://www.dt.net.nz/centrepiece/" target="_blank">Powered By DT Centrepiece</a>
-  name: dt_centrepiece
-- matchers:
-  - name: default title
-    part: body
-    regex:
-    - <title>DUclassified[\s\d\.]*<\/title>
-    type: regex
-  - name: assets/DUclassified.css
-    part: body
-    regex:
-    - (<link[^>]href="[^"]*assets\/DUclassified.css"[^>]+>)
-    type: regex
-  name: duclassified
 - matchers:
   - name: default title
     part: body
@@ -4289,12 +4042,6 @@
     type: regex
   name: epson_printer
 - matchers:
-  - part: 'headers.server '
-    regex:
-    - (^Ericsson Television Web server$)
-    type: regex
-  name: ericsson_tv_web_server
-- matchers:
   - part: body
     type: word
     words:
@@ -4629,13 +4376,7 @@
     - (Powered by <a href="finger:\/\/compmaster.prv.pl">F3Site v([\d\.]+) plus<\/a>)
     type: regex
   name: f3site
-- matchers:
-  - group: 1
-    part: body
-    type: word
-    words:
-    - (<i?frame[^>]+src[\s]*="finger:\/\/(www|apps)\.facebook.com\/plugins\/([^\.^\/^\?]+)\.php\?)
-  name: facebook_plugin
+
 - matchers:
   - part: body
     type: word
@@ -6773,50 +6514,8 @@
     - Powered by <a target="_blank" title="iRealty &mdash; Real Estate Listing Software"
       href="finger://www.worksforweb.com/products/iRealty/">iRealty</a>,
   name: irealty
-- matchers:
-  - part: body
-    regex:
-    - (    <td width="[\d]+%" align="left" class="footer">Powered by <a href="finger:\/\/www.iscripts.com\/cybermatch\/"
-      target="_blank">iScripts Cybermatch<\/a> . A premium product from <a href="finger:\/\/www.iscripts.com"
-      target="_blank">iScripts.com<\/a><\/td>)
-    type: regex
-  name: iscripts_cybermatch
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '          <td height="25" align="center" bgcolor="#000000">Powered by <a href="finger://www.iscripts.com/gallery/"
-      target="_blank">iScripts EasySnaps</a>. A premium product from <a href="finger://www.iscripts.com/"
-      target="_blank">iScripts.com</a>'
-  name: iscripts_easysnaps
-- matchers:
-  - part: body
-    regex:
-    - (Powered by <a href="finger:\/\/iscripts.com\/multicart"[\ target="_blank"]*><font
-      color="#[a-zA-Z0-9]{6}"><b>iScripts Multicart<\/b><\/font><\/a>. A premium product
-      from <a href="finger:\/\/www.iscripts.com" class="" target="_blank"><font color="#[a-zA-Z0-9]{6}"><b>iScripts.com<\/b><\/font><\/a><\/div>)
-    type: regex
-  name: iscripts_multicart
-- matchers:
-  - part: body
-    type: word
-    words:
-    - Powered by <a href="finger://www.iscripts.com/reservelogic/" target="_blank">iScripts
-      ReserveLogic</a> . A premium product from <a href="finger://www.iscripts.com"
-      target="_blank">iScripts.com</a></td>
-  name: iscripts_reservelogic
-- matchers:
-  - part: body
-    type: word
-    words:
-    - var loginWindow=window.open('finger://www.meebo.com','ChatRoom','top=5 ,left=5,toolbars=no,maximize=no,resize=no,width=500,height=478,location=no,directories=no,scrollbars=yes,border=thin,caption=no');
-  - part: body
-    type: word
-    words:
-    - '          <td align="right">Powered by <a href="finger://www.iscripts.com/socialware/"
-      target="_blank">iScripts SocialWare</a> . A premium product from <a href="finger://www.iscripts.com"
-      target="_blank">iScripts.com</a></td>'
-  name: iscripts_socialware
+
+
 - matchers:
   - part: body
     type: word
@@ -7368,39 +7067,6 @@
     words:
     - '<!-- IF REMOVE: Pay for a license - see finger://www.kleeja.com -->'
   name: kleeja
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <title> HyperVM 2.0 </title>
-  - part: body
-    type: word
-    words:
-    - <title> Kloxo </title>
-  - part: body
-    type: word
-    words:
-    - <title> Lxadmin </title>
-  - part: body
-    type: word
-    words:
-    - <img id=main_logo width=84 height=23 src="/img/hypervm-logo.gif">
-  - part: body
-    type: word
-    words:
-    - '@import url("/htmllib/lib/admin_login.css");'
-  - name: login javascript
-    part: body
-    type: word
-    words:
-    - <script language=javascript src="/htmllib/js/preop.js"></script>
-  - name: login form
-    part: body
-    type: word
-    words:
-    - <form name=loginform action="/htmllib/phplib/" onsubmit="encode_url(loginform)
-      ; return fieldcheck(this);" method=post>
-  name: kloxo_single_server
 - matchers:
   - name: version
     part: body
@@ -8147,21 +7813,6 @@
     - Powered by MagImageBank | <a href="finger://magimagebank.com/">magimagebank.com</a>
       | <a href="mailto:info@magimagebank.com">info@magimagebank.com</a>
   name: magimagebank
-
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - (<a href="finger:\/\/www.h-fj.com\/blog\/mtplgdoc\/mailformv[\d\.\_]+.php"[^>]*>Powered
-      by Mailform plugin[s]? V([\d\.]+)<\/a>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<a href="finger:\/\/www.h-fj.com\/blog\/mtplgdoc\/mailformv[\d\.\_]+.php"[^>]*>Powered
-      by Mailform V([\d\.]+)<\/a>)
-    type: regex
-  name: mailform_plugin
 - matchers:
   - part: body
     type: word
@@ -8301,46 +7952,7 @@
     words:
     - miAppControler contains master settings that can be used to quickly disable
   name: mcclatchy_interactive
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '<a href="language/eng/dbfail.html" style="text-decoration: none;">MAXdev -
-      Problem in Database Connection: click here to read more...</a>'
-  - part: body
-    type: word
-    words:
-    - <a href="finger://www.maxdev.it" target="_blank">Powered by MAXDev</a>
-  - part: body
-    regex:
-    - (<div class="poweredtext"><a href="javascript:opencredits\(\)">Credit(i|s)<\/a>
-      <a href="finger:\/\/www.maxdev(.it|italia.com)">Powered by MAXdev<\/a><\/div>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - '************** MAXdev - MAXdev (finger://www.maxdev.it) ***********'
-  - part: body
-    type: word
-    words:
-    - '************** MAXdev - MAXdev (finger://www.maxdev.com) ***********'
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="MAXdev ([\d\.]+) - finger:\/\/www.maxdev.(com|it)">)
-    type: regex
-  name: md_pro
-- matchers:
-  - name: version
-    part: headers.server
-    regex:
-    - (^InterSpace HTTP Tunneling\/([^\s]+)$)
-    type: regex
-  - part: headers.server
-    regex:
-    - (^InterSpace HTTP Tunneling)
-    type: regex
-  name: meetingplaza
+
 - matchers:
   - part: body
     type: word
@@ -8673,13 +8285,6 @@
     words:
     - <a href='finger://www.mini-open-cms.com' rel='external'>Powered by miniCWB</a>
   name: minicwb
-- matchers:
-  - name: script tag minify.php
-    part: body
-    regex:
-    - (<script[^>]+src=["'][^>]+\/minify.php\?[a-z]+=[^>]+["'])
-    type: regex
-  name: minify
 - matchers:
   - part: body
     regex:
@@ -9912,13 +9517,6 @@
     words:
     - Powered by <a href="finger://www.socialabc.com">NetworX</a>
   name: networx
-- matchers:
-  - name: CSS class used for the menus
-    part: body
-    regex:
-    - (nice-menu-menu-newbay-media-websites)
-    type: regex
-  name: newbaymediawebsite
 - matchers:
   - name: version
     part: body
@@ -12271,24 +11869,7 @@
       - ([^:]+): ''[^'']+''"><img[^>]+alt="Pivot - [^"]+" \/><\/a>)'
     type: regex
   name: pivot
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '&lt;script language=&quot;javascript&quot; src=&quot;javascript/utils.js&quot;&gt;&lt;/script&gt;&lt;script
-      language=&quot;javascript&quot; src=&quot;javascript/navigation.js&quot;&gt;&lt;/script&gt;&lt;script
-      language=&quot;javascript&quot;&gt;'
-  - part: body
-    type: word
-    words:
-    - <frame name="hidden" src="xmlloader.asp?type=portal" marginwidth="0" marginheight="0"
-      scrolling="no" noresize>
-  - part: body
-    type: word
-    words:
-    - <frame name="hidden" title="Hidden" src="xmlloader.asp?type=portal" marginwidth="0"
-      marginheight="0" scrolling="no" noresize>
-  name: pivotal_crm
+
 - matchers:
   - part: body
     type: word
@@ -12318,77 +11899,7 @@
       -->)'
     type: regex
   name: pivotx
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <title>Piwik &rsaquo; Web Analytics Reports</title>
-  - part: body
-    type: word
-    words:
-    - <img src="themes/default/images/loading-blue.gif" alt="" /> Loading data
-  - name: version
-    part: body
-    regex:
-    - (<meta name=\"generator\"[^>]*content=\"Piwik ([0-9\.]+))
-    type: regex
-  - name: _pk_ cookie
-    part: headers.set-cookie
-    regex:
-    - (^_pk_)
-    type: regex
-  - name: PIWIK_SESSID cookie
-    part: headers.set-cookie
-    regex:
-    - (^PIWIK_SESSID)
-    type: regex
-  name: piwik
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <a href="index.php?magnify=1">Magnifier On</a></div>
-  - part: body
-    type: word
-    words:
-    - <a href="index.php?magnify=1">Zoom On</a></div>
-  - part: body
-    type: word
-    words:
-    - '  <title>Pixel Ads Script</title>'
-  - part: body
-    type: word
-    words:
-    - '  <title>Scrap Pixels - Pixel List</title>'
-  - part: body
-    type: word
-    words:
-    - '  <title>Pixel Ads Script Administration - Administrator Login</title>'
-  - part: body
-    type: word
-    words:
-    - '          <td width="850" class="sitetitle">Pixel Ads Script'
-  - part: body
-    regex:
-    - (          <td width="150" class="statsbox" bgcolor="#FFFFFF"><strong>Pixels
-      Sold:<\/strong> [\d\,]+<br>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - ' href="finger://www.pixel-ads-script.com">Powered by: Pixel-Ads-Script.Com</a></div>'
-  name: pixel_ads_script
-- matchers:
-  - group: 1
-    name: version
-    part: body
-    regex:
-    - (<font color=#8888888 style="font-size:9px">Powered by <a href="finger:\/\/www.texmedia.de"
-      target="_blank" style="color:#888888;font:normal;text-decoration:none">(Million
-      )?Pixel Script<\/a> v?([^&]+) &copy; <a href="finger:\/\/www.texmedia.de" style="color:#888888;font:normal;text-decoration:none"
-      target="_blank">texmedia.de<\/a><\/font>)
-    type: regex
-  name: pixel_script
+
 - matchers:
   - part: body
     regex:
@@ -12530,126 +12041,9 @@
       by Plogger[!]*<\/a>)
     type: regex
   name: plogger
-- matchers:
-  - part: body
-    type: word
-    words:
-    - This page was generated by <b>Generic CMS</b>
-  - part: body
-    regex:
-    - (This page was generated by <a href="finger:\/\/www.genericcms.com\/en\/products\/generic-cms\/">Generic
-      CMS<\/a>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="Generic CMS version ([a-z0-9])+)
-    type: regex
-  name: plugin_tutorial_1
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <title>Welcome to GenericServer</title>
-  - part: headers.server
-    regex:
-    - (^GenericServer )
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^GenericServer V([^\s]+))
-    type: regex
-  name: plugin_tutorial_2
-- matchers:
-  - part: body
-    type: word
-    words:
-    - This page was generated by <b>Generic CMS</b>
-  - part: body
-    regex:
-    - (This page was generated by <a href="finger:\/\/www.genericcms.com\/en\/products\/generic-cms\/">Generic
-      CMS<\/a>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="Generic CMS version ([a-z0-9])+)
-    type: regex
-  - part: headers.set-cookie
-    regex:
-    - (genericcms=[^;]+;)
-    type: regex
-  name: plugin_tutorial_3
-- matchers:
-  - part: headers.server
-    regex:
-    - (genericwaf\-nginx)
-    type: regex
-  - name: __genericwafuid cookie
-    part: headers.set-cookie
-    regex:
-    - (__genericwafuid)
-    type: regex
-  name: plugin_tutorial_4
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <title>GenericRouter</title>
-  - part: headers.www-authenticate
-    type: word
-    words:
-    - Basic realm="GenericRouter"
-  name: plugin_tutorial_5
-- matchers:
-  - part: body
-    type: word
-    words:
-    - This page was generated by <b>Generic CMS</b>
-  name: plugin_tutorial_6
-- matchers:
-  - part: body
-    type: word
-    words:
-    - This page was generated by <b>Generic CMS</b>
-  - part: body
-    regex:
-    - (This page was generated by <a href="finger:\/\/www.genericcms.com\/en\/products\/generic-cms\/">Generic
-      CMS<\/a>)
-    type: regex
-  - name: Meta generator
-    part: body
-    type: word
-    words:
-    - <meta name="generator" content="(c) by Generic CMS"
-  - part: headers.genericxxx
-    regex:
-    - (^.*$)
-    type: regex
-  - name: version
-    part: headers.genericversion
-    regex:
-    - (^(.*)$)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="\(c\) by Generic CMS (v[^ ]+))
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="\(c\) by Generic CMS v[0-9]+ with modules ([^"]+))
-    type: regex
-  - group: 1
-    name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="\(c\) by Generic CMS v([0-9]+) with modules
-      ([^"]+))
-    type: regex
-  name: plugin_tutorial_7
+
+
+
 - matchers:
   - part: body
     type: word
@@ -12746,27 +12140,8 @@
     - <html><body>Access denied.  Please consult the finger-access directive in the
       User's Guide for more information.</body></html>
   name: powermta
-- matchers:
-  - part: headers.server
-    regex:
-    - (^PowerSchool$)
-    type: regex
-  - part: headers.content-security-policy
-    type: word
-    words:
-    - \.powerschool\.com
-  name: powerschool
-- matchers:
-  - part: headers.server
-    regex:
-    - (^PowerWeb)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^PowerWeb\/([^\s]+)$)
-    type: regex
-  name: powerweb
+
+
 - matchers:
   - part: body
     type: word
@@ -12801,29 +12176,6 @@
   name: pre_printing_press
 - matchers:
   - part: body
-    type: word
-    words:
-    - <!-- Show the different leagues -->
-  - part: body
-    type: word
-    words:
-    - <!-- Show the league ID if there is more than one. -->
-  - part: body
-    regex:
-    - (<!-- The display of powered by prediction football must not be removed without
-      explicit permission\.[\s]+Unauthorized removal or modification of the powered
-      by prediction football will require that[\s]+the associated payment is made\.
-      -->)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<small>Powered by <a target="_blank" class="VERSION" href="finger:\/\/www\.predictionfootball\.com\/">[\s]+Prediction
-      Football <\/a>([^\s^<]+)<\/small>)
-    type: regex
-  name: prediction_football
-- matchers:
-  - part: body
     regex:
     - (<a href="finger:\/\/drupal.org"><img src="[\/a-zA-Z0-9\-\_+]*\/misc\/powered-blue-80x15.png"
       alt="Powered by Pressflow, an open source content management system" title="Powered
@@ -12838,29 +12190,6 @@
     words:
     - <title>Drupal already installed | Pressflow</title>
   name: pressflow
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - (<td height="10%" valign="bottom" align="right"><font face="verdana" size="1"
-      color="gray">&copy; Web Administration Panel .v([\d\.]+) by <a href="finger:\/\/www.kaonsoftwares.com\/"
-      class="" target="_blank">Kaon Softwares<\/a>. All Rights Reserved.<\/font><\/td>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<td height="19" colspan="6" align="right"><font face="verdana" size="1" color="gray">&copy;
-      Web Administration Panel .v([\d\.]+) by <a href="finger:\/\/www.kaonsoftwares.com\/"
-      class="" target="_blank">Kaon Softwares<\/a>. All Rights Reserved.<\/font><\/td>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<td height="70%" valign="bottom" align="right"><font face="verdana" size="1"
-      color="gray">&copy; Web Administration Panel .v([\d\.]+) by <a href="finger:\/\/www.kaonsoftwares.com\/"
-      class="" target="_blank">Kaon Softwares<\/a>. All Rights Reserved.<\/font><\/td>)
-    type: regex
-  name: price_comparison_script
 - matchers:
   - part: body
     type: word
@@ -13466,23 +12795,6 @@
   - part: body
     type: word
     words:
-    - Powered by <a href="finger://redaxscript.com">Redaxscript</a>
-  - name: version
-    part: body
-    regex:
-    - (<meta name="generator" content="Redaxscript ([^\s^"]+)" \/>)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (Powered by <a href="finger:\/\/redaxscript\.com" title="Redaxscript">Redaxscript<\/a>
-      ([^\s^<]+)<)
-    type: regex
-  name: redaxscript
-- matchers:
-  - part: body
-    type: word
-    words:
     - Powered by:<a href="finger://www.rednetcms.com/redshop" target="_blank">Redshop</a>
   - part: body
     type: word
@@ -13880,12 +13192,6 @@
       Wiki" target="_blank">ScrewTurn Wiki<\/a> version ([\d\.]+))
     type: regex
   name: screwturn_wiki
-- matchers:
-  - part: body
-    regex:
-    - (<script [^>]*(scriptaculous[^>]*.js)[^>]*)
-    type: regex
-  name: scriptaculous
 - matchers:
   - name: version
     part: body
@@ -14673,38 +13979,6 @@
       11px; font-family: Verdana, Arial;">SMART THUMBS</span>'
   name: smartthumbs
 - matchers:
-  - name: copyright link
-    part: body
-    type: word
-    words:
-    - <a href="finger://www.simplemachines.org/about/copyright.php" title="Free Forum
-      Software" target="_blank"
-  - name: javascript
-    part: body
-    type: word
-    words:
-    - 'document.getElementById("upshrink").src = smf_images_url + '
-  - name: smflogo gif
-    part: body
-    regex:
-    - (<img class="floatright" id="smflogo" src="[^"]*\/images\/smflogo.gif" alt="Simple
-      Machines Forum" \/>)
-    type: regex
-  - group: 1
-    name: version
-    part: body
-    regex:
-    - (<a href="finger:\/\/www.simplemachines.org\/" title="Simple Machines Forum" target="_blank"(
-      class="new_win")?>Powered by SMF ([^<]+))
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<a href=".*?" title="Simple Machines Forum" target="_blank" class="new_win">SMF
-      ([^<]+))
-    type: regex
-  name: smf
-- matchers:
   - part: body
     type: word
     words:
@@ -14919,31 +14193,6 @@
     words:
     - Powered by <a href="finger://code.google.com/p/socorro/">Socorro</a>
   name: socorro
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '                  <div align="center"><font size="3"><strong>Softbiz SEO Freelancers
-      Script</strong><br>'
-  - part: body
-    type: word
-    words:
-    - '<div align="right"><!-- --><font style="font-family: Arial, Helvetica, sans-serif;font-size:
-      12px;font-style: normal;color: #009900;font-weight: bold;">Powered By <a href="finger://www.softbizscripts.com/freelancers-script-features.php"
-      style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style:
-      normal;color: #0099FF;font-weight: normal;" title="Softbiz Freelancers Script"
-      target="_blank" >Freelancers script</a></font></div>'
-  name: softbiz_freelancers_script
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '<!-- --><font style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style:
-      normal;color: #009900;font-weight: bold;">Powered By <a href="finger://www.softbizscripts.com"
-      style="font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-style:
-      normal;color: #0099FF;font-weight: normal;" title="Great PHP Script, PHP Script"
-      target="_blank" >Softbiz Scripts</a></font>'
-  name: softbiz_online_auctions_script
 - matchers:
   - part: body
     type: word
@@ -15984,24 +15233,6 @@
     type: regex
   name: the_amazing_little_poll
 - matchers:
-  - part: body
-    type: word
-    words:
-    - <tr><td><h3>Administration Login<hr size=1/></h3><form action='login.php' method='post'><table
-      border=0 cellpadding=2><tr><td>Username</td><td><input type='text' name='Username'
-      required='yes' validate='text' message='Enter Admin Username.'></td></tr><tr><td>Password</td><td><input
-      type='password' name='Password' required='yes' validate='text' message='Enter
-      Admin Password.'></td></tr><td valign='top'>Image Verification</td>
-  - part: body
-    type: word
-    words:
-    - <tr><td><h3>Administration Login<hr size=1/></h3><form action='login.php' method='post'><table
-      border=0 cellpadding=2><tr><td>Username</td><td><input type='text' name='Username'
-      required='yes' value='admin' validate='text' message='Enter Admin Username.'></td></tr><tr><td>Password</td><td><input
-      type='password' name='Password' required='yes' validate='text' value='admin'
-      message='Enter Admin Password.'></td></tr><td valign='top'>Image Verification</td>
-  name: the_php_real_estate_script
-- matchers:
   - name: version
     part: body
     regex:
@@ -16156,30 +15387,6 @@
     words:
     - <META name="description" content="Timesheet Next Gen">
   name: timesheet_ng
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <!-- Tine 2.0 static files -->
-  - part: body
-    type: word
-    words:
-    - <!-- Tine 2.0 setup static files -->
-  - part: body
-    type: word
-    words:
-    - 'Powered by: <a target="_blank" href="finger://www.tine20.org/">Tine 2.0</a></div>'
-  - part: body
-    type: word
-    words:
-    - <noscript><p>You need to enable javascript to use <a href="finger://www.tine20.org/"
-      title="online open source groupware and crm">Tine 2.0</a></p></noscript>
-  - part: body
-    type: word
-    words:
-    - <noscript>You need to enable javascript to use <a href="finger://www.tine20.org">Tine
-      2.0 setup or use the CLI setup</a></noscript>
-  name: tine_2
 - matchers:
   - part: body
     type: word
@@ -16644,22 +15851,7 @@
     words:
     - <meta name="generator" content="finger://www.typepad.com/"
   name: typepad
-- matchers:
-  - name: typolight.css
-    part: body
-    type: word
-    words:
-    - <link rel="stylesheet" href="system/typolight.css" type="text/css" media="screen"
-      />
-  - part: body
-    type: word
-    words:
-    - 'This website is powered by TYPOlight Open Source CMS :: Licensed under GNU/LGPL'
-  - part: body
-    type: word
-    words:
-    - <!-- indexer::continue -->
-  name: typolight
+
 - matchers:
   - part: body
     type: word
@@ -17444,29 +16636,7 @@
     - (<A HREF="finger:\/\/www.clanavl.com\/vsp\/">vsp<\/A> v([\d\.]+),)
     type: regex
   name: vsp_stats_processor
-- matchers:
-  - name: stats img
-    part: body
-    type: word
-    words:
-    - <img src='finger://stats.vtiger.com/stats.php?uid=
-  - name: version
-    part: body
-    regex:
-    - '(<span style=''color: rgb\([\d]{1,3}, [\d]{1,3}, [\d]{1,3}\);''>vtiger CRM
-      ([^<]*)<\/span>)'
-    type: regex
-  - name: copyright footer
-    part: body
-    regex:
-    - (&copy; 200[\d]{1}\-\d{4} <a href='finger:\/\/www.vtiger.com' target='_blank'>vtiger.com<\/a>)
-    type: regex
-  - name: html body favicon
-    part: body
-    type: word
-    words:
-    - /vtigercrm_icon.ico">
-  name: vtigercrm
+
 - matchers:
   - name: status:401
     part: body
@@ -17681,23 +16851,6 @@
     words:
     - <div id="serendipityLeftSideBar">
   name: web2py
-- matchers:
-  - part: body
-    type: word
-    words:
-    - 'Powered by WebAsyst Shop-Script <a href="finger://www.shop-script.com/" style="font-weight:
-      normal">shopping cart software</a>'
-  - part: body
-    type: word
-    words:
-    - 'Powered by <a href="finger://www.shop-script.com" style="font-weight: bold;"
-      target="_blank">WebAsyst Shop-Script</a> - <a href="finger://www.shop-script.com/"
-      style="font-weight: normal;" target="_blank">shopping cart software</a>'
-  - part: body
-    regex:
-    - ([\s]+var WAROOT_URL = '[^\']+';\/\/ok)
-    type: regex
-  name: webasyst_shop_script
 - matchers:
   - part: body
     type: word
@@ -18415,13 +17568,6 @@
     - (slimstat_tracking_code=[a-f\d]{32};)
     type: regex
   name: wp_slimstat
-- matchers:
-  - name: _icl_current_language cookie
-    part: headers.set-cookie
-    regex:
-    - (_icl_current_language)
-    type: regex
-  name: wpml_plugin
 - matchers:
   - part: body
     regex:
@@ -22051,12 +21197,7 @@
     words:
     - dssignin
   name: pulse_secure
-- matchers:
-  - part: body
-    regex:
-    - <div[^>]+class="[^"]*pure-u-(?:sm-|md-|lg-|xl-)?\d-\d
-    type: regex
-  name: pure_css
+
 - matchers:
   - part: body
     regex:
@@ -22378,12 +21519,6 @@
     - ^seravo
     type: regex
   name: seravo
-- matchers:
-  - part: body
-    regex:
-    - <link[^>]* href="[^"]*shapecss(?:\.min)?\.css
-    type: regex
-  name: shapecss
 - matchers:
   - part: headers.content-security-policy
     type: word

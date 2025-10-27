@@ -3745,3 +3745,39 @@
     words:
     - strMyLanguage=
   name: cuteflow
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - 'www.dadabik.org'
+  name: dadabik
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - 'dle-news.ru'
+    - 'DataLife Engine'
+    - 'Nulled by M.I.D-Team'
+  - part: headers.set-cookie
+    type: word
+    words:
+    - 'dle_password'
+    - 'dle_user_id'
+  name: datalife_engine
+
+
+- matchers:
+  - part: headers.server
+    words:
+    - Dart WebServer Tool
+    type: word
+  name: dart_webserver_tool
+
+- matchers:
+  - part: headers.server
+    words:
+    - PowerWeb
+    type: word
+  name: powerweb

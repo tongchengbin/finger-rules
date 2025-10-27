@@ -29,3 +29,19 @@
       - "Powered By SugarCRM"
       - "SugarCRM is a customer"
   name: sugarcrm
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - Daffodil Software Ltd
+  name: daffodil_crm
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - stats.vtiger.com
+    - vtigercrm_icon.ico
+  name: vtigercrm
