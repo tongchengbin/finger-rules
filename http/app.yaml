@@ -3447,3 +3447,204 @@
       type: word
       words:
         - "InvoiceShelf"
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - www.tsoft.com.tr
+  name: tsoft
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "tamago.temonalab.com"
+  name: tamago
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - "www.xonic-solutions.de"
+  name: xonic
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - "awstats.sourceforge.net"
+    - "Awstats - Advanced Web Statistics for"
+  name: awstats
+
+- matchers:
+  - part: headers.x-powered-by
+    type: word
+    words:
+    - "modx"
+  name: modx
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "gerrit"
+  name: gerrit
+
+
+- matchers:
+  - part: header
+    type: word
+    words:
+      - "x-ckan-api-key"
+      - "ckan.org"
+  name: ckan
+
+- matchers:
+  - part: title
+    type: word
+    words:
+      - "Nothing here"
+  - part: body
+    type: word
+    words:
+      - "www.phplist.com"
+  name: phplist
+
+
+- matchers:
+  - name: version
+    part: body
+    regex:
+    - (Powered by <a[^>]*><strong>Trac ([^<]+)<\/strong><\/a><br \/>)
+    type: regex
+  name: trac
+- matchers:
+  - part: body
+    type: word
+    words:
+    - powered by Mahara
+    - id="performance-info"
+    - "mahara.org"
+  name: mahara
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - /assets/frontoffice/
+  name: thelia
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "pluxml.org"
+      - "PluXml - Page d'authentification"
+      - "Retour au site"
+  name: pluxml
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - dotclear.org
+  name: dotclear
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - /admin/index.php?route=common/login
+  - part: header
+    type: word
+    words:
+    - ocsessid
+  name: opencart
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "www.egroupware.org"
+  name: egroupware
+
+- matchers:
+  - part: header
+    type: word
+    words:
+    - "mastodon"
+  name: mastodon
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - "tiddlywiki"
+  name: tiddlywiki
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "koha"
+  name: koha
+  
+- matchers:
+  - part: body
+    type: word
+    words:
+    - "fossil-scm.org"
+  name: fossil
+
+- matchers:
+  - part: headers.Set-Cookie
+    type: word
+    words:
+    - 'nc_samesitecookielax'
+  name: nextcloud
+
+- matchers:
+  - part: headers.set-cookie
+    type: word
+    words:
+    - _redmine_session
+  name: redmine
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - Serendipity
+  name: serendipity
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - Coppermine Photo Gallery
+  name: coppermine
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - content="umbraco"
+    - umbraco.org
+  name: umbraco
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "www.acclipse.com.au" 
+  name: acclipse
+
+- matchers:
+  - part: headers.server
+    type: word
+    words:
+    - (^addUPI (Server [^\s]+))
+  name: addUPI

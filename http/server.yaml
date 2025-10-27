@@ -665,3 +665,11 @@
     words:
     - Wing FTP Server
   name: wing_ftp_server
+
+
+- matchers:
+  - part: headers.server
+    type: word
+    words:
+    - addUPI Server ([^\s\.]+)
+  name: addUPI
