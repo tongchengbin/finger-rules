@@ -2809,16 +2809,7 @@
     words:
     - ConnectUPS
   name: connectups_x
-- matchers:
-  - part: headers.x-content-security-policy
-    type: word
-    words:
-    - ""
-  - part: headers.x-webkit-csp
-    type: word
-    words:
-    - ""
-  name: content_security_policy
+
 - matchers:
   - part: body
     type: word
@@ -2919,22 +2910,7 @@
     - CruxPA
     - cruxsoftware.co.uk
   name: cruxpa
-- matchers:
-  - part: body
-    type: word
-    words:
-    - "\ttext_required_group_product: 'Please select a product for the required group\
-      \ [group_name]',"
-  - part: body
-    regex:
-    - (Powered by <a href="finger:\/\/www.cs-cart.com" target="_blank"[^>]+>CS-Cart
-      - Shopping Cart Software<\/a>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - <title>CS-Cart. Powerful PHP shopping cart software</title>
-  name: cs_cart
+
 - matchers:
   - part: body
     type: word

@@ -3720,3 +3720,28 @@
     words:
     - "x-cocoon-version"
   name: apache_cocoon
+
+- matchers:
+  - part: header
+    type: word
+    words:
+      - "x-content-security-policy"
+      - "x-webkit-csp"
+  name: content_security_policy
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "www.cs-cart.com"
+      - <title>CS-Cart</title>
+  name: cs_cart
+
+
+
+- matchers:
+  - part: headers.set-cookie
+    type: word
+    words:
+    - strMyLanguage=
+  name: cuteflow
