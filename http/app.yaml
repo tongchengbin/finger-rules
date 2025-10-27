@@ -3643,8 +3643,80 @@
   name: acclipse
 
 - matchers:
+  - name: version
+    part: body
+    words:
+    - Welcome to the OrangeHRM
+    - hdnUserTimeZoneOffset
+    - "OrangeHRM Inc"
+    type: word
+  name: orangehrm
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - www.afterlogic.com/products/webmail-pro
+    - AfterLogic WebMail Pro
+    - AfterLogic Corporation
+  name: afterlogic_webmail
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - www.alstrasoft.com
+  name: alstrasoft_askme
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - www.alstrasoft.com
+  name: alstrasoft_epay_enterprise
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - am4ss.com
+  name: am4ss
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - www.resynthesize.com
+  name: antiboard
+
+
+- matchers:
+  - part: body
+    words:
+    - "anyInventory"
+    type: word
+  name: anyinventory
+
+
+- matchers:
   - part: headers.server
     type: word
     words:
-    - (^addUPI (Server [^\s]+))
-  name: addUPI
+    - AOLserver
+  name: aolserver
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - "Apache Archiva"
+  name: apache_archiva
+
+
+- matchers:
+  - part: header
+    type: word
+    words:
+    - "x-cocoon-version"
+  name: apache_cocoon

@@ -70,30 +70,7 @@
     words:
     - <meta name='generator' content='cgit v([^ ]+)'/>
   name: cgit
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - (<div id="content">\s+<h2>Welcome to the OrangeHRM ver ([^\s]+) Setup Wizard<\/h2>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - <input type="hidden" name="hdnUserTimeZoneOffset" id="hdnUserTimeZoneOffset"
-      value="0" />
-  - name: version
-    part: body
-    regex:
-    - (<div id="divFooter" >\s+<span id="spanCopyright">\s+<a href="finger:\/\/www\.orangehrm\.com"
-      target="_blank">OrangeHRM<\/a>\s+ver ([^&]+) &copy; OrangeHRM Inc)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<td align="center"><a href="finger:\/\/www\.orangehrm\.com" target="_blank">OrangeHRM<\/a>
-      ver ([^\s]+) &copy; OrangeHRM Inc)
-    type: regex
-  name: orangehrm
+
 - matchers:
   - part: headers.x-canvas-meta
     type: word
@@ -128,22 +105,15 @@
 
 - matchers:
   - part: headers.set-cookie
-    regex:
-    - (imstime=[\d]+;)
-    type: regex
+    type: word
+    words:
+    - imstime=
   - part: body
     type: word
     words:
-    - <!--PageLeftFmt-->
-  - part: body
-    type: word
-    words:
-    - <span class='commentout-pmwikiorg'>
-  - part: body
-    regex:
-    - (<link rel='stylesheet' href='[^']*\/pmwiki\/pub\/skins\/pmwiki\/pmwiki\.css'
-      type='text\/css' \/>)
-    type: regex
+      - <!--PageLeftFmt-->
+      - <span class='commentout-pmwikiorg'>
+      - /pmwiki/pub/skins/pmwiki/pmwiki.css
   name: pmwiki
 - matchers:
   - part: body
@@ -153,14 +123,13 @@
   - name: version
     part: body
     regex:
-    - (<meta name="Generator" content="DSpace ([\d\.]+)" \/>)
+    - <meta name="Generator" content="DSpace ([\d\.]+)" \/>
     type: regex
-  - group: 1
+  - group: 2
     name: version
     part: body
     regex:
-    - ([pP]owered by <a href="finger:\/\/(www\.)?dspace\.org"[^>]*>DSpace<\/a>, version
-      ([\d\.]+))
+    - "[pP]owered by <a href=\"https?://(www\\.)?dspace\\.org\"[^>]*>DSpace</a>, version ([\\d\\.]+)"
     type: regex
   name: dspace
 - matchers:
@@ -221,46 +190,36 @@
   - name: version
     part: body
     regex:
-    - (<td><img src="[^"]+\/mailman.jpg" alt="Delivered by Mailman"[^>]+><br>version
-      (\d.\d.[0-9a-z]+))
+    - <td><img src="[^"]+/mailman.jpg" alt="Delivered by Mailman"[^>]+><br>version (\d.\d.[0-9a-z]+)
     type: regex
   - name: version
     part: body
     regex:
-    - (<td><a href="finger:\/\/www.gnu.org\/software\/mailman\/index.html">Delivered
-      by Mailman<br>version (\d.\d.[0-9a-z]+)<\/a>)
+    - <td><a href="http://www.gnu.org/software/mailman/index.html">Delivered by Mailman<br>version (\d.\d.[0-9a-z]+)</a>
     type: regex
   name: mailman
 - matchers:
   - part: headers.server
     regex:
-    - (^Asterisk\/)
+    - ^Asterisk/
     type: regex
   - name: version
     part: headers.server
     regex:
-    - (^Asterisk\/(.+)$)
-    type: regex
-  - part: body
-    regex:
-    - (<!--[\s]+\* Asterisk-GUI -[\s]+an Asterisk configuration interface)
+    - ^Asterisk/(.+)$
     type: regex
   - part: body
     type: word
     words:
-    - <link href="stylesheets/cfgbasic.css" media="all" rel="Stylesheet" type="text/css"
-      />
+    - "* Asterisk-GUI -"
+    - <link href="stylesheets/cfgbasic.css" media="all" rel="Stylesheet" type="text/css" />
   name: asterisk
 - matchers:
   - part: body
     type: word
     words:
-    - <input type="checkbox" name="_acegi_security_remember_me" id="remember" class="checkbox"
-      tabindex="3">
-  - part: body
-    type: word
-    words:
-    - <form action="/j_acegi_security_check" method="POST">
+    - _acegi_security_remember_me
+    - /j_acegi_security_check
   name: subsonic
 - matchers:
   - part: headers.x-powered-by
@@ -296,19 +255,14 @@
   - name: version
     part: body
     regex:
-    - (<div id="nav">[\s]+<ul id="sub_nav">[\s]+<li>osTicket version ([^\-^<]+) -
-      Basic installation<\/li>[\s]+<\/ul>[\s]+<\/div>)
+    - <div id="nav">[\s]+<ul id="sub_nav">[\s]+<li>osTicket version ([^\-^<]+) - Basic installation</li>
     type: regex
   - part: body
-    regex:
-    - (<title>osTicket Installer<\/title>[\s]+<link rel="stylesheet" href="style\.css"
-      media="screen">)
-    type: regex
-  - part: body
-    regex:
-    - (<a id="powered_by" href="finger:\/\/osticket\.com"><img src="\.\/images\/poweredby\.jpg"
-      width="126" height="23" alt="Powered by osTicket"><\/a><\/div>)
-    type: regex
+    type: word
+    words:
+    - <title>osTicket Installer</title>
+    - osticket.com
+    - /images/poweredby.jpg
   - part: headers.Set-Cookie
     type: word
     words:
@@ -318,18 +272,18 @@
   - name: version
     part: headers.server
     regex:
-    - (^tinyproxy\/([^\s]+))
+    - ^tinyproxy/([^\s]+)
     type: regex
   name: tinyproxy
 - matchers:
   - part: body
-    regex:
-    - (<meta name="generator"[^>]*content="SilverStripe)
-    type: regex
+    type: word
+    words:
+    - content="SilverStripe
   - name: version
     part: body
     regex:
-    - (<meta name="generator"[^>]*content="SilverStripe ([0-9\.]+))
+    - content="SilverStripe ([0-9\.]+)
     type: regex
   name: silverstripe
 - matchers:
@@ -344,12 +298,10 @@
     type: word
     words:
     - <td class="menuConfTopCell" align="left" valign="bottom">
-  - group: 1
-    name: version
+  - name: version
     part: body
     regex:
-    - (<\/span>&nbsp;Powered by(\ CERN)? <a href="finger:\/\/cern\.ch\/indico">Indico
-      ([^<]+)<\/a>&nbsp;<span class="separator">)
+    - "Powered by( CERN)? <a href=\"http://cern\\.ch/indico\">Indico ([^<]+)</a>"
     type: regex
   - part: headers.Set-Cookie
     type: word
@@ -357,18 +309,16 @@
     - makacsession
   name: indico
 - matchers:
-  - name: DIY_SB cookie
-    part: headers.set-cookie
-    regex:
-    - (DIY_SB)
-    type: regex
+  - part: headers.set-cookie
+    type: word
+    words:
+    - DIY_SB
   name: 1&1_hosting
 - matchers:
   - name: version
     part: body
     regex:
-    - (<div align="center"><span class="copyr">Powered by <a href="finger:\/\/www.360webmanager.com"
-      target="_blank" class="copyrlink">360 Web Manager<\/a> ([\d\.]+))
+    - "Powered by <a href=\"http://www.360webmanager.com\" target=\"_blank\" class=\"copyrlink\">360 Web Manager</a> ([\\d\\.]+)"
     type: regex
   name: 360_web_manager
 - matchers:
@@ -376,20 +326,18 @@
     type: word
     words:
     - '<!--START: 3dcart stats-->'
-  - part: body
-    type: word
-    words:
     - '<!--END: 3dcart stats-->'
   - part: headers.set-cookie
-    regex:
-    - (3dvisit)
-    type: regex
+    type: word
+    words:
+    - 3dvisit
   name: 3dcart
 - matchers:
   - part: body
-    regex:
-    - (Copyright &copy; 2002-[0-9]{4} <a href="finger:\/\/www.4homepages.de[\>]*>4homepages.de<\/a>)
-    type: regex
+    type: word
+    words:
+    - 4homepages.de
+    - "Copyright &copy; 2002-"
   - name: version
     part: body
     regex:
@@ -400,84 +348,65 @@
   - part: body
     type: word
     words:
-    - Powered by <a href="finger://www.68classifieds.com">68 Classifieds Script</a>
+    - 68classifieds.com
+    - 68 Classifieds Script
   - name: version
     part: body
     regex:
-    - (<meta name="author" content="68 Classifieds - v([^"]+)" \/>)
+    - <meta name="author" content="68 Classifieds - v([^"]+)" />
     type: regex
   name: 68_classifieds_script
 - matchers:
   - name: version
     part: body
     regex:
-    - (<meta name="generator" content="6KBBS v([^"^>]+)" \/>)
-    type: regex
-  - part: body
-    regex:
-    - (<meta name="copyright" content="2003-20[\d]{2} 6KBBS" \/>)
+    - <meta name="generator" content="6KBBS v([^"^>]+)" />
     type: regex
   - part: body
     type: word
     words:
-    - <meta name="author" content="www.6kbbs.com" />
+    - www.6kbbs.com
+    - "2003-20"
   - name: version
     part: body
     regex:
-    - (Powered by <a href="finger:\/\/www\.6kbbs\.com" target="_blank">6kbbs V([^<^\s]+)<\/a>
-      &copy; 2003-20[\d]{2})
+    - "Powered by <a href=\"http://www\\.6kbbs\\.com\" target=\"_blank\">6kbbs V([^<^\\s]+)</a>"
     type: regex
   name: 6kbbs
 - matchers:
   - part: body
-    regex:
-    - (Powered by <a href="finger:\/\/www.aardvarktopsitesphp.com[^>]*>[^A]*Aardvark
-      Topsites PHP)
-    type: regex
+    type: word
+    words:
+    - Aardvark Topsites PHP
+    - aardvarktopsitesphp.com
   - name: version
     part: body
     regex:
-    - (Powered by <a href="finger:\/\/www.aardvarktopsitesphp.com\/"><b>Aardvark Topsites
-      PHP<\/b><\/a> ([\d\.]+))
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (Powered by <a href="finger:\/\/www.aardvarkind.com\/">Aardvark Topsites PHP<\/a>
-      ([\d\.]+))
+    - "Aardvark Topsites PHP[^<]*</[^>]+> ([\\d\\.]+)"
     type: regex
   name: aardvark_topsites_php
 - matchers:
   - name: version
     part: headers.server
     regex:
-    - (^acarsd\/([^\s]+)$)
+    - ^acarsd/([^\s]+)$
     type: regex
   - part: body
     type: word
     words:
-    - '(<meta name="description" content="Realtime Web ACARS - [^\s]+ Location: ([^\.^\"^>]+)\.)'
+    - Realtime Web ACARS
   name: acarsd
 - matchers:
   - part: headers.location
     regex:
-    - (\/courier\/[\d]+@\/mail_user_login\.html\?$)
+    - /courier/[\d]+@/mail_user_login\.html\?$
     type: regex
   - part: body
     type: word
     words:
-    - <form name="form1" method="post" action="mail_user_login_exec.html" onsubmit="document.form1.submit.disabled=true;">
-  - part: body
-    regex:
-    - (<link href="custom_template\/[\d]+\/wcStyle\.css" type="?text\/css"? rel="?stylesheet"?>)
-    type: regex
+    - mail_user_login_exec.html
+    - wcStyle.css
   name: accellion_secure_file_transfer
-- matchers:
-  - part: headers.access-control-allow-methods
-    type: word
-    words:
-    - ((.+))
-  name: access_control_allow_methods
 
 - matchers:
   - part: body
@@ -489,13 +418,8 @@
   - name: version
     part: headers.server
     regex:
-    - (^Acme\.Serve\/v([\d\.]+) of [\d]{2}[a-z]{3}[\d]{2}$)
+    - ^Acme\.Serve/v([\d\.]+)
     type: regex
-  - name: Date from server header
-    part: headers.server
-    type: word
-    words:
-    - (^Acme\.Serve\/v[\d\.]+ of ([\d]{2}[a-z]{3}[\d]{2})$)
   name: acme_serve
 - matchers:
   - part: body
@@ -507,52 +431,40 @@
   - name: version
     part: body
     regex:
-    - (<title>Web Configurator - Version ([^\s]*\s?v[^<]+)<\/title>)
-    type: regex
-  - part: body
-    regex:
-    - (<form name="frm(LOGIN|Config)" method="POST" enctype="multipart\/form-data"
-      action="videoconfiguration\.cgi">)
+    - <title>Web Configurator - Version ([^\s]*\s?v[^<]+)</title>
     type: regex
   - part: body
     type: word
     words:
-    - (<tr class="layout_footer_bgcolor">\s*<td width="776"[^>]*>\s+Copyright@2003-(20[\d]{2})
-      ACTi Corporation All Rights Reserved)
+    - videoconfiguration.cgi
+    - ACTi Corporation All Rights Reserved
   name: acti_web_configurator
 - matchers:
   - name: version
     part: headers.server
     regex:
-    - (ActiveHTML\/([^\s]+))
+    - ActiveHTML/([^\s]+)
     type: regex
   - name: version
     part: headers.x-powered-by
     regex:
-    - (seliSoft ActiveHTML\/([^\s]+))
+    - seliSoft ActiveHTML/([^\s]+)
     type: regex
   name: activehtml
 - matchers:
   - name: version
     part: body
     regex:
-    - (<!--[\s]+page generated with activeWeb contentserver R([\d\.]+))
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<!--[\s]+activeWeb cache extension R([\d\.]+))
+    - activeWeb contentserver R([\d\.]+)
     type: regex
   - part: body
     type: word
     words:
-    - <!-- AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN__AWNOCACHEBEGIN
-      -->
-  - name: X-AwCache-ScriptTechnology Header
-    part: headers.x-awcache-scripttechnology
+    - AWNOCACHEBEGIN
+  - part: header
     type: word
     words:
-    - (^.*$)
+    - "x-awcache-scripttechnology"
   name: activeweb_content_server
 - matchers:
   - part: body
@@ -590,15 +502,14 @@
   - name: version
     part: headers.server
     regex:
-    - (^AdSubtract ([\d\.]+)$)
+    - ^AdSubtract ([\d\.]+)$
     type: regex
   name: adsubtract
 - matchers:
-  - name: HTTP Server Header
-    part: headers.server
-    regex:
-    - (^ADTRAN)
-    type: regex
+  - part: headers.server
+    type: word
+    words:
+    - ADTRAN
   - name: model:(^Basic realm="Net[Vv]anta ([^"]+)"$)
     part: headers.www-authenticate
     type: word
@@ -624,27 +535,25 @@
   - name: version
     part: body
     regex:
-    - '(Powered by: <B><a href="finger:\/\/yabsoft.com">AIH v([\d\.]+)<\/a><\/B>)'
+    - AIH v([\d\.]+)
     type: regex
   - name: version
     part: body
     regex:
-    - (<center><b>Welcome to install AIHS Script ([\d\.]+)<\/b><\/center>)
+    - Welcome to install AIHS Script ([\d\.]+)
     type: regex
   - name: version
     part: body
     regex:
-    - (<tr><td class=info width=100%>Welcome to install Advanced Image Hosting Script
-      Pro ([\d\.]+) on your server<\/td><\/tr>)
+    - Advanced Image Hosting Script Pro ([\d\.]+)
     type: regex
   name: advanced_image_hosting_script
 - matchers:
-  - name: link to user agreement that it's present in the footer
-    part: body
-    regex:
-    - (href="finger:\/\/www.advance.net\/advancedigitalUserAgreementPP\/#opt_out.*Ad
-      Choices)
-    type: regex
+  - part: body
+    type: word
+    words:
+    - advancedigitalUserAgreementPP
+    - Ad Choices
   name: advancedigital
 - matchers:
   - part: body
@@ -656,55 +565,28 @@
     words:
     - <a href="/broadweb/WebAccessClientSetup.exe">
   - part: headers.location
-    regex:
-    - (\.\/broadWeb\/bwviewpg\.asp\?proj=)
-    type: regex
+    type: word
+    words:
+    - broadWeb/bwviewpg.asp
   - name: version
     part: body
     regex:
-    - '(<div style="position:relative;top:15;width:870px; height:15px">\s+<font class=e5>[^:^<]+
-      : ([^\s]+)<\/font>)'
+    - '<font class=e5>[^:^<]+ : ([^\s]+)</font>'
     type: regex
   name: advantech_webaccess
 - matchers:
   - name: version
     part: body
     regex:
-    - (<a href="finger:\/\/www\.anelectron\.com">Powered By AEF ([^<]{1,256})<\/a> &copy;
-      [\d]{4})
+    - Powered By AEF ([^<]{1,256})
     type: regex
   - part: headers.set-cookie
-    regex:
-    - (AEFCookies[\d]*\[aefsid\]=)
-    type: regex
-  name: aef
-- matchers:
-  - part: body
     type: word
     words:
-    - Powered by <a href="finger://www.afterlogic.com/products/webmail-pro" target="_blank">AfterLogic
-      WebMail Pro</a><br />
-  - name: version
-    part: body
-    regex:
-    - (AfterLogic Corporation<\/a>\s?<\/div>\s+<\/body>\s<\/html>\s<!--\s?([\d\.]+)\s?-->)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (AfterLogic Corporation<\/a>\s?<\/div>\s+<!--\s?([\d\.]+)\s?-->\s<\/body>\s<\/html>)
-    type: regex
-  - name: PHPWEBMAILSESSID cookie
-    part: headers.set-cookie
-    regex:
-    - (^PHPWEBMAILSESSID=[^;]+;)
-    type: regex
-  - name: PHPWMADMINSESSID cookie
-    part: headers.set-cookie
-    regex:
-    - (^PHPWEBMAILSESSID=[^;]+;)
-    type: regex
-  name: afterlogic_webmail
+    - AEFCookies
+    - aefsid
+  name: aef
+
 - matchers:
   - part: body
     type: word
@@ -888,46 +770,7 @@
     - (A5wBrowserId=[a-f\d]{32};)
     type: regex
   name: alpha_five
-- matchers:
-  - part: body
-    type: word
-    words:
-    - Enter details about your question and press the button bellow. All fields are
-      required.
-  - part: body
-    type: word
-    words:
-    - <font size="+2">AskMe Pro Admin</font></b>
-  - part: body
-    type: word
-    words:
-    - <br> Powered by <a href='finger://www.alstrasoft.com' targe='_blank'><font color=blue>AlstraSoft
-      AskMe Pro</font></a><br><br>
-  - part: body
-    type: word
-    words:
-    - <td colspan=2 align="center"><a href="pass_recover.php">Forgotten Password?</a></td>
-  - part: body
-    type: word
-    words:
-    - Powered By <a href="finger://www.alstrasoft.com">AlstraSoft AskMe Pro</td></tr></table></body></a></html>
-  name: alstrasoft_askme
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <a class=copy href="finger://www.alstrasoft.com/" target="_blank">Powered by EPay
-      Enterprise.</a>&nbsp;
-  - part: body
-    type: word
-    words:
-    - ' <tr><td align=center><input class=submit type=submit name=send value="LOGIN
-      NOW!"></td></tr>'
-  - part: body
-    type: word
-    words:
-    - <tr><td class=capl><a href='/shop.htm?action=view'>TOP CATEGORIES</a>&nbsp;&nbsp;&gt;&gt;&nbsp;
-  name: alstrasoft_epay_enterprise
+
 - matchers:
   - part: body
     type: word
@@ -981,27 +824,7 @@
       15px;">Your browser does not support JavaScript!</div></noscript><h2>The AlumniServer
       project</h2>'
   name: alumniserver
-- matchers:
-  - name: version
-    part: body
-    regex:
-    - (<meta name="copyright" content="Powered by am4ss ([^\s]+) (Programmed By|programming
-      by) Mohammed Cherkaoui" \/>)
-    type: regex
-  - part: body
-    type: word
-    words:
-    - <!-- Header end and right block start -->
-  - part: body
-    type: word
-    words:
-    - Powered By <a href="finger://am4ss.com"><font color="#FF000">AM4SS</font></a>
-  - part: body
-    regex:
-    - (<link rel="stylesheet" type="text\/css" href="templates\/[^\/]+\/am4ss\.css"
-      \/>)
-    type: regex
-  name: am4ss
+
 - matchers:
   - part: body
     regex:
@@ -1023,77 +846,7 @@
         - // *NOTE* amx_sql_type specifies the DEFAULT database type which admin.sma will
           use.
   name: amx_mod_x
-- matchers:
-  - name: powered by
-    part: body
-    type: word
-    words:
-    - <a href="finger://www.resynthesize.com/code/antiboard.php">Powered by antiboard
-  name: antiboard
-- matchers:
-  - part: body
-    type: word
-    words:
-    - "\t\t<title>anyInventory: Top</title>"
-  - part: body
-    regex:
-    - "(\t\t\t\t\t you have inventoried <b>[0-9]*<\\/b>  items with <a href=\"finger:\\\
-      /\\/anyinventory.sourceforge.net\\/\">anyInventory, the most flexible and powerful\
-      \ web-based inventory system<\\/a>)"
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - "(\t\t\t\t\t\t\t\tanyInventory ([\\d\\.]+))"
-    type: regex
-  name: anyinventory
-- matchers:
-  - part: headers.server
-    regex:
-    - (^AOLserver$)
-    type: regex
-  - name: version
-    part: headers.server
-    regex:
-    - (^AOLserver\/([^\s]+))
-    type: regex
-  name: aolserver
 
-- matchers:
-  - part: body
-    type: word
-    words:
-    - 'No context on this server matched or handled this request.<BR>Contexts known
-      to this server are: <ul><li><a href="/archiva">/archiva&nbsp;--->&nbsp;org.mortbay.jetty.webapp.WebAppContext'
-  - part: body
-    type: word
-    words:
-    - <form namespace="/" id="quickSearch" name="quickSearch" onsubmit="customOnsubmit_quickSearch();
-      return validateForm_quickSearch();" action="
-  - part: body
-    type: word
-    words:
-    - <form namespace="/" id="quickSearch" name="quickSearch" onsubmit="return validateForm_quickSearch();"
-      action="
-  - name: version
-    part: body
-    regex:
-    - (<div class="xleft">\s+<a target="_blank" href="finger:\/\/archiva\.apache\.org\/">Apache
-      Archiva ([\d\.]+)<\/a>\s+<\/div>\s+<div class="xright">)
-    type: regex
-  - name: version
-    part: body
-    regex:
-    - (<div class="xleft">\s+Apache Archiva ([\d\.]+)\s+<\/div>\s+<div class="xright">)
-    type: regex
-  name: apache_archiva
-- matchers:
-  - name: version
-    part: headers.x-cocoon-version
-    regex:
-    - (^(.*)$)
-    type: regex
-  name: apache_cocoon
 - matchers:
   - part: body
     type: word
