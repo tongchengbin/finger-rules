@@ -3781,3 +3781,12 @@
     - PowerWeb
     type: word
   name: powerweb
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - 'cafeengine.com'
+    - 'CafeEngine'
+  name: cafeengine
+
