@@ -3790,3 +3790,9 @@
     - 'CafeEngine'
   name: cafeengine
 
+- name: cobbler
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "cobbler web interface"
