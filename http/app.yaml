@@ -3809,3 +3809,10 @@
       type: word
       words:
         - "-165268926"
+
+- name: kubernetes
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "kubernetes web view"
