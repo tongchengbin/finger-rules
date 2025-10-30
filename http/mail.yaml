@@ -1,0 +1,7 @@
+﻿- name: mail-server
+  vendor: IceWarp 
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "IceWarp"
