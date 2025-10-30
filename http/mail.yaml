@@ -1,7 +1,15 @@
-﻿- name: mail-server
-  vendor: IceWarp 
+﻿- name: Mail-Server
   matchers:
     - part: title
       type: word
       words:
-        - "IceWarp"
+        - "IceWARP"
+    - part: headers.server
+      words:
+        - IceWarp
+      type: word
+    - name: version
+      part: headers.server
+      regex:
+        - ^IceWarp\/(.+)$
+      type: regex

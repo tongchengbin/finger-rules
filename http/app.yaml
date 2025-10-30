@@ -1888,21 +1888,6 @@
       type: word
       words:
         - "Eureka"
-- name: IceWarp-Mail-Server
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "IceWARP"
-    - part: headers.server
-      words:
-        - IceWarp
-      type: word
-    - name: version
-      part: headers.server
-      regex:
-        - ^IceWarp\/(.+)$
-      type: regex
 
 
 
