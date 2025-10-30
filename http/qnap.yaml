@@ -4,3 +4,10 @@
       type: word
       words:
         - "QNAP Turbo NAS"
+
+- name: photo station
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "photo station"
