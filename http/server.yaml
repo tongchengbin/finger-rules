@@ -611,7 +611,11 @@
       regex:
         - (^[\s]*Boa\/([^\s]+))
       type: regex
-  name: Boa-WebServer
+    - part: headers.server
+      type: word
+      words:
+        - Boa
+  name: Boa
 - name: Embedthis-http
   matchers:
     - part: headers.server
