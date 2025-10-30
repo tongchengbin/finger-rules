@@ -3367,7 +3367,7 @@
       type: word
       words:
         - "usualtool"
-- name: NetAlertX
+- name: Maltrail
   matchers:
     - part: title
       type: word
