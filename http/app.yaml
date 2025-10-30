@@ -3802,3 +3802,10 @@
       type: word
       words:
         - "dompdf - The PHP 5 HTML to PDF Converter"
+
+- name: Jan
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-165268926"
