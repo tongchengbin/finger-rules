@@ -673,3 +673,10 @@
     words:
     - addUPI Server ([^\s\.]+)
   name: addUPI
+
+- matchers:
+  - part: headers.server
+    type: word
+    words:
+    - fedora
+  name: fedora

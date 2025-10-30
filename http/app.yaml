@@ -3796,3 +3796,9 @@
       type: word
       words:
         - "cobbler web interface"
+- name: DomPDF
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "dompdf - The PHP 5 HTML to PDF Converter"
