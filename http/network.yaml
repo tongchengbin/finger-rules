@@ -1,10 +1,9 @@
 - matchers:
-    - name: version
-      part: headers.server
-      regex:
-        - ^PRTG\/([^\s]+)$
-      type: regex
-  name: PRTG
+    - part: headers.server
+      words:
+        - PRTG
+      type: word
+  name: PRTG Network Monitor
 - name: PAN-OS
   matchers:
     - part: title
