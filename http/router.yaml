@@ -393,3 +393,10 @@
       type: word
       words:
         - "lighttpd"
+
+- name: emerge_e3_firmware
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Linear eMerge"
