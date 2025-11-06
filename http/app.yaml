@@ -3807,3 +3807,10 @@
       type: word
       words:
         - "T24 Sign in"
+
+- name: Xfilesharing
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/?op=registration"
