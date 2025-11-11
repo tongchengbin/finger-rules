@@ -3814,3 +3814,10 @@
       type: word
       words:
         - "/?op=registration"
+
+- name: jeecg_p3_biz_chat
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1380908726"
