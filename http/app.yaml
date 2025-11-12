@@ -3821,3 +3821,10 @@
       type: word
       words:
         - "1380908726"
+
+- name: Clickhouse
+  matchers:
+    - part: header
+      type: word
+      words:
+        - "X-Clickhouse-Summary"
