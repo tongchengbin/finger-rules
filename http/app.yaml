@@ -3857,3 +3857,10 @@
       type: word
       words:
         - "ZEROF Web Server"
+
+- name: Stirling-PDF
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Stirling PDF"
