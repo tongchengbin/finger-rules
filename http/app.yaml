@@ -3835,3 +3835,10 @@
       type: word
       words:
         - "netalertx"
+
+- name: Qualitor
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Qualitor"
