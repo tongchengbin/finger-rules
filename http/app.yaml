@@ -3842,3 +3842,10 @@
       type: word
       words:
         - "Qualitor"
+
+- name: fogproject
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1952619005"
