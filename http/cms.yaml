@@ -1590,3 +1590,10 @@
     - (genericcms=[^;]+;)
     type: regex
   name: plugin_tutorial_3
+
+- name: camaleon_cms
+  matchers:
+    - part: title
+      type: word
+      words:
+        - 'Camaleon CMS'
