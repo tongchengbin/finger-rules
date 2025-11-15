@@ -684,3 +684,10 @@
     words:
     - fedora
   name: fedora
+
+- name: calibre
+  matchers:
+    - part: headers.server
+      type: word
+      words:
+        - calibre
