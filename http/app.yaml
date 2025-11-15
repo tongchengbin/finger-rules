@@ -525,7 +525,7 @@
       part: title
       words:
         - "influxdb"
-- name: Nexus-Repository-Manager
+- name: Nexus
   matchers:
     - type: word
       part: body
