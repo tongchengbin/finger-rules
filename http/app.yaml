@@ -3849,3 +3849,11 @@
       type: word
       words:
         - "-1952619005"
+
+- name: web_server
+  vendor: zerof
+  matchers:
+    - part: headers.server
+      type: word
+      words:
+        - "ZEROF Web Server"
