@@ -3907,3 +3907,10 @@
       type: word
       words:
         - "Datax Web"
+
+- name: iMO-云办公室
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "imo_setup.exe"
