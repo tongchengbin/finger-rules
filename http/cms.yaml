@@ -652,7 +652,7 @@
     - part: body
       type: word
       words:
-        - 'content="GDIDEES :'
+        - 'cms-gdidees'
 - name: wowCMS
   matchers:
     - part: title
