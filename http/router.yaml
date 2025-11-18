@@ -360,7 +360,7 @@
 
 - name: colibri_firmware
   matchers:
-    - part: title
+    - part: body
       type: word
       words:
         - "Franklin Fueling Systems"
