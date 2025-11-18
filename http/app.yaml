@@ -3874,7 +3874,7 @@
 
 
 - matchers:
-    part: body
+  - part: body
     type: word
     words:
       - content="limesurvey
