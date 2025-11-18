@@ -1267,7 +1267,7 @@
     - part: body
       type: word
       words:
-        - Powered by <a href="finger://www.getmura.com/">Mura CMS</a>
+        - Mura CMS
   name: Mura-CMS
 - matchers:
     - part: body
@@ -1604,5 +1604,4 @@
     type: word
     words:
     - playSMS content
-    - <a href='index.php?app=page&inc=forgot'>Forgot password</a>
   name: playsms
