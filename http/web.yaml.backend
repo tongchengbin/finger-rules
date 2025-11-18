@@ -3491,19 +3491,7 @@
     - (SERVER_SOFTWARE=([^\n]+))
     - (SERVER_SIGNATURE=<ADDRESS>([^<]+))
   name: fastcgi_echo
-- matchers:
-  - name: version
-    part: headers.host_service
-    type: regex
-    regex:
-    - (^FutureTenseContentServer:([^\s]+)$)
-  - part: body
-    type: word
-    words:
-    - <!-- this tag to be replaced with autogen stuff -->
-    - <h1>FatWire Corporation<br />&nbsp;Content Server</h1>
-    - <b>Open Market, Inc.<br>&nbsp;ContentServer</b><hr>
-  name: fatwire
+
 - matchers:
   - part: body
     type: regex
@@ -8600,17 +8588,7 @@
     regex:
     - (^Play! Framework;(\d[^\s^;]+;[^\s]+)$)
   name: play_framework
-- matchers:
-  - part: body
-    type: regex
-    regex:
-    - (<!--td background="https?:\/\/[^>^"]+\/plugin\/themes\/km2\/images\/header-4\.png"-->)
-  - part: body
-    type: word
-    words:
-    - <a href='index.php?app=page&inc=register'>Register an account</a>
-    - <a href='index.php?app=page&inc=forgot'>Forgot password</a>
-  name: playsms
+
 - matchers:
   - part: headers.x-powered-by
     type: word

@@ -3886,3 +3886,10 @@
     words:
       - fusion_visited
   name: php_fusion
+
+- matchers:
+  - part: headers.host_service
+    type: word
+    words:
+      - FutureTenseContentServer
+  name: fatwire
