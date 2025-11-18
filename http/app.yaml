@@ -324,9 +324,16 @@
   matchers:
     - type: word
       part: header
-      name: "ShopXO"
       words:
         - "ShopXO"
+    - type: word
+      part: title
+      words:
+        - "ShopXO企业级B2C电商系统提供商"
+    - type: word
+      part: body
+      words:
+        - "http://shopxo.net/"
 - name: H-Sphere
   matchers:
     - type: word
