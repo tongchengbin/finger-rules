@@ -7899,22 +7899,7 @@
     regex:
     - '(<td align="right" class="hdr">Powered by: <a href="finger:\/\/www\.php-csl\.com\/" class="foot" title="PHP-CSL">PHP-CSL V([^<]+)<\/a>&nbsp;<\/td>)'
   name: php_csl
-- matchers:
-  - part: body
-    type: word
-    words:
-    - (Powered by <a href='finger:\/\/www\.php-fusion\.co\.uk'>PHP-Fusion<\/a> copyright &copy; 2002 - ([\d]{4}))
-    - <td align='right' class='tbl1 profile_user_level'><!--profile_user_level-->
-    - <td align='right' class='profile_user_level tbl1'><!--profile_user_level-->
-    - class='tbl profile_user_avatar'><!--profile_user_avatar--><img src='images/avatars/
-    - <td align='right' class='tbl1 profile_user_name'><!--profile_user_name-->
-    - <td align='right' class='profile_user_name tbl1'><!--profile_user_name-->
-  - name: fusion_visited Cookie
-    part: headers.set-cookie
-    type: regex
-    regex:
-    - (fusion_visited=)
-  name: php_fusion
+
 - matchers:
   - name: version
     part: body

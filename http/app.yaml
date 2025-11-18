@@ -3872,7 +3872,6 @@
       words:
         - "Stirling PDF"
 
-
 - matchers:
   - part: body
     type: word
@@ -3880,3 +3879,10 @@
       - content="limesurvey
       - href="http://www.limesurvey.org" target="_blank
   name: limesurvey
+
+- matchers:
+  - part: headers.set-cookie
+    type: word
+    words:
+      - fusion_visited
+  name: php_fusion
