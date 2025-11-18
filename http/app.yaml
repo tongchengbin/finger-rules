@@ -3927,3 +3927,13 @@
       type: word
       words:
         - "issabel"
+
+- name: Raisecom
+  matchers:
+    - part: body
+      type: word
+      condition: and
+      words:
+        - "<TITLE>Web user login</TITLE>"
+        - "MSHTML"
+        - "GENERATOR"
