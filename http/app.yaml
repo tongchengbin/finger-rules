@@ -3893,3 +3893,17 @@
     words:
       - FutureTenseContentServer
   name: fatwire
+
+- name: u.motion_builder
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1985490094"
+
+- name: datax-web
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Datax Web"
