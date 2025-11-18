@@ -3921,3 +3921,9 @@
       type: word
       words:
         - "nginxwebui"
+- name: PBX
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "issabel"
