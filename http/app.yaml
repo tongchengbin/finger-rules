@@ -3914,3 +3914,10 @@
       type: word
       words:
         - "imo_setup.exe"
+
+- name: nginxWebUI
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "nginxwebui"
