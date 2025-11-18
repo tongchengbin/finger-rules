@@ -3937,3 +3937,16 @@
         - "<TITLE>Web user login</TITLE>"
         - "MSHTML"
         - "GENERATOR"
+- name: 掌上校园服务管理平台
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "掌上校园服务管理平台"
+
+- name: Ollama
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Ollama is running"
