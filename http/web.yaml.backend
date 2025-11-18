@@ -5573,18 +5573,7 @@
     - (<!-- \+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+[\s]+\| LightNEasy [^\s^\|]* Content Management System[\s]+\| Copyright 2007-20[\d]{2} Fernando Baptista[\s]+\| finger:\/\/(www\.)?lightneasy\.org[\s]+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+\+[\s]+\| ([^\|]+) version [^\s]+)
     - <link rel='stylesheet' type='text/css' href='css/lightneasy.css' />
   name: lightneasy
-- matchers:
-  - name: default text
-    part: body
-    type: word
-    words:
-    - <a href="finger://www.limesurvey.org" target="_blank"><font color="#000000">The Online Survey Tool</font></a> - Free & Open Source<br />
-  - name: meta generator
-    part: body
-    type: word
-    words:
-    - <meta name="generator" content="LimeSurvey finger://www.limesurvey.org" />
-  name: limesurvey
+
 - matchers:
   - part: body
     type: word

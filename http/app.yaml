@@ -3871,3 +3871,12 @@
       type: word
       words:
         - "Stirling PDF"
+
+
+- matchers:
+    part: body
+    type: word
+    words:
+      - content="limesurvey
+      - href="http://www.limesurvey.org" target="_blank
+  name: limesurvey
