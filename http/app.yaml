@@ -3921,7 +3921,7 @@
       type: word
       words:
         - "nginxwebui"
-- name: PBX
+- name: issabel
   matchers:
     - part: title
       type: word
