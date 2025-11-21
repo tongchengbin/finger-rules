@@ -3950,3 +3950,9 @@
       type: word
       words:
         - "Ollama is running"
+- name: docker-kong
+  matchers:
+    - part: header
+      type: word
+      words:
+        - "X-Kong"
