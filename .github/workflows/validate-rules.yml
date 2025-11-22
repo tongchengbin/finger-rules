@@ -14,17 +14,12 @@ jobs:
       - name: Checkout finger-rules repository
         uses: actions/checkout@v4
 
-      - name: Set up Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
-
-      - name: Install appfinger
+      - name: Download appfinger binary
         run: |
-          go install github.com/tongchengbin/appfinger@latest
+          curl -L -o appfinger \
+            https://github.com/tongchengbin/appfinger/releases/latest/download/appfinger-linux-amd64
+          chmod +x appfinger
 
       - name: Validate rules with appfinger
-        env:
-          PATH: ${{ env.PATH }}:$(go env GOPATH)/bin
         run: |
-          appfinger --validate --finger-home .
+          ./appfinger --validate --finger-home .
