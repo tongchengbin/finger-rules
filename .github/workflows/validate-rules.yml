@@ -1,0 +1,30 @@
+name: Validate Finger Rules
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout finger-rules repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+
+      - name: Install appfinger
+        run: |
+          go install github.com/tongchengbin/appfinger@latest
+
+      - name: Validate rules with appfinger
+        env:
+          PATH: ${{ env.PATH }}:$(go env GOPATH)/bin
+        run: |
+          appfinger --validate --finger-home .
