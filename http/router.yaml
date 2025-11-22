@@ -413,3 +413,95 @@
       type: word
       words:
         - "eMerge"
+
+- name: basic_pdu_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Powertek"
+
+- name: compact_controller_100_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/wbm/"
+
+- name: evlink_city_evc1s22p4_firmware
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "EVSE web interface"
+        - "evse web interface"
+
+- name: intercom_broadcast_system
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1830859634"
+
+- name: jasperreports_library
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "jasperserver-pro"
+
+- name: my_cloud_wdbctl0020hwt_firmware
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1074357885"
+
+- name: nas_os
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "seagate nas - seagate"
+
+- name: netman_204_firmware
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "netman 204"
+
+- name: securelinx_spider_firmware
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Lantronix"
+
+- name: wl_wn531g3_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "WN531G3"
+
+- name: wl_wn533a8_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "WN533A8"
+
+- name: wn530hg4_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "WN530HG4"
+
+- name: xc1000_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "cassia bluetooth gateway management platform"

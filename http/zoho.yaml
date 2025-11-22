@@ -37,3 +37,17 @@
       type: word
       words:
         - "manageengine desktop central"
+- name: manageengine_access_manager_plus
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "ManageEngine Access Manager Plus"
+        - "manageengine access manager plus"
+- name: servicedesk
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "ManageEngine ServiceDesk"
+        - "ManageEngine ServiceDesk Plus"

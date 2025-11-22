@@ -77,3 +77,10 @@
       part: body
       words:
         - "__gradio_mode__"
+- name: framework
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Laravel-Framework"
+        - "Laravel Framework"
