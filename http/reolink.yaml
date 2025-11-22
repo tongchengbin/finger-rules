@@ -1,0 +1,6 @@
+- name: reolink
+  matchers:
+    - type: title
+      part: body
+      words:
+        - "reolink"

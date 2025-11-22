@@ -178,3 +178,9 @@
       part: body
       words:
         - "sharecenter"
+- name: d-view_8
+  matchers:
+    - type: icon_hash
+      part: body
+      words:
+        - "-1317621215"

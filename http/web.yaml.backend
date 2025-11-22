@@ -2036,26 +2036,7 @@
     - <title>Support Center - Powered By ClientExec</title>
     - <form action="index.php?fuse=admin&amp;action=Login&amp;public=1" method="post"
   name: clientexec
-- matchers:
-  - part: body
-    type: word
-    words:
-    - (<meta name="copyright" content="ClipBucket - PHPBucket ClipBucket 2007 - (20[\d]{2})" \/>)
-    - <meta name="author" content="Arslan Hassan - finger://clip-bucket.com/arslan-hassan" />
-    - <!-- Setting Template Variables -->
-    - <!-- Forged by ClipBucket -->
-    - <!-- Forged by ClipBucket ends -->
-    - <!-- Please do not remove this unless you have license -->
-    - Forged by <a href="finger://clip-bucket.com/">ClipBucket</a>
-  - name: version
-    part: body
-    type: regex
-    words:
-    - <!-- ClipBucket v2 -->
-    regex:
-    - 2.x
-    - (<!-- ClipBucket version ([\d\.]+) -->)
-  name: clipbucket
+
 - matchers:
   - name: status:403
     part: body

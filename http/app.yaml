@@ -1537,7 +1537,7 @@
         - ci_session
         - exp_last_activity
         - exp_tracker
-  name: Codeigniter-PHP-Framework
+  name: Codeigniter
 - name: Mattermost
   matchers:
     - part: title
@@ -3711,7 +3711,7 @@
     type: word
     words:
     - "x-cocoon-version"
-  name: apache_cocoon
+  name: cocoon
 
 - matchers:
   - part: header
@@ -4358,3 +4358,23 @@
       type: word
       words:
       - "nsbase_session"
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - ClipBucket version
+      - Forged by ClipBucket
+  - part: icon_hash
+    type: word
+    words:
+      - "538583492"
+  name: clipbucket
+
+- name: datagerry
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "datagerry"
