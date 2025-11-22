@@ -4102,3 +4102,125 @@
       type: word
       words:
         - "X-Kong"
+- name: appspace
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "appspace"
+- name: cachet
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1606065523"
+- name: kubeoperator
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "kubeoperator"
+- name: kubeview
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "kubeview"
+    - part: icon_hash
+      type: word
+      words:
+        - "-379154636"
+- name: trilium
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "trilium notes"
+- name: phpipam
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "phpipam ip address management"
+- name: repetier_server
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "repetier-server"
+- name: atlantis
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "atlantis"
+- name: changedetection
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "changedetection"
+- name: cliniccases
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "cliniccases"
+    - part: body
+      type: word
+      words:
+        - "/cliniccases/"
+- name: squidex
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1099097618"
+- name: icinga_web_2
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "icinga"
+- name: thruk
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "thruk"
+- name: openam
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "openam"
+- name: smartertrack
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1410071322"
+- name: shardingsphere_elasticjob_ui
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "816588900"
+- name: bigant_server
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "bigant"
+- name: verint
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "verint sign-in"
+- name: cobranca
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "876876147"
