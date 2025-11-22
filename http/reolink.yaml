@@ -1,6 +1,6 @@
 - name: reolink
   matchers:
-    - type: title
-      part: body
+    - type: word
+      part: title
       words:
         - "reolink"

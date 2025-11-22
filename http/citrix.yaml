@@ -86,7 +86,7 @@
 
 - name: Citrix-ShareFile
   matchers:
-    - part: iconhash
+    - part: icon_hash
       type: word
       words:
         - "20733819"

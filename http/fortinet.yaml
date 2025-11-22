@@ -66,7 +66,7 @@
       words:
         - FortiDDoS
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - cookiesession1
       type: word

@@ -4394,7 +4394,7 @@
         - "frigate"
 
 - matchers:
-  - part: headers
+  - part: header
     type: word
     words:
     - flarum_session=

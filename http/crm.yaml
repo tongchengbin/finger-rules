@@ -6,7 +6,7 @@
           - "-79854140"
 - name: 灵当CRM
   matchers:
-    - part: iconhash
+    - part: icon_hash
       type: word
       words:
           - "436310201"

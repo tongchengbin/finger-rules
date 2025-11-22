@@ -207,7 +207,7 @@
       type: word
   name: Fastly-CDN
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - limelight
       type: word
@@ -225,13 +225,13 @@
       type: word
   name: maxcdn-CDN
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - Asessioncookie=
       type: word
   name: DenyAll
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - Navajo
       type: word
@@ -249,7 +249,7 @@
       type: word
   name: Incapsula-CDN
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - jsluid=
       type: word
@@ -320,7 +320,7 @@
       type: word
   name: Safedog
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - Safedog
       type: word
@@ -350,13 +350,13 @@
       type: word
   name: WatchGuard
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - \AX-Mapping-
       type: regex
   name: Stingray
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - WODSESSION=
       type: word
@@ -404,7 +404,7 @@
       type: word
   name: Yundun
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - st8id=
       type: word
@@ -416,7 +416,7 @@
       type: word
   name: Imperva-SecureSphere
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - NCI__SessionId=
       type: word
@@ -428,7 +428,7 @@
       type: word
   name: Yundun
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - yunsuo
       type: word
@@ -458,7 +458,7 @@
       type: word
   name: azion-CDN
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - ODSESSION=
       type: word
@@ -506,7 +506,7 @@
       type: word
   name: HuaweiCloudWAF
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - HWWAFSESID
       type: word
@@ -518,7 +518,7 @@
       type: word
   name: KeyCDN
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - rbzid=\w+
       type: regex
@@ -621,7 +621,7 @@
       type: word
   name: aliyun
 - matchers:
-    - part: header.set-cookie
+    - part: headers.set-cookie
       words:
         - aliyungf_tc=
       type: word
