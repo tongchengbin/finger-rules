@@ -4096,3 +4096,9 @@
       type: word
       words:
         - "pcoweb"
+- name: docker-kong
+  matchers:
+    - part: header
+      type: word
+      words:
+        - "X-Kong"
