@@ -75,7 +75,7 @@
       name: "ASPCMS"
       words:
         - "AspCMS"
-- name: jsh ERP
+- name: jsherp
   matchers:
     - type: word
       part: body

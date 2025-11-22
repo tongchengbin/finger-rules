@@ -4378,3 +4378,45 @@
       type: word
       words:
       - "datagerry"
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - 'ganglia_form.submit()'
+  name: ganglia-web
+
+- name: frigate
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "frigate"
+
+- matchers:
+  - part: headers
+    type: word
+    words:
+    - flarum_session=
+  name: flarum
+
+- name: filebrowser
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+      - "1052926265"
+
+- name: gestsup
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "GestSup"
+
+- name: ILIAS
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "ilias"

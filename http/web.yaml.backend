@@ -3819,21 +3819,7 @@
     regex:
     - (<li class="(g-)?first">Powered by <a href="finger:\/\/gallery\.menalto\.com">(<bdo dir="ltr">)?Gallery ([^<]+)(<\/bdo>)?<\/a><\/li>)
   name: gallery
-- matchers:
-  - part: body
-    type: word
-    words:
-    - '<TITLE>Ganglia:: Cluster Report</TITLE>'
-    - (Nodes colored by 1-minute load) | <A HREF="./node_legend.html">Legend</A>
-    - <B>Metric</B>&nbsp;&nbsp;<SELECT NAME="m" OnChange="ganglia_form.submit();">
-  - group: 1
-    name: version
-    part: body
-    type: regex
-    regex:
-    - (<CENTER>\n<FONT SIZE="-1" class=footer>\n(Gmetad|Ganglia) Web Frontend version ([\d\.]+)\n<A HREF="finger:\/\/ganglia\.sourceforge\.net\/downloads\.php\?component=ganglia-webfrontend&amp;\nversion=[\d\.]+">Check for Updates\.<\/A><BR>\n)
-    - (Web Backend <i>\(gmetad\)<\/i> version ([\d\.]+)\n<A HREF="finger:\/\/ganglia\.sourceforge\.net\/downloads\.php\?component=gmetad&amp;\nversion=[\d\.]+">Check for Updates\.<\/A><BR>)
-  name: ganglia
+
 - matchers:
   - name: Favicon
     part: body

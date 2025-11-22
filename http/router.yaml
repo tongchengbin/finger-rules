@@ -400,3 +400,10 @@
       type: word
       words:
         - "Linear eMerge"
+
+- name: ind780_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "IND780"

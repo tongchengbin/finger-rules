@@ -1,0 +1,6 @@
+- name: knowledge_warehouse
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-266008933"

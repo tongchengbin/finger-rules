@@ -1,0 +1,6 @@
+- name: junos
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Juniper Web Device Manager"

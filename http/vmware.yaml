@@ -157,3 +157,10 @@
       type: word
       words:
         - "/AirWatch/default.aspx"
+
+- name: identity_manager
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1250474341"
