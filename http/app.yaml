@@ -4224,3 +4224,68 @@
       type: word
       words:
         - "876876147"
+- name: eventum
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "305412257"
+- name: bibliopac
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "bibliopac"
+- name: pypiserver
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "pypiserver"
+- name: aurall_rec_monitor
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "aurall"
+- name: maximo_asset_management
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-399298961"
+- name: mojarra
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "javax.faces.ViewState"
+        - "javax.faces.resource"
+- name: sinema_remote_connect_server
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "logon - sinema remote connect"
+- name: intouch_access_anywhere
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "intouch access anywhere"
+- name: control_panel
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "hestia control panel"
+    - part: icon_hash
+      type: word
+      words:
+        - "-476299640"
+- name: analytics
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1381126564"
