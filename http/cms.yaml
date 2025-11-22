@@ -1605,3 +1605,21 @@
     words:
     - playSMS content
   name: playsms
+- name: bludit
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "bludit"
+- name: erxes
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "erxes"
+- name: smartstorenet
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "content=\"smartstore"

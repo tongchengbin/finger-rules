@@ -3950,3 +3950,149 @@
       type: word
       words:
         - "Ollama is running"
+- name: keycloak
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "keycloak"
+    - part: icon_hash
+      type: word
+      words:
+        - "-1105083093"
+- name: consul
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "consul by hashicorp"
+- name: jeedom
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "jeedom"
+- name: superwebmailer
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "superwebmailer"
+- name: extreme_management_center
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "extreme management center"
+- name: aviatrix_controller
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "aviatrix cloud controller"
+- name: testrail
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "testrail"
+- name: redash
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "698624197"
+- name: sentinel
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "sentinel dashboard"
+- name: thinfinity_virtualui
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "thinfinity virtualui"
+- name: central_authentication_service
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "cas - central authentication service"
+- name: kavita
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "kavita"
+- name: i3geo
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "i3geo"
+- name: dapr_dashboard
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "dapr dashboard"
+- name: free5gc
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "free5gc web console"
+- name: laravel_filemanager
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "laravel filemanager"
+- name: reqlogic
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "reqlogic"
+- name: moveit_transfer
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "989289239"
+- name: icewarp
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "icewarp"
+    - part: icon_hash
+      type: word
+      words:
+        - "2144485375"
+- name: webui_aria2
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "aria2 webui"
+- name: roxy_fileman
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "roxy file manager"
+- name: printmonitor
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "printmonitor"
+- name: pcoweb_card_firmware
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "pcoweb"
