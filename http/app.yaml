@@ -4343,3 +4343,18 @@
       type: word
       words:
       - "Welcome to DocsGPT"
+
+- name: cmg_suite
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "Mitel Networks"
+
+
+- name: appliance_base_software
+  matchers:
+    - part: headers.set-cookie
+      type: word
+      words:
+      - "nsbase_session"

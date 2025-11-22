@@ -24,3 +24,10 @@
       type: word
       words:
         - "OpManager Plus"
+- name: adaudit_plus
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "ADAudit Plus"
+        - "ManageEngine - ADManager Plus"

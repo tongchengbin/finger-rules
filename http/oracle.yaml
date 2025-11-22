@@ -62,7 +62,7 @@
       words:
         - Oracle Access Manager
       type: word
-  name: Oracle-Access-Manager
+  name: Access-Manager
 - matchers:
     - part: headers.proxy-agent
       regex:
