@@ -4437,3 +4437,16 @@
       type: word
       words:
       - "shopping cart program by zen cart"
+
+- name: yui
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "bower_components/yui2/"
+- name: workforce_optimization
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "Verint Sign-in"

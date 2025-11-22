@@ -67,12 +67,7 @@
     - 'This website is powered by Contao Open Source CMS :: Licensed under GNU/LGPL'
     - <!-- indexer::continue -->
   name: contao
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <div id="flarum-loading"
-  name: flarum
+
 - matchers:
   - part: body
     type: word
@@ -16911,12 +16906,6 @@
     words:
     - <input type="hidden" name="_sys_bind_\d+" id="_sys_bind_\d+" />
   name: xeora
-- matchers:
-  - part: body
-    type: regex
-    regex:
-    - (?:<html[^>]* yuilibrary\.com/rdf/[\d.]+/yui\.rdf|<body[^>]+class="yui3-skin-sam)
-  name: yui_doc
 - matchers:
   - part: body
     type: regex
