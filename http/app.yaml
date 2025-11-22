@@ -4289,3 +4289,43 @@
       type: word
       words:
         - "-1381126564"
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - OpenAM
+  name: OpenAM
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - WebTitan
+  name: webtitan
+- matchers:
+  - part: body
+    type: word
+    words:
+    - corebos
+  name: corebos
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - Bibliopac
+  name: bibliopac
+- matchers:
+  - part: body
+    type: word
+    words:
+    - PHPJabbers
+  name: phpjabbers
+- matchers:
+  - part: icon_hash
+    type: word
+    words:
+    - 163538942
+  name: cdata

@@ -416,3 +416,10 @@
       type: word
       words:
         - "plugin/FoscamFlashPlayer.swf"
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - Web Viewer for Samsung DVR
+  name: argus_surveillance_dvr
