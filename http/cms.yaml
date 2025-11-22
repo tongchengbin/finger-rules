@@ -13,7 +13,7 @@
         - "Simple CRM"
 - name: sitecore
   matchers:
-    - part: body
+    - part: title
       type: word
       words:
         - "Sitecore"
