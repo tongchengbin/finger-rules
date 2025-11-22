@@ -31,3 +31,9 @@
       words:
         - "ADAudit Plus"
         - "ManageEngine - ADManager Plus"
+- name: manageengine_desktop_central
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "manageengine desktop central"

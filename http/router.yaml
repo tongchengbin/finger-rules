@@ -407,3 +407,9 @@
       type: word
       words:
         - "IND780"
+- name: linear_emerge_essential_firmware
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "eMerge"
