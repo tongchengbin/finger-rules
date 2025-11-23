@@ -4513,3 +4513,34 @@
       type: word
       words:
       - "-356182173"
+- name: netmaker
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "netmaker"
+
+- name: open-xchange_appsuite
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "Appsuite"
+- name: rebuild
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+      - "871154672"
+- name: resourcespace
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "ResourceSpace"
+- name: websitepanel
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "WebsitePanel"
