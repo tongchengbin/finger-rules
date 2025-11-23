@@ -4499,3 +4499,17 @@
       type: word
       words:
       - "Ellucian Company"
+- name: moosocial
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+      - "702863115"
+
+- name: WebPanel
+  vendor: "control-webpanel"
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "-356182173"
