@@ -4456,3 +4456,46 @@
       type: word
       words:
       - "Verint Sign-in"
+- name: kubernetes-enterprise-manager
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "kubernetes web view"
+- name: lansweeper
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "lansweeper - login"
+- name: hd_network_real_time_monitoring_system
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "HD-Network Real-time Monitoring System"
+- name: automation_360
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+      - "-1005691603"
+- name: datepicker_calendar
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "triconsole.com - php calendar date picker"
+- name: device_manager_express
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "Audiocodes"
+
+- name: ellucian
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "Ellucian Company"

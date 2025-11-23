@@ -145,7 +145,7 @@
       type: word
       words:
         - "Oracle PeopleSoft"
-- name: Oracle-Business-Intelligence
+- name: Business-Intelligence
   matchers:
     - part: title
       type: word

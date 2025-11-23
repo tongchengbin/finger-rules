@@ -175,3 +175,9 @@
       type: word
       words:
         - 'ise-theme-selected'
+- name: evolved_programmable_network_manager
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "prime infrastructure"

@@ -164,3 +164,10 @@
       type: word
       words:
         - "-1250474341"
+
+- name: aria_operations_for_logs
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "VMware Aria Operations for Logs"
