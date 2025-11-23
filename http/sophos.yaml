@@ -54,3 +54,10 @@
       type: word
       words:
         - "Securepoint UTM"
+- name: mobile
+  vendor: sophos
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "sophos mobile"
