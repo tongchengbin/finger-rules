@@ -2937,6 +2937,12 @@
       type: word
       words:
         - "CData"
+- name: arc
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "163538942"
 - name: Telerik-Report-Server
   matchers:
     - part: title

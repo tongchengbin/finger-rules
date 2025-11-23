@@ -421,20 +421,7 @@
       words:
         - "Powertek"
 
-- name: compact_controller_100_firmware
-  matchers:
-    - part: body
-      type: word
-      words:
-        - "/wbm/"
 
-- name: evlink_city_evc1s22p4_firmware
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "EVSE web interface"
-        - "evse web interface"
 
 - name: intercom_broadcast_system
   matchers:
@@ -450,12 +437,6 @@
       words:
         - "jasperserver-pro"
 
-- name: my_cloud_wdbctl0020hwt_firmware
-  matchers:
-    - part: icon_hash
-      type: word
-      words:
-        - "-1074357885"
 
 - name: nas_os
   matchers:
@@ -505,3 +486,9 @@
       type: word
       words:
         - "cassia bluetooth gateway management platform"
+- name: spectrum_server_firmware
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "868509217"

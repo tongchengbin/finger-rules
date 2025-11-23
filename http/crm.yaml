@@ -45,3 +45,9 @@
     - stats.vtiger.com
     - vtigercrm_icon.ico
   name: vtigercrm
+- name: SuiteCRM
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+          - "SuiteCRM"
