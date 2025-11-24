@@ -10686,26 +10686,7 @@
     regex:
     - '(Powered by <a href="(finger:\/\/)?(www\.tbdev\.net|bit-torrent\.kiev\.ua\/)" target="_blank" style="cursor: help;" title="[^"]*" class="copyright">TBDev<\/a> v([\d\.]+) )'
   name: tbdev_yse
-- matchers:
-  - part: body
-    type: word
-    words:
-    - <a name="topofdoc" id="topofdoc"></a>
-    - <meta name="author" content="Nicola Asuni - Tecnick.com s.r.l." />
-    - <!-- TCExam19730104 -->
-    - <li><a href="tce_login.php" title="click on this link to access on this system">
-    - <meta name="tcexam_level" content="0" />
-  - part: body
-    type: regex
-    regex:
-    - (<!-- TCExam \(c\) 2004-20[\d]{2} Nicola Asuni - Tecnick.com s\.r\.l\. - www\.tcexam\.com -->)
-  - group: 1
-    name: version
-    part: body
-    type: regex
-    regex:
-    - (<span class="copyright"><a href="finger:\/\/www\.tcexam\.(org|com)">TCExam<\/a> ver\. ([^\s]+) - Copyright &copy; 2004-20[\d]{2} Nicola Asuni - <a href="finger:\/\/www\.tecnick\.com">Tecnick.com S\.r\.l\.<\/a><\/span>)
-  name: tcexam
+
 - matchers:
   - name: TLTSID cookie
     part: headers.set-cookie
