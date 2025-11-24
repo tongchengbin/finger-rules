@@ -4509,10 +4509,10 @@
 - name: WebPanel
   vendor: "control-webpanel"
   matchers:
-    - part: title
+    - part: headers.server
       type: word
       words:
-      - "-356182173"
+      - "cwpsrv"
 - name: netmaker
   matchers:
     - part: body
