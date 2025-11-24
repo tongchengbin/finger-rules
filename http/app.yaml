@@ -4552,10 +4552,3 @@
     - <a name="topofdoc" id="topofdoc"></a>
     - content="nicola asuni - tecnick.com s.r.l." />
   name: tcexam
-
-- matchers:
-  - part: body
-    type: word
-    words:
-    - oxygen-body
-  name: oxygen
