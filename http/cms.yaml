@@ -1623,3 +1623,10 @@
       type: word
       words:
         - "content=\"smartstore"
+
+- matchers:
+  - part: headers.x-powered-by
+    type: word
+    words:
+    - dragonfly cms
+  name: cpg_dragonfly

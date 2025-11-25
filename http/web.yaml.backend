@@ -13877,12 +13877,7 @@
     regex:
     - ^cdn77-turbo$
   name: cdn77
-- matchers:
-  - part: headers.x-powered-by
-    type: regex
-    regex:
-    - ^dragonfly cms
-  name: cpg_dragonfly
+
 - matchers:
   - part: headers.server
     type: regex
@@ -15576,12 +15571,7 @@
     regex:
     - <script [^>]+data-requiremodule="oro/
   name: orocommerce
-- matchers:
-  - part: body
-    type: regex
-    regex:
-    - <body class=(?:"|')[^"']*oxygen-body
-  name: oxygen
+
 - matchers:
   - part: body
     type: regex

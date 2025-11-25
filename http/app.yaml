@@ -4552,3 +4552,10 @@
     - <a name="topofdoc" id="topofdoc"></a>
     - content="nicola asuni - tecnick.com s.r.l." />
   name: tcexam
+
+- name: dragonfly
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "logo-dragonfly.png"
