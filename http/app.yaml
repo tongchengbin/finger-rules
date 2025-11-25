@@ -4558,4 +4558,4 @@
     - part: body
       type: word
       words:
-      - "logo-dragonfly.png"
+      - "logo_dragonfly.png"
