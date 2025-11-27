@@ -1630,3 +1630,9 @@
     words:
     - dragonfly cms
   name: cpg_dragonfly
+- name: RiteCMS
+  matchers:
+    - part: title
+      type: word
+      words:
+        - 'RiteCMS'
