@@ -394,7 +394,7 @@
       words:
         - "lighttpd"
 
-- name: emerge_e3_firmware
+- name: linear_emerge_e3_access_control
   matchers:
     - part: title
       type: word

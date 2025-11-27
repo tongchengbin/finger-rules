@@ -4,3 +4,9 @@
       type: word
       words:
         - "-266008933"
+- name: content_server
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-266008933"

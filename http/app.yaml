@@ -4559,3 +4559,17 @@
       type: word
       words:
       - "logo_dragonfly.png"
+
+- name: micollab
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "micollab"
+
+- name: ligeo_basics
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Ligeo"
