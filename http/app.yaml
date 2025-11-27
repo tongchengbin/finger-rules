@@ -3359,6 +3359,10 @@
       type: word
       words:
         - "Mongoose"
+    - part: header
+      type: word
+      words:
+        - "Mongoose"
 - name: usualtoolcms
   matchers:
     - part: body
