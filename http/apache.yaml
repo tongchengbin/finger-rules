@@ -157,3 +157,10 @@
       type: word
       words:
         - "tapestry-console.css"
+
+- name: streampipes
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "apache streampipes"
