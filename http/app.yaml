@@ -4573,3 +4573,10 @@
       type: word
       words:
         - "Ligeo"
+
+- name: Jackett
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Jackett"
