@@ -13,6 +13,13 @@
       type: word
       words:
         - TopApp-LB 负载均衡系统
+
+- name: topsec_reporter
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1595726841"
 # 奇安信
 - name: "secgate_3600"
   matchers:
