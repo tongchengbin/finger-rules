@@ -28,6 +28,7 @@
       - "var module_sugar_grp1"
       - "Powered By SugarCRM"
       - "SugarCRM is a customer"
+      - "SUGAR.ajaxUI.loadContent"
   name: sugarcrm
 
 
