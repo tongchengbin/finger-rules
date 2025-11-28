@@ -4598,3 +4598,11 @@
       type: word
       words:
        - "ntpsec-logo.png"
+
+- name: udp
+  vendor: arcserve
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+       - "1015186617"
