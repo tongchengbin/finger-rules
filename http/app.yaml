@@ -4584,3 +4584,10 @@
       type: word
       words:
        - "Jackett"
+- name: dify
+  vendor: langgenius
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+       - "97378986"
