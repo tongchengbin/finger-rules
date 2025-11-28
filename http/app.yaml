@@ -4591,3 +4591,10 @@
       type: word
       words:
        - "97378986"
+
+- name: ntpsec
+  matchers:
+    - part: body
+      type: word
+      words:
+       - "ntpsec-logo.png"
