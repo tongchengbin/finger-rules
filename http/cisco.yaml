@@ -181,3 +181,14 @@
       type: word
       words:
       - "prime infrastructure"
+
+- name: identity_services_engine
+  matchers:
+    - part: header
+      type: word
+      words:
+      - '"Set-Cookie: APPSESSIONID=" "Path=/admin"'
+    - part: title
+      type: word
+      words:
+      - "identity services engine"
