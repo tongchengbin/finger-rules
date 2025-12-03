@@ -13,3 +13,10 @@
         - "vsFTPd"
   service: ftp
   name: vsFTPd
+- name: Pure-FTPd
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Welcome to Pure-FTPd"
+  service: ftp
