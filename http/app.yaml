@@ -4624,3 +4624,9 @@
       type: word
       words:
        - "Cockroach Console"
+- name: 123solar
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "123solar"
