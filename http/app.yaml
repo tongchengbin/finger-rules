@@ -4630,3 +4630,10 @@
       type: word
       words:
        - "123solar"
+- name: secure_web_gateway
+  vendor: iboss
+  matchers:
+    - part: body
+      type: word
+      words:
+      - "iboss-font.css"
