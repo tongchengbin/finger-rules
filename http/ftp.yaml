@@ -20,3 +20,11 @@
       words:
         - "Welcome to Pure-FTPd"
   service: ftp
+
+- name: filezilla_server
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "FileZilla Server version"
+  service: ftp

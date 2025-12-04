@@ -1,0 +1,6 @@
+﻿# 主要识别信息泄露风险
+- name: 1password-phish
+  matchers:
+  - type: word
+    words:
+      - 'Password Manager for Families, Enterprise &amp; Business | 1Password'
