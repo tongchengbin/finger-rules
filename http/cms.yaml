@@ -61,10 +61,6 @@
 - name: AeroCMS
   matchers:
     - part: body
-      type: regex
-      regex:
-        - 'content="(.*)AeroCMS(.*)'
-    - part: title
       type: word
       words:
         - AeroCMS
