@@ -31,7 +31,7 @@
       words:
         - asp.net
       type: word
-  name: ASP.NET
+  name: .net_framework
 - matchers:
     - type: word
       part: header
