@@ -4618,3 +4618,9 @@
       type: word
       words:
        - "TileServer PHP"
+- name: CockroachDB
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Cockroach Console"
