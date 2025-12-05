@@ -28,3 +28,11 @@
       words:
         - "FileZilla Server version"
   service: ftp
+
+- name: Titan FTP Server
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Titan FTP Server"
+  service: ftp
