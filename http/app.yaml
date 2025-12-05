@@ -4637,3 +4637,9 @@
       type: word
       words:
       - "iboss-font.css"
+- name: Yeti
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Yeti"
