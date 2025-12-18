@@ -4591,6 +4591,10 @@
       type: word
       words:
        - "97378986"
+    - part: body
+      type: word
+      words:
+       - "dify.ai"
 
 - name: ntpsec
   matchers:
