@@ -87,6 +87,7 @@
     - part: body
       type: word
       words:
+        - "react.production.min.js"
         - "react.min.js"
         - "react.js"
         - "React.createElement"
