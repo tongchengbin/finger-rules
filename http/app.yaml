@@ -4647,3 +4647,10 @@
       type: word
       words:
        - "Yeti"
+
+- name: n8n
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "n8n"
