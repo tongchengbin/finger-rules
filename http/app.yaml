@@ -4654,3 +4654,10 @@
       type: word
       words:
        - "n8n"
+
+- name: LibreChat
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "LibreChat"
