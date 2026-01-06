@@ -1632,3 +1632,10 @@
       type: word
       words:
         - 'RiteCMS'
+
+- name: ChanCMS
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'ChanCMS'
