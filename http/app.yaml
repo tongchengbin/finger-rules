@@ -4669,3 +4669,10 @@
       words:
        - "HPE"
        - "OneView"
+
+- name: DataArt
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "DataArt"
