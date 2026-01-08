@@ -56,7 +56,7 @@
       type: word
       words:
         - "VMware vRealize Operations"
-- name: Vmware-vCenter
+- name: vCenter-Server
   matchers:
     - part: body
       type: word
