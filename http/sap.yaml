@@ -10,3 +10,9 @@
       type: word
       words:
         - "-266008933"
+- name: solution_manager
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "sap/bc/ui2/flp"
