@@ -4677,3 +4677,9 @@
       words:
        - "Datart"
 
+- name: Agent-Zero
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Agent Zero"
