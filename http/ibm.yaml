@@ -33,3 +33,10 @@
         - IBM_HTTP_Server
       type: word
   name: IBM HTTP Server
+
+- name: data_risk_manager
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "IBM Data Risk Manager"
