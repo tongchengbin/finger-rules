@@ -4683,3 +4683,10 @@
       type: word
       words:
        - "Agent Zero"
+
+- name: N-central
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "N-central Login"
