@@ -4670,9 +4670,10 @@
        - "HPE"
        - "OneView"
 
-- name: DataArt
+- name: Datart
   matchers:
     - part: title
       type: word
       words:
-       - "DataArt"
+       - "Datart"
+
