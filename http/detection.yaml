@@ -39,6 +39,15 @@
       - 'Index of /routes.ini'
       - 'Index of /.sass-lint.yml'
       - 'Index of /wc.db'
+      - 'Index of /credentials.json'
+      - 'Index of /phinx.yml'
+      - 'Index of /Makefile'
+      - 'Index of /.flowconfig'
+      - 'Index of /.bashrc'
+      - 'Index of /.zshrc'
+      - 'Index of /.profile'
+      - 'Index of /.bash_profile'
+      - 'Index of /.my.cnf'
       - 'desktop.ini'
 
 - name: 1password-phish

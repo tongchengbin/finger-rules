@@ -4794,3 +4794,51 @@
       type: word
       words:
        - "VideoXpert"
+- name: Redpanda
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Redpanda Console"
+- name: PgHero
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "PgHero"
+- name: NeoDash
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "NeoDash"
+- name: ImageResizer
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "ImageResizer"
+- name: Artifactory
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Artifactory"
+- name: KCFinder
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "KCFinder"
+- name: Ambassador
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Ambassador Diagnostic Overview"
+- name: Weaviate
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Weaviate"
