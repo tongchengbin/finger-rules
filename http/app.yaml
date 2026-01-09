@@ -4778,7 +4778,13 @@
        - "TitanNit Web Control"
 - name: syncthing
   matchers:
-    - part: title
+    - part: body
       type: word
       words:
        - 'ng-app="syncthing"'
+- name: StarNet
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+       - "-260118452"
