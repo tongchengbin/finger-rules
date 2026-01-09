@@ -35,8 +35,11 @@
       - 'Index of /dbsettings.py'
       - 'Index of /db.php'
       - 'Index of /database.php'
+      - 'Index of /web.config'
+      - 'Index of /routes.ini'
+      - 'Index of /.sass-lint.yml'
+      - 'Index of /wc.db'
       - 'desktop.ini'
-
 
 - name: 1password-phish
   matchers:
