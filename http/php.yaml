@@ -83,3 +83,11 @@
     words:
       - phpLDAPadmin
   name: phpldapadmin
+
+
+- matchers:
+  - part: body
+    type: word
+    words:
+    - phpsysinfo
+  name: phpsysinfo

@@ -71,3 +71,10 @@
       type: word
       words:
         - "1085941792"
+
+- name: yonyou-U9
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "U9-登录"
