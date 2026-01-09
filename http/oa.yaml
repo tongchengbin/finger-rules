@@ -130,3 +130,11 @@
       type: word
       words:
         - "iOffice"
+
+- name: 致翔OA
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/ztoffice/"
+        - "致翔OA"
