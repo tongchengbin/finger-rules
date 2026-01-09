@@ -4696,3 +4696,10 @@
       type: word
       words:
        - "NeDi"
+
+- name: biotime
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "BioTime"
