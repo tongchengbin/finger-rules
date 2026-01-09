@@ -1639,3 +1639,10 @@
       type: word
       words:
         - 'ChanCMS'
+
+- name: Piwik
+  matchers:
+    - part: title
+      type: word
+      words:
+        - 'Piwik'
