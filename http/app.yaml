@@ -4776,3 +4776,9 @@
       type: word
       words:
        - "TitanNit Web Control"
+- name: syncthing
+  matchers:
+    - part: title
+      type: word
+      words:
+       - 'ng-app="syncthing"'
