@@ -656,3 +656,10 @@
         - Powered by UTM Web Protection
       type: word
   name: Sophos-UTM-Firewall
+
+- name: 绿盟下一代防火墙
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "绿盟下一代防火墙"
