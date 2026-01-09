@@ -4743,3 +4743,9 @@
       type: word
       words:
        - "ZMC_Admin_Login"
+- name: Zitadel
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Zitadel"
