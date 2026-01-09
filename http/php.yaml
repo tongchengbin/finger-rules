@@ -76,3 +76,10 @@
       type: word
       words:
         - "PHP Mailer"
+
+- matchers:
+  - part: body
+    type: word
+    words:
+      - phpLDAPadmin
+  name: phpldapadmin
