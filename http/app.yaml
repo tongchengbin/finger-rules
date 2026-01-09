@@ -4705,3 +4705,15 @@
        - "BioTime"
 
 - name: Zipline
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Zipline"
+
+- name: Р7-Office
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Р7-Офис"
