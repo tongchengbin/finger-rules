@@ -691,3 +691,10 @@
       type: word
       words:
         - calibre
+
+- name: uc-httpd
+  matchers:
+    - part: headers.server
+      type: word
+      words:
+        - uc-httpd

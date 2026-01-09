@@ -4731,3 +4731,9 @@
       type: word
       words:
        - "Yacht"
+- name: YeaLink
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "YeaLink"
