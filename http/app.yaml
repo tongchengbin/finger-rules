@@ -4724,3 +4724,10 @@
       type: word
       words:
        - "webpackJsonpzipkin-lens"
+
+- name: Yacht
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Yacht"
