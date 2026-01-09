@@ -4756,3 +4756,11 @@
       type: word
       words:
        - "Zebra"
+
+- name: YonBIP
+  matchers:
+    - part: title
+      type: word
+      words:
+      - "YonBIP"
+      - "数字化工作台"
