@@ -4717,3 +4717,10 @@
       type: word
       words:
        - "Р7-Офис"
+
+- name: Zipkin
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "webpackJsonpzipkin-lens"
