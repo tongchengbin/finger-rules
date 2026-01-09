@@ -91,3 +91,10 @@
     words:
     - phpsysinfo
   name: phpsysinfo
+
+- name: PHPnow
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "PHPnow works"
