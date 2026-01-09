@@ -4737,3 +4737,9 @@
       type: word
       words:
        - "YeaLink"
+- name: Zmanda 
+  matchers:
+    - part: header
+      type: word
+      words:
+       - "ZMC_Admin_Login"
