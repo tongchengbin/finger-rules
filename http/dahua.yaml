@@ -11,3 +11,9 @@
       type: word
       words:
         - "eims"
+- name: 智能云网关注册管理平台
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "智能云网关注册管理平台"

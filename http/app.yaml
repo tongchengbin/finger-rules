@@ -4749,3 +4749,10 @@
       type: word
       words:
        - "Zitadel"
+
+- name: Zebra
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Zebra"
