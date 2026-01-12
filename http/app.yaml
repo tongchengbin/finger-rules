@@ -4908,3 +4908,16 @@
       type: word
       words:
        - "AcuToWeb"
+- name: AmpJuke
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-121681558"
+- name: aim
+  vendor: aimstack
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1047157256"
