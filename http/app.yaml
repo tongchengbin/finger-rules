@@ -4842,3 +4842,63 @@
       type: word
       words:
        - "Weaviate"
+- name: Codian-MCU
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Codian MCU"
+- name: webcamXP
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "webcamXP"
+- name: MySQLd-exporter
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "MySQLd Exporter"
+- name: Heatmiser Wifi Thermostat
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Heatmiser Wifi Thermostat"
+- name: WebDAV
+  matchers:
+    - part: header
+      type: word
+      words:
+       - "Ms-Author-Via: DAV"
+- name: Pacts
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Pacts"
+- name: puppetdb
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "PuppetDB: Dashboard"
+- name: ServerStatus
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "ServerStatus"
+- name: cyber_infrastructure
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "Acronis Cyber Infrastructure"
+- name: acmailer
+  matchers:
+    - part: title
+      type: word
+      words:
+       - "ACMAILER4.0"
