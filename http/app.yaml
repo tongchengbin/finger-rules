@@ -4933,3 +4933,15 @@
       type: word
       words:
         - "ANTEEO"
+- name: avaya_aura_utility_services
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Avaya Aura&reg;&nbsp;Utility Services"
+- name: openwebui
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-286484075"
