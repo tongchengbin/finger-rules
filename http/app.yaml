@@ -4921,3 +4921,15 @@
       type: word
       words:
         - "-1047157256"
+- name: Bugzilla
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Bugzilla"
+- name: AnteeoWMS
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "ANTEEO"

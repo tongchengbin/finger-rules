@@ -171,3 +171,9 @@
       type: word
       words:
         - "Apache Drill"
+- name: Pinot
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1696974531"
