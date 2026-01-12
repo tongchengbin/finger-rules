@@ -183,3 +183,15 @@
       type: word
       words:
         - "aquatronica"
+- name: CodeChecker
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1496590341"
+- name: Cleo
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Server: Cleo"
