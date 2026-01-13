@@ -52,3 +52,15 @@
       type: word
       words:
         - "BigFixHTTPServer"
+- name: hardware_management_console
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "262502857"
+- name: aspera_faspex
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Aspera Faspex"
