@@ -92,6 +92,12 @@
         - "蓝凌软件 版权所有"
         - "jsp/clearSsoCookie.jsp"
       condition: and
+- name: landray_ekp
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "831854882"
 - name: O2OA
   matchers:
     - part: title
@@ -136,5 +142,4 @@
     - part: body
       type: word
       words:
-        - "/ztoffice/"
-        - "致翔OA"
+        - "/layer_red/layer.js"

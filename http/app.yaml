@@ -4945,3 +4945,21 @@
       type: word
       words:
         - "-286484075"
+- name: Portal API
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/_proxy/api/v3/"
+- name: laminas-http
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "laminas"
+- name: Glimpse
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Glimpse.axd"
