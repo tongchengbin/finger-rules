@@ -1593,8 +1593,6 @@
       type: word
       words:
         - 'Camaleon CMS'
-
-
 - matchers:
   - part: body
     type: word
@@ -1646,3 +1644,10 @@
       type: word
       words:
         - 'Piwik'
+- name: tpshop
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'tpshop.css'
+        - 'tpshop_config'

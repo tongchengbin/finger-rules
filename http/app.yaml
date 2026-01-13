@@ -725,6 +725,12 @@
       type: word
       words:
         - SolarWinds
+- name: web_help_desk
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1895809524"
 - name: Certbot
   matchers:
     - part: title
@@ -4963,3 +4969,71 @@
       type: word
       words:
         - "Glimpse.axd"
+- name: Frappe
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Login to Frappe"
+- name: kace_systems_management_appliance
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-463230636"
+- name: Triofox
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-177043778"
+- name: ESPHome
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "ESPHome"
+- name: Traccar
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Traccar"
+- name: EWEBS
+  matchers:
+    - part: body
+      type: word
+      condition: and
+      words:
+        - "ClientDownload.xgi"
+        - "NewSoft"
+- name: LED Assistant
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "LED Assistant"
+- name: Monsta FTP
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Monsta FTP"
+- name: business_intelligence_and_reporting_tools
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "eclipse birt home"
+- name: MikoPBX
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "MikoPBX"
+- name: larecipe
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/binarytorch/larecipe/"
