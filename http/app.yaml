@@ -5037,3 +5037,21 @@
       type: word
       words:
         - "/binarytorch/larecipe/"
+- name: revpi_status
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "RevPi"
+- name: poststaticfooter
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "posstaticfooter"
+- name: asustor_data_master
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "ASUSTOR"

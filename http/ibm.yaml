@@ -40,3 +40,15 @@
       type: word
       words:
         - "IBM Data Risk Manager"
+- name: planning_analytics
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Arc for TM1"
+- name: bigfix_platform
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "BigFixHTTPServer"
