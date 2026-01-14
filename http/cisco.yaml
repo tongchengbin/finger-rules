@@ -198,3 +198,9 @@
       type: word
       words:
         - 'Cisco Finesse'
+- name: adaptive_security_appliance_software
+  matchers:
+    - part: body
+      type: word
+      words:
+        - '/+CSCOE+/logon.html'
