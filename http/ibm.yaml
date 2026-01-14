@@ -64,3 +64,15 @@
       type: word
       words:
         - "Aspera Faspex"
+- name: ibm_mq_console
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "ibmmq/console/login.html"
+- name: elastic_storage_system
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Elastic Storage System"

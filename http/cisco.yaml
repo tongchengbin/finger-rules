@@ -192,3 +192,9 @@
       type: word
       words:
       - "identity services engine"
+- name: finesse
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'Cisco Finesse'
