@@ -6812,20 +6812,7 @@
     regex:
     - (^NetTalk-WebServer\/([\d\.]+)$)
   name: nettalk_webserver
-- matchers:
-  - part: headers.x-powered-by
-    type: regex
-    regex:
-    - ^nette framework
-  - part: headers.Set-Cookie
-    type: word
-    words:
-    - nette-browser
-  - part: body
-    type: regex
-    regex:
-    - <div[^>]+id="snippet-
-  name: nette_framework
+
 - matchers:
   - part: body
     type: word

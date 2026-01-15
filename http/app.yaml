@@ -5183,3 +5183,46 @@
       type: word
       words:
         - "SimpleHelp"
+- name: kace_system_management_appliance
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-463230636"
+- name: Optergy
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Optergy"
+
+- matchers:
+  - part: header
+    type: word
+    words:
+    - Nette Framework
+  name: nette_framework
+- name: Stash
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Stash"
+- name: CyberPower
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "PDNU"
+- name: Veeam
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Veeam"
+- name: Plenti
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Plenti"
