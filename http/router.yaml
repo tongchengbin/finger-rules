@@ -492,3 +492,9 @@
       type: word
       words:
         - "868509217"
+- name: netis
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "netis router"

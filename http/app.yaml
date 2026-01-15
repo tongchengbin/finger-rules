@@ -5146,3 +5146,15 @@
       type: word
       words:
         - "1521468900"
+- name: sonlogger
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "SonLogger"
+- name: aura_device_services
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Avaya Aura&reg;&nbsp;Utility Services"
