@@ -20,3 +20,9 @@
       type: word
       words:
         - 'Laser Printer'
+- name: Dell-Unisphere
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Unisphere"
