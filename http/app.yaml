@@ -5055,3 +5055,50 @@
       type: word
       words:
         - "ASUSTOR"
+- name: Redis Commander
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Redis Commander"
+- name: Blackbox Exporter
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Blackbox Exporter"
+- matchers:
+  - part: body
+    type: word
+    words:
+    - episerver
+  name: episerver
+- name: fides
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "SERVER_SIDE_FIDES_API_URL"
+- name: nvt_web_server
+  matchers-condition: and
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "/viewer/viewer.html"
+    - part: header
+      type: word
+      words:
+        - "lighttpd"
+- name: memtracker
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "MemTracker"
+- name: vben
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "vben"

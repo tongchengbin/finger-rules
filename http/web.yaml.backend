@@ -940,13 +940,6 @@
   - part: body
     type: word
     words:
-    - <span class="vmsTitle">Avaya Aura&#8482;&nbsp;Utility Server</span>
-    - <div id="topBar"><div id="topBarLeft"><a href="#" class="helpAndExit" onclick="window.open('/webhelp/Base/Utility_toc.htm
-  name: avaya_aura_utility_server
-- matchers:
-  - part: body
-    type: word
-    words:
     - <html><head><title>IP Office System Status</title><style
   - name: version
     part: headers.server
@@ -3180,22 +3173,6 @@
     regex:
     - (<center><font size="3" face="monospace">\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* Version ([^\s]+) \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*<\/font><\/center>)
   name: epic_web_honeypot
-- matchers:
-  - part: body
-    type: word
-    words:
-    - src="/Util/javascript/episerverscriptmanager.js"
-  - name: meta generator tag with EPiServer
-    part: body
-    type: word
-    words:
-    - <meta name="GENERATOR" content="EPiServer" />
-  - name: EPiServer comment
-    part: body
-    type: word
-    words:
-    - <!-- EPiServer -->
-  name: episerver
 - matchers:
   - part: body
     type: regex
@@ -15463,18 +15440,6 @@
     words:
     - epi:statemarker
   name: optimizely_commerce
-- matchers:
-  - part: headers.content-security-policy
-    type: word
-    words:
-    - \.episerver\.net
-  - part: headers.Set-Cookie
-    type: word
-    words:
-    - epi:statemarker
-    - episerver
-    - episessionid
-    - epitrace
   name: optimizely_content_management
 - matchers:
   - part: headers.x-generator
@@ -16405,12 +16370,6 @@
     words:
     - <!-- powered by strikingly\.com
   name: strikingly
-- matchers:
-  - part: headers.x-powered-cms
-    type: word
-    words:
-    - subrion cms
-  name: subrion
 - matchers:
   - part: headers.x-cluster
     type: word

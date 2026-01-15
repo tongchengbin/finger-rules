@@ -402,7 +402,7 @@
       type: word
       words:
         - october_session
-  name: October-CMS
+  name: October
 - name: Batflat-CMS
   matchers:
     - part: headers.X-Created-By
@@ -1079,7 +1079,7 @@
       type: word
       words:
         - Subrion CMS
-  name: Subrion-CMS
+  name: Subrion
 - matchers:
     - part: body
       words:
@@ -1651,3 +1651,39 @@
       words:
         - 'tpshop.css'
         - 'tpshop_config'
+- name: ipeakcms
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'ipeak'
+- name: doorgets
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'Powered with doorGets'
+- name: FleetCart
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'FleetCart'
+- name: CPAS Management System
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - '-58141038'
+- name: prison_management_system
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'Prison Management System'
+- name: ep_web_cms
+  matchers:
+    - part: body
+      type: word
+      words:
+        - 'EPweb'

@@ -191,7 +191,13 @@
         - "-1496590341"
 - name: Cleo
   matchers:
-    - part: body
+    - part: header
       type: word
       words:
         - "Server: Cleo"
+- name: StreamPark
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Apache StreamPark"

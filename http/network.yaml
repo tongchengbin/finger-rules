@@ -70,3 +70,9 @@
       type: word
       words:
         - "VoIP Gateway"
+- name: man-eam-0003
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "webconfig menu.cgi"
