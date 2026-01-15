@@ -29,3 +29,9 @@
       - "SonicWALL Universal Management Suite"
       - "SonicWALL Global Management System"
   name: sonicwall_gms
+- name: email_security
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "SonicWALL Email Security"
