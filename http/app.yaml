@@ -5111,3 +5111,9 @@
       type: word
       words:
         - "Letta"
+- name: peplink
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Peplink"
