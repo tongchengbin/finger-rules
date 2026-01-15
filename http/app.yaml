@@ -5158,3 +5158,28 @@
       type: word
       words:
         - "Avaya Aura&reg;&nbsp;Utility Services"
+- name: mindsdb
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "MindsDB"
+- name: projectsend
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "ProjectSend"
+- name: Infinitt PACS
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1474455751"
+        - "702238928"
+- name: simplehelp
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "SimpleHelp"
