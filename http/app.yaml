@@ -4366,16 +4366,12 @@
       type: word
       words:
       - "Mitel Networks"
-
-
 - name: appliance_base_software
   matchers:
     - part: headers.set-cookie
       type: word
       words:
       - "nsbase_session"
-
-
 - matchers:
   - part: body
     type: word
@@ -5102,3 +5098,10 @@
       type: word
       words:
         - "vben"
+- name: mitel_6000
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1940372141"
+        - "-447557905"
