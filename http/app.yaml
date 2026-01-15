@@ -5124,3 +5124,25 @@
       type: word
       words:
         - "-1445519482"
+- name: vantara_pentaho_business_analytics_server
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1749354953"
+- name: bonita
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Bonita"
+    - part: header
+      type: word
+      words:
+        - "Bonita"
+- name: viaware
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1521468900"
