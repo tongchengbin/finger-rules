@@ -5117,3 +5117,10 @@
       type: word
       words:
         - "Peplink"
+- name: vsa
+  vendor: kaseya
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "-1445519482"
