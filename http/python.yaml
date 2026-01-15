@@ -86,8 +86,8 @@
         - "Laravel Framework"
 - name: QdrantUI
   matchers:
-    - type: body
-      part: title
+    - type: word
+      part: body
       words:
         - "qdrant - vector search engine"
 - name: PostgREST
