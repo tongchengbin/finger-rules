@@ -5226,3 +5226,57 @@
       type: word
       words:
         - "Plenti"
+- name: Vendure
+  matchers:
+    - part: header
+      type: word
+      words:
+        - "Vendure"
+- name: Netdisco
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Netdisco"
+- name: pREST
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "authorization token is empty"
+- name: vicidial
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "1375401192"
+- name: Vanna
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "vanna.ai"
+- name: FileCatalyst
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "FileCatalyst file transfer solution"
+- name: node-red
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "321591353"
+- name: Fumeng Cloud
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Fumeng Cloud"
+- name: 孚盟云
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "孚盟云"
