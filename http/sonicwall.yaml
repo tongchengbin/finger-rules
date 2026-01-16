@@ -14,7 +14,8 @@
       words:
         - SonicWALL SSL-VPN Web Server
       type: word
-  name: SonicWALL-SSL-VPN
+  vendor: SonicWall
+  name: SSLVPN
 - matchers:
   - part: headers.server
     words:

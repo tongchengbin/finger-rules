@@ -5280,3 +5280,21 @@
       type: word
       words:
         - "孚盟云"
+- name: SafeGuard
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Safeguard for Privileged Passwords"
+- name: Malwared
+  matchers:
+    - part: icon_hash
+      type: word
+      words:
+        - "487145192"
+- name: 云安宝
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "云安宝"
