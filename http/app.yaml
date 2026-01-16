@@ -5298,3 +5298,9 @@
       type: word
       words:
         - "云安宝"
+- name: AstrBot
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "AstrBot"

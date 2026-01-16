@@ -35,35 +35,6 @@
       type: word
       words:
         - "奇安信VPN"
-#sangfor
-- name: SangFor firewall products
-  matchers:
-    - part: title
-      type: word
-      words:
-        - "SANGFOR | NGAF"
-# 应用交付管理系统
-- name: Sangfor Application Delivery
-  matchers:
-    - part: body
-      type: word
-      words:
-        - "default_target=\"/cgi-bin/login.cgi?action=log&fro=self"
-        - "var check_login_key"
-        - "/static/es5_shim/es5-sham.js"
-- name: SANGFOR-EDR
-  matchers:
-    - part: body
-      type: word
-      words:
-        - "datalayer','gtm-tl7g2lw'"
-#  SangFor-行为感知系统/日志中心
-- name: SANGFOR-ba
-  matchers:
-    - part: body
-      type: word
-      words:
-        - "isHighPerformance : !!SFIsHighPerformance,"
 
 - name: 奇安信天擎
   matchers:
@@ -225,12 +196,7 @@
       type: word
       words:
         - "/cgi-bin/webui?op=del_security_code&path="
-- name: SangFor-防火墙
-  matchers:
-    - part: icon_hash
-      type: word
-      words:
-        - "-885859535"
+
 - name: LeadSec-Firewall
   matchers:
     - part: body
