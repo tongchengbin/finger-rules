@@ -171,3 +171,9 @@
       type: word
       words:
       - "VMware Aria Operations for Logs"
+- name: VeloCloud
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "VeloCloud"

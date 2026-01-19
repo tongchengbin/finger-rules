@@ -537,7 +537,7 @@
     - type: word
       part: body
       words:
-        - Nexus Repository Manager
+        - Nexus Repository
 
 - name: weiphp
   matchers:
