@@ -5328,3 +5328,9 @@
       type: word
       words:
         - "Chef Automate"
+- name: protop
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Protop"

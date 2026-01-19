@@ -81,3 +81,15 @@
       type: word
       words:
         - "Provide a link that opens Word,"
+- name: OfficeWeb365
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "OfficeWeb365"
+- name: Dkron
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "Dkron"
