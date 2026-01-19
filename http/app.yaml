@@ -5322,3 +5322,9 @@
       type: word
       words:
         - "I Doc View"
+- name: chef
+  matchers:
+    - part: body
+      type: word
+      words:
+        - "Chef Automate"
