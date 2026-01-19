@@ -5316,3 +5316,9 @@
       type: word
       words:
         - "SolarWinds Security Event Manager"
+- name: idoc文档管理系统
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "I Doc View"
