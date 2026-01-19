@@ -5310,3 +5310,9 @@
     words:
     - ISPConfig
   name: ispconfig
+- name: security_event_manager
+  matchers:
+    - part: title
+      type: word
+      words:
+        - "SolarWinds Security Event Manager"
