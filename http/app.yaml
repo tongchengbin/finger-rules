@@ -5304,3 +5304,9 @@
       type: word
       words:
         - "AstrBot"
+- matchers:
+  - part: body
+    type: word
+    words:
+    - ISPConfig
+  name: ispconfig
